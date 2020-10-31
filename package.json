@@ -1,0 +1,20 @@
+{
+  "name": "alberta-covid-analysis",
+  "version": "1.0.0",
+  "description": "This is a data collection of covid related doccs, as many as could be recovered.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
+  },
+  "author": "Matt Schlosser",
+  "license": "MIT",
+  "dependencies": {
+    "node-html-parser": "^1.4.5"
+  },
+  "devDependencies": {
+    "vue": "^2.6.12",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  }
+}
