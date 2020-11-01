@@ -1,11 +1,20 @@
+<template>
+    <div style="width: 50%; margin: 0 auto;">
+        <div class='full-width'>
+            <LineChart />
+        </div>
+    </div>
+</template>
 <script>
-import { Bar } from 'vue-chartjs'
-import data from '../../local/20200531.json'
-console.log(data);
+import LineChart from './LineChart.vue'
 export default {
-  extends: Bar,
-  mounted () {
-    this.renderChart(data, {})
-  }
+    components: {
+        LineChart
+    }
 }
 </script>
+<style>
+.full-width {
+    width: 100%;
+}
+</style>
