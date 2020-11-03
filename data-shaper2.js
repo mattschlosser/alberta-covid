@@ -1,3 +1,12 @@
+/**
+ * Merges the two name types. 
+ * 
+ * At some point, names changes from a format like 
+ * "Edmonton - Boonie Doon" to "Edmonton - Boonie Doon (& Nearby Neighbourhoods)"
+ * 
+ * This script simply merges the two data sets into the same dataset. 
+ * 
+ */
 const fs = require('fs');
 const path = require('path');
 
