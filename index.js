@@ -5,7 +5,7 @@ for (let filename of dire) {
         let file = fs.readFileSync(filename)
         let objs = [];;
         let data = JSON.parse(file);
-        let tree = data.x.calls[1].args[6]
+        let tree = data.x.calls[2].args[6]
         // console.log(data.x.calls[1])
 
         var {parse, HTMLElement, TextNode} = require('node-html-parser')
@@ -35,7 +35,7 @@ for (let filename of dire) {
             } else if (each instanceof TextNode) {
                 // if (next.match(toFind)) {
                     // console.log(each.rawText);
-                    let n = Number(each.rawText.split(' ')[0]);
+                    let n = Number(each.rawText.split(' ')[1]);
                     if (each.rawText.match(/ase/)) {
                         obj.cases = n
                     } else if (each.rawText.match(/Active/)) {
