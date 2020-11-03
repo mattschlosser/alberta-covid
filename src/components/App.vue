@@ -53,7 +53,7 @@ export default {
         chartData() {
             return {
                 datasets: [{
-                    label: 'Edmonton', 
+                    label: "Count", 
                     backgroundColor: '#f87979',
                     data: this.selectedData,
                 }]
