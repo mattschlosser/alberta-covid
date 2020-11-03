@@ -2,7 +2,7 @@
     <div style="width: 100%; margin: 0 auto; display: flex; ">
         <div style="max-height: 100vh; overflow: auto;">
             <ul style="position: sticky; display: block; top: 0; background-color: white; margin-bottom: 20px; padding-bottom: 10px;">
-                <li v-for="mode in modes" :key="mode" @click="selectedMode = mode" :class="{bold: selectedMode == mode}">
+                <li v-for="mode in modes" :key="mode" @click="selectedMode = mode" :style="{'font-weight': selectedMode == mode ? 'bold' : 'normal'}">
                     {{mode}}
                 </li>
             </ul>
@@ -17,7 +17,7 @@
                 </li>
             </ul>
         </div>
-        <div class='full-width'>
+        <div style="width: 50%; max-height: 100vh;">
             <LineChart :chart-data="chartData" />
         </div>
         
@@ -62,12 +62,3 @@ export default {
     }
 }
 </script>
-<style>
-.full-width {
-    width: 50%;
-    max-height: 100vh;
-}
-.bold {
-    font-weight: bolder;
-}
-</style>
