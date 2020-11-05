@@ -14,7 +14,7 @@ for (let filename of dir2) {
         let d = new Date(date);
         let myDate = `${("" + d.getFullYear()).slice(-2)}${("0" + (d.getMonth() + 1)).slice(-2)}${("0" + d.getDate()).slice(-2)}`;
         console.log(myDate);
-        if (myDate < 201103) {
+        if (myDate < 301103) {
             // process.exit(0);
             // return;
             let scripts = file.querySelectorAll('[type=application/json]')
