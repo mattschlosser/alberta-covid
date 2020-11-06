@@ -18,7 +18,10 @@ for (let e of x) {
     let i = obj.find(f => {
         if (e.name.search(f.name) == 0 || f.name.search(e.name) == 0) {
             // console.log(`${f.name} matches ${e.name}`);
-            return true;
+            if ((e.name.length > f.name.length && e.name[f.name.length+1] == '(') || (f.name.length > e.name.length && f.name[e.name.length+1] == '('))
+                return true;
+            else
+                return false;
         } else {
             return false;
         }
@@ -31,6 +34,6 @@ for (let e of x) {
         obj.push(e)
     }
 }
-console.log(obj);
+// console.log(obj);
 let out = JSON.stringify(obj);
 fs.writeFileSync("all2.json", out)
