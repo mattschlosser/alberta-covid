@@ -29,7 +29,7 @@ node .
 ```
 Which extracts just the data we need, and places it in a 2020MMDD.json file
 
-4. Move JOSN file to local directory
+4. Move JSON file to local directory
 ``` 
 mv 2020* local/
 ```
