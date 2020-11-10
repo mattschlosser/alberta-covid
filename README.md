@@ -21,7 +21,7 @@ wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 ```
 node htmlProcessor.js
 ```
-Which produces a 20MMDD.json file where MM is the two digit month, and DD is the two digit year
+Which produces a 20MMDD.json file where MM is the two digit month, and DD is the two digit date
 
 3. Run JSON processor
 ```
