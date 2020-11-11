@@ -21,7 +21,7 @@ wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 ```
 node htmlProcessor.js
 ```
-Which produces a 20MMDD.json file where MM is the two digit month, and DD is the two digit year
+Which produces a 20MMDD.json file where MM is the two digit month, and DD is the two digit date
 
 3. Run JSON processor
 ```
@@ -29,7 +29,7 @@ node .
 ```
 Which extracts just the data we need, and places it in a 2020MMDD.json file
 
-4. Move JOSN file to local directory
+4. Move JSON file to local directory
 ``` 
 mv 2020* local/
 ```
