@@ -7,7 +7,7 @@ for (let link of links) {
     let inst = i;
     let task = () => {
         let ts = link.split('/')[4];
-        let proc = spawn('wget', [link, '-O', `${ts}.htm`])
+        let proc = spawn('wget', [link, '-O', `pages/${ts}.htm`])
         proc.on('data', (e) => {
             console.log(data)
         })
@@ -17,5 +17,5 @@ for (let link of links) {
         proc.on('error', console.error)
         proc.on("message", e => console.log(e))
     }
-    setTimeout(task, i++ * 2000)
+    setTimeout(task, i++ * 4000)
 }
