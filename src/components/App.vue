@@ -4,9 +4,11 @@
         <v-container fluid> 
             <v-layout row reverse>
                 <v-flex md12 lg9>
+                    <QuickStats :stats="stats"/>
                     <div style="postion: sticky; top: 0; margin: 0 auto; width: 100%; max-height: 100vh" 
                         :style="{width: autoWidth}">
                         <LineChart :chart-data="chartData" />
+                        
                     </div>  
                 </v-flex>
                 <v-flex md12 lg3 align-self-start style="overflow: auto; max-height: 100vh; margin: 0px;">
@@ -50,6 +52,7 @@
 </template>
 <script>
 import LineChart from "./LineChart.vue";
+import QuickStats from './QuickStats.vue'
 import data from "../../local/all2.json";
 let x = data.find((e) => e.name.match(/Bonnie/));
 let d = x.data.map((data) => ({ x: data.x, y: data.active }));
@@ -57,6 +60,7 @@ console.log(d);
 export default {
   components: {
     LineChart,
+    QuickStats
   },
   data() {
     return {
@@ -81,6 +85,9 @@ export default {
       names.sort((a, b) => a.name > b.name);
       return names;
     },
+    stats( ){
+      return this.allData.find(e => e.name === this.selected)?.data.slice(-1)[0]
+    }, 
     selectedData() {
       return this.allData
         .find((e) => e.name === this.selected)

@@ -45,4 +45,4 @@ for (let e of x) {
 }
 // console.log(obj);
 let out = JSON.stringify(obj);
-fs.writeFileSync("all2.json", out)
+fs.writeFileSync(path.join(__dirname, "local", "all2.json"), out)
