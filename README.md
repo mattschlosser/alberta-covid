@@ -50,18 +50,14 @@ Which produces an `all.json` file, which contains all the data for each day
 node data-shaper2.js
 ```
 Which merges duplicate names into the same regions
+ocation
 
-8. Move file to correct location
-```
-mv all2.json local/
-```
-
-9. Run webpack
+8. Run webpack
 ```
 npm run webpack
 ```
 
-10. Commit and push
+9. Commit and push
 ```
 git add . && git commit -m "Update for $(date)" && git push
 ```
