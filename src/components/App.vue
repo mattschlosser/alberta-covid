@@ -37,12 +37,7 @@
                           :value="name"  
                           >
                           <v-list-item-title>
-                              <b v-if="selected == name">
-                              {{ name }}
-                              </b>
-                              <span v-else>
-                              {{ name }}
-                              </span>
+                            {{name}}
                           </v-list-item-title>
                           </v-list-item>
                         </v-list-item-group>
@@ -65,10 +60,16 @@ function merger(rest, first) {
     let existing = rest.find(x => x.x == one.x);
     if (existing) {
       // merge one's value which existing's value
-      existing.y += one.y;
+      let types = ['cases', 'recovered', 'deaths', 'active']
+      types.map(mode => {
+        if (existing[mode] !== undefined || one[mode] !== undefined) {
+          existing[mode] = (existing[mode] || 0) + (one[mode] || 0);
+        }
+      })
+
     } else {
       // push one's value into rest
-      rest.push(one);
+      rest.push({...one});
     }
   }
   return rest;
@@ -101,15 +102,18 @@ export default {
       names.sort((a, b) => a.name > b.name);
       return names;
     },
-    stats( ){
-      return this.allData.find(e => e.name === this.selected[0])?.data.slice(-1)[0]
-    }, 
-    selectedData() {
+    mergedData() {
       return this.selected.map(selected => this.allData
         .find((e) => e.name === selected))
-        ?.map(sel => sel.data.map((data) => ({ x: data.x, y: data[this.selectedMode] })))
-        ?.reduce((a,e) => merger(a, e), []);
+        .reduce((a,e) => merger(a, e.data), [])
+    }, 
+    selectedData() {
+      return this.mergedData
+        ?.map((data) => ({ x: data.x, y: data[this.selectedMode] }))
     },
+    stats( ){
+      return this.mergedData.slice(-1)[0]
+    }, 
     chartData() {
       return {
         datasets: [
