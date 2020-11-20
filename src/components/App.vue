@@ -29,20 +29,23 @@
                     </v-list>
                     <v-list subheader>
                         <v-subheader>Region</v-subheader>
-                        <v-list-item
-                        v-for="{ name } in names"
-                        :key="name"
-                        @click="selected = name"
-                        >
-                        <v-list-item-title>
-                            <b v-if="selected == name">
-                            {{ name }}
-                            </b>
-                            <span v-else>
-                            {{ name }}
-                            </span>
-                        </v-list-item-title>
-                        </v-list-item>
+                        <v-list-item-group multiple v-model="selected">
+                          <v-list-item
+                          v-for="{ name } in names"
+                          :key="name"
+
+                          :value="name"  
+                          >
+                          <v-list-item-title>
+                              <b v-if="selected == name">
+                              {{ name }}
+                              </b>
+                              <span v-else>
+                              {{ name }}
+                              </span>
+                          </v-list-item-title>
+                          </v-list-item>
+                        </v-list-item-group>
                     </v-list>
                 </v-flex>
             </v-layout>
@@ -57,6 +60,19 @@ import data from "../../local/all2.json";
 let x = data.find((e) => e.name.match(/Bonnie/));
 let d = x.data.map((data) => ({ x: data.x, y: data.active }));
 console.log(d);
+function merger(rest, first) {
+  for (let one of first) {
+    let existing = rest.find(x => x.x == one.x);
+    if (existing) {
+      // merge one's value which existing's value
+      existing.y += one.y;
+    } else {
+      // push one's value into rest
+      rest.push(one);
+    }
+  }
+  return rest;
+}
 export default {
   components: {
     LineChart,
@@ -67,7 +83,7 @@ export default {
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",
-      selected: "Edmonton - Bonnie Doon",
+      selected: ["Edmonton - Bonnie Doon (& Nearby Neighbourhoods)"],
     };
   },
   computed: {
@@ -86,12 +102,13 @@ export default {
       return names;
     },
     stats( ){
-      return this.allData.find(e => e.name === this.selected)?.data.slice(-1)[0]
+      return this.allData.find(e => e.name === this.selected[0])?.data.slice(-1)[0]
     }, 
     selectedData() {
-      return this.allData
-        .find((e) => e.name === this.selected)
-        ?.data.map((data) => ({ x: data.x, y: data[this.selectedMode] }));
+      return this.selected.map(selected => this.allData
+        .find((e) => e.name === selected))
+        ?.map(sel => sel.data.map((data) => ({ x: data.x, y: data[this.selectedMode] })))
+        ?.reduce((a,e) => merger(a, e), []);
     },
     chartData() {
       return {
