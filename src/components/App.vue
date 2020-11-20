@@ -161,6 +161,7 @@ export default {
         x.newRecovered = today.recovered - yesterday.recovered;
         x.newDeaths = today.deaths - yesterday.deaths;
         x.newCases = today.cases - yesterday.cases;
+        x.recoveryRate = x.recovered > 0 || x.deaths > 0 ? Number(today.recovered / (today.recovered + today.deaths) * 100).toFixed(2)+"%" : '-'
         return x;
       });
     },

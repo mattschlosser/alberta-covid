@@ -14,12 +14,13 @@ export default {
                 {text: 'Area Name',   value: 'name'}, 
                 {text: 'Total Cases', value: 'cases'}, 
                 {text: 'New Cases',   value: 'newCases'}, 
+                {text: 'Active',      value: 'active'}, 
+                {text: 'Trend',      value: 'newActive'}, 
                 {text: 'Recovered',   value: 'recovered'}, 
                 {text: 'New Recovieres',   value: 'newRecovered'}, 
                 {text: 'Deaths',      value: 'deaths'}, 
                 {text: 'New Deaths',      value: 'newDeaths'}, 
-                {text: 'Active',      value: 'active'}, 
-                {text: 'New Active',      value: 'newActive'}, 
+                {text: 'Survival Rate',      value: 'recoveryRate', sort: (a, b) => Number(a.slice(0, -1)) < Number(b.slice(0, -1))}, 
             ], 
         }
     }
