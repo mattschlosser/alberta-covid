@@ -19,7 +19,7 @@ export default {
                 {text: 'Recovered',   value: 'recovered'}, 
                 {text: 'New Recovieres',   value: 'newRecovered'}, 
                 {text: 'Deaths',      value: 'deaths'}, 
-                {text: 'New Deaths',      value: 'newDeaths'}, 
+                {text: 'New Deaths',      value: 'newDeaths'},  
                 {text: 'Survival Rate',      value: 'recoveryRate', sort: (a, b) => Number(a.slice(0, -1)) < Number(b.slice(0, -1))}, 
             ], 
         }
