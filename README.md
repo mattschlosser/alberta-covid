@@ -41,7 +41,7 @@ node .
 ```
 This extracts the daily case numbers for each region, and places it in a 2020MMDD.json file, formatted as such:
 
-This JOSN file looks something like...
+This JSON file has the follwing format:
 ```json
 [
  { 
@@ -57,8 +57,7 @@ This JOSN file looks something like...
    "recovered": 1, 
    "deaths": 1, 
    "active": 1
- },
- ...
+ }
 ]
 ```
 
@@ -91,7 +90,6 @@ Which produces an `all.json` file, which contains all the data for each day
         "x": "2020-03-22", 
         "cases": 1,
       },
-      ...,
       {
         "x": "2020-04-09", 
         "cases": 38, 
@@ -99,10 +97,8 @@ Which produces an `all.json` file, which contains all the data for each day
         "recovered": 13,
         "deaths": 1
       },
-      ...
     ]
   },
-  ...
 ]
 ```
 **Note:** There is a distinction between data before April 9, 2020, and onwards. Data before April 9 only includes total number of cases, whereas data after that date includes active cases, recoveries, and deaths. 
@@ -117,7 +113,7 @@ Which merges duplicate names into the same regions.  On August 16, 2020, some re
 ```
 npm run webpack
 ```
-This updates the files in `/docs` with the new data, which is where the GitHub Pages site is pointed. 
+This updates the files in `docs/` with the new data, which is where the GitHub Pages site is pointed. 
 
 9. Commit and push
 ```
