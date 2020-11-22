@@ -4,8 +4,8 @@ This is a data collection of active/recovered/deaths/total cases broken down by 
 
 You can easily select each region and see the active/total/recovered/deaths for each region. 
 
-Data is automatically updated daily, provided the Government of Alberta's dasboard updates on time. 
-Some datapoints are missing between Sept 15 and October 29, as I started this project on October 29, 
+Data is automatically updated daily, provided the Government of Alberta's dashboard updates on time. 
+Some data are missing between Sept 15 and October 29, as I started this project on October 29, 
 and while the majority of data was available by pulling from web.archive.org, few archived copies of
 the dashbaord exist between Sept. 15 and October 29. 
 
