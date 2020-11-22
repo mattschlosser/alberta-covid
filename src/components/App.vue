@@ -65,8 +65,46 @@
                 </v-layout>
               </template>
               <template v-if="item == 'Summary'">
-                <div class="p-3">Here is a summary of today's stats.</div>
-                <custom-table :chart-data="todaysSummary" />
+                <v-container>
+                  <div class="p-3">Here is a summary of today's stats. Data was last updated on {{ lastActive }}. New numbers are new since {{ lastLastActive }}</div>
+                  
+                  
+                  <h2>
+                    Of cases with location data :
+                  </h2>
+                  <v-simple-table style="margin-bottom: 20px">
+                      <thead>
+                        <th>Type</th><th>Total</th><th>Change</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>All Time Cases:</td>
+                          <td>{{todaysTotalSummary.cases}} *  </td>
+                          <td> ({{ todaysTotalSummary.newCases }})</td>
+                        </tr>
+                        <tr>
+                          <td>Active:</td>
+                          <td>{{todaysTotalSummary.active}} </td>
+                          <td> ({{todaysTotalSummary.newActive}})</td>
+                        </tr>
+                        <tr>
+                          <td>Recoveries:</td>
+                          <td>{{todaysTotalSummary.recovered}} </td>
+                          <td> ({{ todaysTotalSummary.newRecovered }})</td>
+                        </tr>
+                        <tr>
+                          <td>Deaths:</td>
+                          <td>{{todaysTotalSummary.deaths}} </td>
+                          <td> ({{ todaysTotalSummary.newDeaths }})</td>
+                        </tr>
+                      </tbody>
+                  </v-simple-table>
+                  <em>* Does not include cases for which there is no location data</em>
+                  <h2>
+                    Summary Table
+                  </h2>
+                  <custom-table :chart-data="todaysSummary" />
+                </v-container>
               </template>
             </v-tab-item>
           </v-tabs-items>
@@ -165,9 +203,54 @@ export default {
         return x;
       });
     },
+    todaysTotals() {
+      return this.allData.reduce((a,e) => {
+        let last = e.data.slice(-1)[0];
+        a.active += last.active;
+        a.cases += last.cases;
+        a.deaths += last.deaths;
+        a.recovered += last.recovered;
+        return a;
+      }, {
+        active: 0, 
+        cases: 0,
+        deaths: 0,
+        recovered: 0
+      })
+    }, 
+    yesterdaysTotals() {
+      return this.allData.reduce((a,e) => {
+        let last = e.data.slice(-2)[0];
+        a.active += last.active;
+        a.cases += last.cases;
+        a.deaths += last.deaths;
+        a.recovered += last.recovered;
+        return a;
+      }, {
+        active: 0, 
+        cases: 0,
+        deaths: 0,
+        recovered: 0
+      })
+    },
+    todaysTotalSummary() {
+      return {
+        ...this.todaysTotals, 
+        newActive: this.todaysTotals.active - this.yesterdaysTotals.active, 
+        newCases: this.todaysTotals.cases - this.yesterdaysTotals.cases, 
+        newDeaths: this.todaysTotals.deaths - this.yesterdaysTotals.deaths, 
+        newRecovered: this.todaysTotals.recovered - this.yesterdaysTotals.recovered
+      }
+    }, 
     stats() {
       return this.mergedData.slice(-1)[0];
     },
+    lastActive() {
+      return this.stats.x;
+    }, 
+    lastLastActive() {
+      return this.mergedData.slice(-2)[0].x;
+    }, 
     chartData() {
       return {
         datasets: [
