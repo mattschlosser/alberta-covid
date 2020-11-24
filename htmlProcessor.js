@@ -1,4 +1,3 @@
-const { dir } = require('console');
 const fs = require('fs');
 const {parse, TextNode} = require('node-html-parser')
 
