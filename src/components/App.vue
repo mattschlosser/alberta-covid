@@ -190,7 +190,7 @@ export default {
         let x = { ...e };
         let diffs = x.data.slice(-2);
         let yesterday = diffs[0];
-        let today = diffs[1];
+        let today = diffs[1] || yesterday;
         x.active = today.active;
         x.cases = today.cases;
         x.recovered = today.recovered;
