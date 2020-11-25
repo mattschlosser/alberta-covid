@@ -5,7 +5,7 @@ for (let filename of dire) {
         let file = fs.readFileSync(filename)
         let objs = [];;
         let data = JSON.parse(file);
-        let tree = data.x.calls[2].args[6]
+        let tree = data.x.calls[3].args[6]
         // console.log(data.x.calls[1])
 
         var {parse, HTMLElement, TextNode} = require('node-html-parser')
