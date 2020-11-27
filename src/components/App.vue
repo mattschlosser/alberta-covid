@@ -8,7 +8,7 @@
           </v-tabs>
           <v-tabs-items v-model="tab">
             <v-tab-item v-for="item in items" :key="item">
-              <template v-if="item == 'Chart'">
+              <template v-if="item == 'Location Chart'">
                 <v-layout row reverse>
                   <v-flex md12 lg9>
                     <QuickStats :stats="stats" />
@@ -64,7 +64,7 @@
                   </v-flex>
                 </v-layout>
               </template>
-              <template v-if="item == 'Summary'">
+              <template v-if="item == 'Location Table'">
                 <v-container>
                   <div class="p-3">Here is a summary of today's stats. Data was last updated on {{ lastActive }}. New numbers are new since {{ lastLastActive }}</div>
                   
@@ -106,6 +106,9 @@
                   <custom-table :chart-data="todaysSummary" />
                 </v-container>
               </template>
+              <template v-if="item == 'Age Charts'">
+                <age-charts/>
+              </template>
             </v-tab-item>
           </v-tabs-items>
         </div>
@@ -118,6 +121,7 @@ import LineChart from "./LineChart.vue";
 import QuickStats from "./QuickStats.vue";
 import data from "../../local/all2.json";
 import CustomTable from "./CustomTable.vue";
+import AgeCharts from './AgeCharts.vue';
 let x = data.find((e) => e.name.match(/Bonnie/));
 let d = x.data.map((data) => ({ x: data.x, y: data.active }));
 console.log(d);
@@ -144,11 +148,12 @@ export default {
     LineChart,
     QuickStats,
     CustomTable,
+    AgeCharts,
   },
   data() {
     return {
       tab: "Chart",
-      items: ["Chart", "Summary", "Other"],
+      items: ["Location Chart", "Location Table", "Age Charts"],
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",

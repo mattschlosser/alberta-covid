@@ -39,9 +39,7 @@ Which produces a 20MMDD.json file where MM is the two digit month, and DD is the
 ```
 node .
 ```
-This extracts the daily case numbers for each region, and places it in a 2020MMDD.json file, formatted as such:
-
-This JSON file has the follwing format:
+This extracts the daily case numbers for each region, and places it in a 2020MMDD.json file. Each JSON file has the follwing format:
 ```json
 [
  { 
@@ -61,17 +59,12 @@ This JSON file has the follwing format:
 ]
 ```
 
-4. Move JSON file to local directory 
-``` 
-mv 2020* local/
+4. Clean up files no longer needed.
+```
+rm covid* 
 ```
 
-5. Clean up files no longer needed.
-```
-rm covid* 20* 
-```
-
-6. Run the first aggregator
+5. Run the first aggregator
 ```
 node data-shaper.js 
 ```
@@ -103,19 +96,19 @@ Which produces an `all.json` file, which contains all the data for each day
 ```
 **Note:** There is a distinction between data before April 9, 2020, and onwards. Data before April 9 only includes total number of cases, whereas data after that date includes active cases, recoveries, and deaths. 
 
-7. Run the second aggregator
+6. Run the second aggregator
 ```
 node data-shaper2.js
 ```
-Which merges duplicate names into the same regions.  On August 16, 2020, some regions were renamed from names like "Calgary - Node Hill" to "Calgary - Nose HIll (& Nearby Neighbourhoods)". This merges the data from older name formats, into the newer ones. 
+Which merges duplicate names into the same regions.  On August 16, 2020, some regions were renamed from names like "Calgary - Nose Hill" to "Calgary - Nose HIll (& Nearby Neighbourhoods)". This merges the data from older name formats, into the newer ones. 
 
-8. Run webpack
+7. Run webpack
 ```
 npm run webpack
 ```
 This updates the files in `docs/` with the new data, which is where the GitHub Pages site is pointed. 
 
-9. Commit and push
+8. Commit and push
 ```
 git add . && git commit -m "Update for $(date)" && git push
 ```

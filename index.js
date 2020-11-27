@@ -50,7 +50,8 @@ for (let filename of dire) {
         }
         console.log(objs);
         let str = JSON.stringify(objs);
-        fs.writeFileSync(`20${filename}`, str);
+        fs.writeFileSync(`local/20${filename}`, str);
+        fs.unlinkSync(filename);
         // process.exit(0);
     }
 }
