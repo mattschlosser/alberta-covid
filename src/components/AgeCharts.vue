@@ -47,7 +47,7 @@
     </v-layout>
 </template>
 <script>
-import LineChart from "./LineChart";
+import LineChart from "./LineChart.vue";
 import myData from "../../age/all.json";
 export default {
   components: {
