@@ -16,11 +16,8 @@ for (let filename of dir2) {
         let myDate = `${("" + d.getFullYear()).slice(-2)}${("0" + (d.getMonth() + 1)).slice(-2)}${("0" + d.getDate()).slice(-2)}`;
         if (!fs.existsSync(`age/20${myDate}.json`)) {
             if (myDate > 200409) {
-                // process.exit(0);
-                // return;
                 let tables = file.querySelectorAll('.Rtable tbody');
                 let nodes = tables[0].childNodes.filter(e => !(e instanceof TextNode))
-                // console.log(nodes);
                 let stats = [];
                 nodes.forEach((childNode, i) => {
                     let rags = [];
@@ -56,8 +53,8 @@ for (let filename of dir2) {
                             unknown_percent: rags[i][6], 
                             all_cases: rags[i][7], 
                             percent: rags[i][8]
-                        })
-                    } else  {
+                        });
+                    } else {
                         stats.push({
                             category: rags[i][0], 
                             male_cases: rags[i][1], 
@@ -71,7 +68,6 @@ for (let filename of dir2) {
                         })
                     }
                 });
-                console.log(stats);
                 let deets = JSON.stringify(stats);
                 fs.writeFileSync(`age/20${myDate}.json`, deets);
 
