@@ -66,7 +66,7 @@
               </template>
               <template v-if="item == 'Location Table'">
                 <v-container>
-                  <div class="p-3">Here is a summary of today's stats. Data was last updated on {{ lastActive }}. New numbers are new since {{ lastLastActive }}</div>
+                  <v-alert class="p-3">Here is a summary of today's stats. Data was last updated on {{ lastActive }}. New numbers are new since {{ lastLastActive }}</v-alert>
                   
                   
                   <h2>

@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <v-alert>
         Recovery Rate: {{ recoveryRate }}%<br/>
         Because of all cases of which an outcome is known, {{stats.recovered}} recovered and {{stats.deaths}}
         died.
-    </div>
+    </v-alert>
 </template>
 <script>
 export default {

@@ -17,7 +17,9 @@
         <v-flex md12 lg3 
                     align-self-start
                     style="overflow: auto; max-height: 100vh; margin: 0px">
-            This data is subject to experiments, and may not be correct. 
+            <v-alert prominent>
+              This data is subject to experiments, and may not be correct. 
+            </v-alert>
             <v-list subheader>
             <v-subheader>Mode</v-subheader>
             <v-list-item
