@@ -34,3 +34,6 @@ shape_dir("local", "name", ["active", "cases", "recovered", "deaths"]);
 
 // age
 shape_dir("age", "category", ["male_cases", "male_percent", "female_cases", "female_percent", "unknown_cases", "unknown_percent", "all_cases", "percent"])
+
+// severe
+shape_dir("severe", "category", ["all_cases", "hospitalized", "hospitalized_pct", "hospitalized_rate", "icu", "icu_pct", "icu_rate", "deaths", "deaths_pct", "deaths_rate"])

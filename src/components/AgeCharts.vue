@@ -1,62 +1,21 @@
 <template>
-    <v-layout row reverse>
-        <v-flex md12 lg9>
-            <div
-            style="
-                postion: sticky;
-                top: 0;
-                margin: 0 auto;
-                width: 100%;
-                max-height: 100vh;
-            "
-            :style="{ width: autoWidth }"
-            >
-            <LineChart :chart-data="chartData" />
-            </div>
-        </v-flex>
-        <v-flex md12 lg3 
-                    align-self-start
-                    style="overflow: auto; max-height: 100vh; margin: 0px">
-            <v-alert prominent>
-              This data is subject to experiments, and may not be correct. 
-            </v-alert>
-            <v-list subheader>
-            <v-subheader>Mode</v-subheader>
-            <v-list-item
-                v-for="mode in modes"
-                :key="mode"
-                @click="selectedMode = mode"
-                :style="{
-                'font-weight': selectedMode == mode ? 'bold' : 'normal',
-                }"
-            >
-                <v-list-item-title>
-                {{ mode }}
-                </v-list-item-title>
-            </v-list-item>
-            </v-list>
-            <v-list subheader>
-            <v-subheader>Category</v-subheader>
-            <v-list-item-group v-model="category">
-                <v-list-item v-for="(cat, i) in categories" :key="cat" :value="i">
-                    <v-list-item-title>
-                    {{ cat }}
-                    </v-list-item-title>
-                </v-list-item>
-            </v-list-item-group>
-            </v-list>
-        </v-flex>
-    </v-layout>
+    <quick-chart
+      :modes="modes"
+      keyed-by="category"
+      :all-data="myData"
+      init-category=0
+      init-mode="male_cases"
+    />
 </template>
 <script>
-import LineChart from "./LineChart.vue";
 import myData from "../../age/all.json";
+import QuickChart from './Chart/QuickChart.vue';
 export default {
   components: {
-    LineChart,
+    QuickChart   
   },
   data() {
-    return {
+ return {
       myData,
       selectedMode: "male_cases",
       modes: [

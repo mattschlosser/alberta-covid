@@ -106,8 +106,11 @@
                   <custom-table :chart-data="todaysSummary" />
                 </v-container>
               </template>
-              <template v-if="item == 'Age Charts'">
+              <template v-if="item == 'Age Chart'">
                 <age-charts/>
+              </template>
+              <template v-if="item == 'Severe Outcomes'">
+                <severe-chart/>
               </template>
             </v-tab-item>
           </v-tabs-items>
@@ -117,11 +120,12 @@
   </v-app>
 </template>
 <script>
-import LineChart from "./LineChart.vue";
+import LineChart from "./Chart/LineChart.vue";
 import QuickStats from "./QuickStats.vue";
 import data from "../../local/all2.json";
 import CustomTable from "./CustomTable.vue";
 import AgeCharts from './AgeCharts.vue';
+import SevereChart from './SevereChart.vue';
 let x = data.find((e) => e.name.match(/Bonnie/));
 let d = x.data.map((data) => ({ x: data.x, y: data.active }));
 console.log(d);
@@ -149,11 +153,12 @@ export default {
     QuickStats,
     CustomTable,
     AgeCharts,
+    SevereChart,
   },
   data() {
     return {
       tab: "Chart",
-      items: ["Location Chart", "Location Table", "Age Charts"],
+      items: ["Location Chart", "Location Table", "Age Chart", "Severe Outcomes"],
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",
