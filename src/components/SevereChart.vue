@@ -9,7 +9,7 @@
 </template>
 <script>
 import allData from '../../severe/all.json'
-import QuickChart from './Chart/QuickChart'
+import QuickChart from './Chart/QuickChart.vue'
 export default {
     components: {
         QuickChart
