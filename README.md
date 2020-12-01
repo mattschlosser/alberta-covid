@@ -21,9 +21,9 @@ npm install
 
 This is how to update the data/what each script is for. 
 
-1. Pull webpage
+## Pull webpage
 
-Get a recent copy of the Alberta Covid data dashboard.
+First, get a recent copy of the Alberta Covid data dashboard.
 
 ```
 mkdir pages
@@ -31,17 +31,17 @@ cd pages
 wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 ```
 
-2. Run various processors
+## Run various processors
 ```
 node localProcessor.js
 node ageProcessor.js
 node severeProcessor.js
 ```
-Which produces a a 2020MMDD.json in the local, age, and severe folders respectively,  where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. 
+Which produces a a 2020MMDD.json in the `local`, `age`, and `severe` folders respectively,  where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. 
 
-## Formats
+### Formats
 
-### Local 
+#### Local 
 Each JSON file contains all of Alberta's geospatial data related to covid cases for that day. Each JSON file has the following format:
 ```json
 [
@@ -61,7 +61,7 @@ Each JSON file contains all of Alberta's geospatial data related to covid cases 
  }
 ]
 ```
-### Age
+#### Age
 Each JSON file is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
@@ -77,8 +77,7 @@ Each JSON file is an array of objects, one for each age category. Each category 
 }
 ```
 
-
-### Severe Outcomes
+#### Severe Outcomes
 Severe outcome JSON files are an array of objects, each
 object representing an age category. Each category has a format like:
 ```json
@@ -97,16 +96,17 @@ object representing an age category. Each category has a format like:
 }
 ```
 
-3. Run the first aggregator
+## Run the first aggregator
+Run:
 ```
 node data-shaper.js 
 ```
 Which produces an `all.json` file, in local, age, and severe, each which contains all the data for each day
 
-## Formats
+### Formats
 Each `all.json` file is formated as a colleciton of time series data for each category/region.
 
-### Local
+#### Local
 
 An array of objects. One for each region. Each region has a format like:
 ```json
@@ -133,7 +133,7 @@ An array of objects. One for each region. Each region has a format like:
 ```
 **Note:** There is a distinction between data before April 9, 2020, and onwards. Data before April 9 only includes total number of cases, whereas data after that date includes active cases, recoveries, and deaths. 
 
-### Age
+#### Age
 
 The `all.json` file in the age folder is an array of objects, one for each age category. Each category has a format like:
 ```json
@@ -166,7 +166,7 @@ The `all.json` file in the age folder is an array of objects, one for each age c
 }
 ```
 
-### Severe
+#### Severe
 The `all.json` file in the severe folder is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
@@ -200,19 +200,19 @@ The `all.json` file in the severe folder is an array of objects, one for each ag
 }
 ```
 
-4. Run the second aggregator
+## Run the second aggregator
 ```
 node data-shaper2.js
 ```
 Which merges duplicate names into the same regions for local data, and places it in an `local/all2.json` file.  On August 16, 2020, some regions were renamed from names like "Calgary - Nose Hill" to "Calgary - Nose HIll (& Nearby Neighbourhoods)". This merges the data from older name formats, into the newer ones. 
 
-7. Run webpack
+## Run webpack
 ```
 npm run webpack
 ```
 This updates the files in `docs/` with the new data, which is where the GitHub Pages site is pointed. 
 
-8. Commit and push
+## Commit and push
 ```
 git add . && git commit -m "Update for $(date)" && git push
 ```
