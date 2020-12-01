@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const {parse, TextNode} = require('node-html-parser')
 
-let dir2 = fs.readdirSync(path.join(__dirname, "pages"));
-for (let filename of dir2) {
+let files = fs.readdirSync(path.join(__dirname, "pages"));
+for (let filename of files) {
     if (filename.match(/\.htm/)) {
         let data = fs.readFileSync(path.join(__dirname, "pages", filename));
         let file = parse(data);

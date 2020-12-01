@@ -26,20 +26,23 @@ This is how to update the data/what each script is for.
 Get a recent copy of the Alberta Covid data dashboard.
 
 ```
+mkdir pages
+cd pages
 wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 ```
 
-2. Run html processor
+2. Run various processors
 ```
-node htmlProcessor.js
+node localProcessor.js
+node ageProcessor.js
+node severeProcessor.js
 ```
-Which produces a 20MMDD.json file where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. This JSON file contains all of Alberta's geospatial data related to covid cases for that day.
+Which produces a a 2020MMDD.json in the local, age, and severe folders respectively,  where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. This JSON file contains all of Alberta's geospatial data related to covid cases for that day.
 
-3. Run JSON processor
-```
-node .
-```
-This extracts the daily case numbers for each region, and places it in a 2020MMDD.json file. Each JSON file has the follwing format:
+## Formats
+
+### Local 
+Daily case numbers for each region. Each JSON file has the follwing format:
 ```json
 [
  { 
@@ -58,18 +61,57 @@ This extracts the daily case numbers for each region, and places it in a 2020MMD
  }
 ]
 ```
-
-4. Clean up files no longer needed.
+### Age
+Age files have a format like:
+```json
+[
+  {
+    "category": "Under 1 Year", 
+    "male_cases": 0, 
+    "male_percent": 0, 
+    "female_cases": 0, 
+    "female_percent": 0,
+    "unknown_cases": 0,
+    "unknown_percent": 0, 
+    "all_cases": 0, 
+    "percent": 0
+  }
+]
 ```
-rm covid* 
+
+
+### Severe Outcomes
+Severe outcome files have a format like:
+```json
+[
+  {
+    "category": "Under 1 year", 
+    "all_cases": 2,
+    "hospitalized": 0, 
+    "hospitalized_pct": 0, 
+    "hospitalized_rate": 0, 
+    "icu": 0, 
+    "icu_pct": 0, 
+    "icu_rate": 0, 
+    "deaths": 0, 
+    "deaths_pct": 0, 
+    "deaths_rate": 0
+  }
+]
 ```
 
-5. Run the first aggregator
+3. Run the first aggregator
 ```
 node data-shaper.js 
 ```
-Which produces an `all.json` file, which contains all the data for each day
+Which produces an `all.json` file, in local, age, and severe, each which contains all the data for each day
 
+## Formats
+Each `all.json` file is formated as a colleciton of time series data for each category/region.
+
+### Local
+
+An array of objects. One for each region. Each region has a format like
 ```json
 [
   {
@@ -91,16 +133,83 @@ Which produces an `all.json` file, which contains all the data for each day
         "deaths": 1
       },
     ]
-  },
-]
+  }
 ```
 **Note:** There is a distinction between data before April 9, 2020, and onwards. Data before April 9 only includes total number of cases, whereas data after that date includes active cases, recoveries, and deaths. 
 
-6. Run the second aggregator
+### Age
+
+An array of objects. One for each category. Each category has a format like
+```json
+{
+  "category": "Under 1 Year",
+  "data": [
+    {
+      "x": "2020-03-21", 
+      "male_cases": 0, 
+      "male_percent": 0, 
+      "female_cases": 0, 
+      "female_percent": 0,
+      "unknown_cases": 0,
+      "unknown_percent": 0, 
+      "all_cases": 0, 
+      "percent": 0
+    }, 
+    { 
+      "x": "2020-03-22", 
+      "male_cases": 0, 
+      "male_percent": 0, 
+      "female_cases": 0, 
+      "female_percent": 0,
+      "unknown_cases": 0,
+      "unknown_percent": 0, 
+      "all_cases": 0, 
+      "percent": 0
+    }
+  ]
+}
+```
+
+### Severe
+An array of objects. One for each category. Each category has a format like
+```json
+
+{
+  "category": "Under 1 Year",
+  "data": [
+    {
+      "x": "2020-03-21", 
+      "hospitalized": 0, 
+      "hospitalized_pct": 0, 
+      "hospitalized_rate": 0, 
+      "icu": 0, 
+      "icu_pct": 0, 
+      "icu_rate": 0, 
+      "deaths": 0, 
+      "deaths_pct": 0, 
+      "deaths_rate": 0
+    }, 
+    { 
+      "x": "2020-03-22", 
+      "hospitalized": 0, 
+      "hospitalized_pct": 0, 
+      "hospitalized_rate": 0, 
+      "icu": 0, 
+      "icu_pct": 0, 
+      "icu_rate": 0, 
+      "deaths": 0, 
+      "deaths_pct": 0, 
+      "deaths_rate": 0
+    }
+  ]
+}
+```
+
+4. Run the second aggregator
 ```
 node data-shaper2.js
 ```
-Which merges duplicate names into the same regions.  On August 16, 2020, some regions were renamed from names like "Calgary - Nose Hill" to "Calgary - Nose HIll (& Nearby Neighbourhoods)". This merges the data from older name formats, into the newer ones. 
+Which merges duplicate names into the same regions for local data, and places it in an `all2.json` file.  On August 16, 2020, some regions were renamed from names like "Calgary - Nose Hill" to "Calgary - Nose HIll (& Nearby Neighbourhoods)". This merges the data from older name formats, into the newer ones. 
 
 7. Run webpack
 ```
@@ -111,4 +220,11 @@ This updates the files in `docs/` with the new data, which is where the GitHub P
 8. Commit and push
 ```
 git add . && git commit -m "Update for $(date)" && git push
+```
+
+# Frontend Dev 
+
+To run a dev server for local dev of the UI pages
+```
+vue serve ./src
 ```
