@@ -1,9 +1,15 @@
 <template>
   <v-app>
     <v-main>
-      <v-container fluid>
+      <v-app-bar app>
+        <v-app-bar-nav-icon />
+        <v-toolbar-title>
+          Alberta Covid Data
+        </v-toolbar-title>
+      </v-app-bar>  
+      <v-container app fluid>
         <div>
-          <v-tabs v-model="tab">
+          <v-tabs app v-model="tab">
             <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
           </v-tabs>
           <v-tabs-items v-model="tab">
@@ -116,6 +122,9 @@
           </v-tabs-items>
         </div>
       </v-container>
+      <v-footer>
+        Another site by &nbsp; <a href="https://mattschlosser.me">&nbsp;Matt Schlosser</a>
+      </v-footer>
     </v-main>
   </v-app>
 </template>
