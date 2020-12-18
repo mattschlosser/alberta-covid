@@ -1,6 +1,6 @@
 <template>
     <v-alert>
-        Recovery Rate: {{ recoveryRate }}%<br/>
+        Survival Rate: {{ recoveryRate }}%<br/>
         Because of all cases of which an outcome is known, {{stats.recovered}} recovered and {{stats.deaths}}
         died.
     </v-alert>
