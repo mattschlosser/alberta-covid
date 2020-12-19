@@ -10,16 +10,15 @@
       </v-app-bar>  
       <v-navigation-drawer app v-model="drawer">
         <v-list>
-          <v-list-item link v-for="item in items" :key="item" v-model="tab">
-            {{item}}
-          </v-list-item>
+          <v-list-item-group v-model="tab">
+            <v-list-item link v-for="item in items" :key="item">
+              {{item}}
+            </v-list-item>
+          </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
       <v-container app fluid>
         <div>
-          <!-- <v-tabs app v-model="tab">
-            <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
-          </v-tabs> -->
           <v-tabs-items v-model="tab">
             <v-tab-item v-for="item in items" :key="item">
               <template v-if="item == 'Location Chart'">
@@ -175,7 +174,7 @@ export default {
   data() {
     return {
       drawer: false, 
-      tab: "Location Chart",
+      tab: 0,
       items: ["Location Chart", "Location Table", "Age Chart", "Severe Outcomes"],
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
