@@ -283,7 +283,8 @@ export default {
         datasets: [
           {
             label: "Count",
-            backgroundColor: "#f87979",
+            borderColor: "#7979f8",
+            backgroundColor: "#fff0",
             data: this.selectedData,
           },
         ],
