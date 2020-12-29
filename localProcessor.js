@@ -26,7 +26,12 @@ for (let filename of files) {
                         
                         let objs = [];;
                         // this changes over time. 
-                        let tree = data.x.calls[3].args[6]
+                        let tree
+                        if (filename >= '20201109') {
+                            tree = data.x.calls[3].args[6] 
+                        } else {
+                            tree = data.x.calls[2].args[6]
+                        }
 
                         let r= parse(tree)
                         let next = '';
