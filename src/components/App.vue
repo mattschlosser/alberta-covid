@@ -119,6 +119,9 @@
                   <custom-table :chart-data="todaysSummary" />
                 </v-container>
               </template>
+              <template v-if="item == 'Municipal Chart'">
+                <municipal-chart/>
+              </template>
               <template v-if="item == 'Age Chart'">
                 <age-charts/>
               </template>
@@ -142,6 +145,7 @@ import data from "../../local/all2.json";
 import CustomTable from "./CustomTable.vue";
 import AgeCharts from './AgeCharts.vue';
 import SevereChart from './SevereChart.vue';
+import MunicipalChart from './MunicipalCharts.vue';
 let x = data.find((e) => e.name.match(/Bonnie/));
 let d = x.data.map((data) => ({ x: data.x, y: data.active }));
 console.log(d);
@@ -170,12 +174,13 @@ export default {
     CustomTable,
     AgeCharts,
     SevereChart,
+    MunicipalChart
   },
   data() {
     return {
       drawer: false, 
       tab: 0,
-      items: ["Location Chart", "Location Table", "Age Chart", "Severe Outcomes"],
+      items: ["Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",
