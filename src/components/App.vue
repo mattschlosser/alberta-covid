@@ -62,6 +62,8 @@
                     </v-list>
                     <v-list subheader>
                       <v-subheader>Region</v-subheader>
+                      <v-btn depressed block v-if='!allAreSelected' @click="selectAll">Select all</v-btn>
+                      <v-btn depressed block v-else-if="selected.length" @click="deselectAll">Deselect All</v-btn>
                       <v-list-item-group multiple v-model="selected">
                         <v-list-item
                           v-for="{ name } in names"
@@ -188,6 +190,9 @@ export default {
     };
   },
   computed: {
+    allAreSelected() {
+      return this.selected.length == this.names.length
+    }, 
     autoWidth() {
       switch (this.$vuetify.breakpoint.name) {
         case "xl":
@@ -300,6 +305,12 @@ export default {
     toggleDrawer() {
       console.log("CLICKED");
       this.drawer = !this.drawer;
+    },
+    selectAll() {
+      this.selected = this.names.map(e => e.name);
+    },
+    deselectAll() {
+      this.selected = []
     }
   }
 };
