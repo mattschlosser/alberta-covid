@@ -22,7 +22,7 @@
             </v-alert>
             <v-list subheader>
              <v-subheader>Mode</v-subheader>
-              <v-list-item-group v-model="selectedMode">
+              <v-list-item-group multiple v-model="selectedMode">
                 <v-list-item
                     v-for="(mode) in modes"
                     :key="mode"
@@ -65,7 +65,7 @@ export default {
   }, 
   data() {
     return {
-      selectedMode: this.initMode,
+      selectedMode: [this.initMode],
       category: 0
     };
   },
@@ -88,17 +88,17 @@ export default {
     },
     chartData() {
       return {
-        datasets: [
-          {
-            label: "Count",
-            borderColor: "#7979f8",
+        datasets: this.selectedMode.map((selected, i) => ({
+            label: selected,
+            borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
             backgroundColor: "#fff0",
             data: this.allData[this.category].data.map((e) => ({
               x: e.x,
-              y: e[this.selectedMode],
+              y: e[selected],
             })),
-          },
-        ],
+          })
+        ),
+        labels: this.allData[this.category].data.map(e => e.x)
       };
     },
   },
