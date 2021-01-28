@@ -36,8 +36,9 @@ wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 node localProcessor.js
 node ageProcessor.js
 node severeProcessor.js
+node municipalProcessor.js
 ```
-Which produces a a 2020MMDD.json in the `local`, `age`, and `severe` folders respectively,  where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. 
+Which produces a a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. 
 
 ### Formats
 
