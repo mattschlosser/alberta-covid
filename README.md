@@ -4,10 +4,12 @@ This is a data collection of active/recovered/deaths/total cases broken down by 
 
 You can easily select each region and see the active/total/recovered/deaths for each region. 
 
-Data is automatically updated daily, provided the Government of Alberta's dashboard updates on time. 
-Some data are missing between Sept 15 and October 29, as I started this project on October 29, 
-and while the majority of data was available by pulling from web.archive.org, few archived copies of
-the dashbaord exist between Sept. 15 and October 29. 
+Data is automatically updated daily, provided the Government of Alberta's dashboard updates on time (usually around 3:35 pm)
+
+View various charts including:
+* History of all cases, active, recovered, daeths, devided my local georgraphical area, and municipal area, over time (March 15 to present)
+* History of hospitalizations, ICU, and deaths province wide over time. 
+* Table view for location data with trends. 
 
 # Developing 
 
