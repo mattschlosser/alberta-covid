@@ -21,6 +21,9 @@
         <div>
           <v-tabs-items v-model="tab">
             <v-tab-item v-for="item in items" :key="item">
+              <template v-if="item == 'Daily Data'">
+                <daily-data />
+              </template>
               <template v-if="item == 'Location Chart'">
                 <v-layout row reverse>
                   <v-flex md12 lg9>
@@ -146,6 +149,7 @@ import QuickStats from "./QuickStats.vue";
 import data from "../../local/all2.json";
 import CustomTable from "./CustomTable.vue";
 import AgeCharts from './AgeCharts.vue';
+import DailyData from './DailyData.vue';
 import SevereChart from './SevereChart.vue';
 import MunicipalChart from './MunicipalCharts.vue';
 let x = data.find((e) => e.name.match(/Bonnie/));
@@ -171,6 +175,7 @@ function merger(rest, first) {
 }
 export default {
   components: {
+    DailyData,
     LineChart,
     QuickStats,
     CustomTable,
@@ -182,7 +187,7 @@ export default {
     return {
       drawer: false, 
       tab: 0,
-      items: ["Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
+      items: ["Daily Data", "Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",

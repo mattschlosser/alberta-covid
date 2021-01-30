@@ -4,6 +4,7 @@ const { reactiveProp } = mixins
 export default {
   extends: Line,
   mixins: [reactiveProp], 
+  props: ['chartData'],
   mounted () {
     this.renderChart(
         this.chartData, 
@@ -13,11 +14,19 @@ export default {
                 xAxes: [{
                     type: 'time',
                     time: {
-                        unit: 'day'
+                        parser: 'YYYY-MM-DD',
+                        unit: 'day',
+                        displayFormats: {
+                            'day': 'YYYY-MM-DD'
+                        }
                     },
-                    bounds: 'data',
-                    min: new Date("2020-03-15")
-                }]
+                    bounds: 'data', 
+                    // ticks: {
+                    //     source: 'data'
+                    // }
+                }]    
+                    // min: new Date("2020-03-15")
+                // }]
             },
             cubicInterpolationMode: 'monotone',
         }
