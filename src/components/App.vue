@@ -285,7 +285,10 @@ export default {
       }
     }, 
     stats() {
-      return this.mergedData.slice(-1)[0];
+      return {
+        regions: this.selected,
+        ...this.mergedData.slice(-1)[0]
+      }
     },
     lastActive() {
       return this.stats.x;

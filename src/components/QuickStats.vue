@@ -1,6 +1,6 @@
 <template>
     <v-alert>
-        Survival Rate: {{ recoveryRate }}%<br/>
+        Survival Rate for {{stats.regions.join(', ')}}: {{ recoveryRate }}%<br/>
         Because of all cases of which an outcome is known, {{stats.recovered}} recovered and {{stats.deaths}}
         died.
     </v-alert>

@@ -17,9 +17,9 @@
         <v-flex md12 lg3 
                     align-self-start
                     style="overflow: auto; max-height: 100vh; margin: 0px">
-            <!-- <v-alert prominent>
-              This data is subject to experiments, and may not be correct. 
-            </v-alert> -->
+            <v-alert prominent>
+              Data is current until end of day {{allData[0].data.slice(-1)[0].x}}
+            </v-alert>
             <v-list subheader>
              <v-subheader>Mode</v-subheader>
               <v-list-item-group multiple v-model="selectedMode">
