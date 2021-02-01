@@ -14,13 +14,12 @@ export default {
                 xAxes: [{
                     type: 'time',
                     time: {
-                        parser: 'YYYY-MM-DD',
+                        // parser: 'YYYY-MM-DD',
                         unit: 'day',
                         displayFormats: {
-                            'day': 'YYYY-MM-DD'
+                            'day': 'll'
                         }
                     },
-                    bounds: 'data', 
                     // ticks: {
                     //     source: 'data'
                     // }
