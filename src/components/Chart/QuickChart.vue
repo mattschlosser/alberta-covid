@@ -53,16 +53,16 @@
 <script>
 import LineChart from "./LineChart.vue";
 
-function genLabels() {
-  let l = [];
-  let start = new Date(2020, 3,15);
-  let now = new Date();
-  while (start < now) {
-    l.push(`${start.getUTCFullYear()}-${("0"+(start.getUTCMonth()+1)).slice(-2)}-${("0"+start.getUTCDate()).slice(-2)}`)
-    start.setDate(start.getDate()+1);
-  }
-  return l;
-}
+// function genLabels() {
+//   let l = [];
+//   let start = new Date(2020, 3,15);
+//   let now = new Date();
+//   while (start < now) {
+//     l.push(`${start.getUTCFullYear()}-${("0"+(start.getUTCMonth()+1)).slice(-2)}-${("0"+start.getUTCDate()).slice(-2)}`)
+//     start.setDate(start.getDate()+1);
+//   }
+//   return l;
+// }
 
 export default {
   components: {
@@ -108,9 +108,10 @@ export default {
               x: e.x,
               y: e[selected],
             })),
+            xAxisID: "1"
           })
         ),
-        labels: genLabels()
+        // labels: null
       };
     },
   },
