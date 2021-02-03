@@ -34,6 +34,9 @@
                     <v-list-item-title>
                     {{ mode }}
                     </v-list-item-title>
+                    <v-list-item-action-text>
+                      {{ allData[category] && allData[category].data.slice(-1)[0][mode] }}
+                    </v-list-item-action-text>
                 </v-list-item>
               </v-list-item-group>
             </v-list>
