@@ -9,7 +9,10 @@ export default {
   watch: {
     chartData() {
       // recreate the chart if data changes
-      if (this.c) this.c?.destroy();
+      if (this.c) {
+        this.c?.destroy();
+        console.log("DESTROYED");
+      }
       this.c = this.createChart();
     }
   }, 
@@ -21,7 +24,7 @@ export default {
   },
   methods: {
     createChart() {
-      new chart(this.$refs.myChart, {
+      return new chart(this.$refs.myChart, {
         type: "line",
         data: this.chartData,
         options: {
