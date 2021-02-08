@@ -1,15 +1,16 @@
 # COVID-19 analysis in Alberta, Canada
 
-This is a data collection of active/recovered/deaths/total cases broken down by region per day. 
+This is a data collection of active/recovered/deaths/total cases. It also includes the geographical history, broken down by region per day. 
 
-You can easily select each region and see the active/total/recovered/deaths for each region. 
+You can select a region and see the active/total/recovered/deaths for each region. 
 
 Data is automatically updated daily, provided the Government of Alberta's dashboard updates on time (usually around 3:35 pm)
 
 View various charts including:
-* History of all cases, active, recovered, daeths, devided my local georgraphical area, and municipal area, over time (March 15 to present)
-* History of hospitalizations, ICU, and deaths province wide over time. 
-* Table view for location data with trends. 
+* History of all cases, active, recovered, and daeths.
+* History of cases counts devided by local geographical (neighbourhood) or municipal area.
+* History of hospitalizations, ICU, and deaths rates, by age.
+* History of age/gender distribution of cases. 
 
 # Developing 
 
@@ -34,13 +35,16 @@ wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 ```
 
 ## Run various processors
+
+### Historical Processors
+
 ```
 node localProcessor.js
 node ageProcessor.js
 node severeProcessor.js
 node municipalProcessor.js
 ```
-Which produces a a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. 
+Each of these produces a a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. The data is cureent up to the end of this date. 
 
 ### Formats
 
