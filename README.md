@@ -57,7 +57,7 @@ node ageProcessor.js
 node severeProcessor.js
 node municipalProcessor.js
 ```
-Each of these produces a a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. Data is pulled from each pae in the `pages/` directory. Dates that already have been processed are skipped.  The data in each dated file is cureent up to the end of it's date. 
+Each of these produces a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. Data is pulled from each pae in the `pages/` directory. Dates that already have been processed are skipped.  The data in each dated file is cureent up to the end of it's date. 
 
 #### Aggregate Files
 ```
@@ -111,7 +111,7 @@ Each JSON file is an array of objects, one for each age category. Each category 
 ```
 
 #### Severe Outcomes
-Severe outcome JSON files are an array of objects, each
+[Severe outcome JSON files](severe/) are an array of objects, each
 object representing an age category. Each category has a format like:
 ```json
 {
@@ -134,7 +134,7 @@ Run:
 ```
 node data-shaper.js 
 ```
-Which produces an `all.json` file, in local, age, and severe, each which contains all the data for each day
+Which produces an `all.json` file, in [local](local/all.json), [age](age/all.json), and [severe](severe/all.json), each which contains all the data for each day
 
 ### Formats
 Each `all.json`, as well as each of the files in the `data` dir, is formated as a colleciton of time series data for each category/region.
@@ -168,7 +168,7 @@ An array of objects. One for each region. Each region has a format like:
 
 #### Age
 
-The `all.json` file in the age folder is an array of objects, one for each age category. Each category has a format like:
+The [`all.json` file in the age folder](age/all.json) is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
   "category": "Under 1 Year",
@@ -200,7 +200,7 @@ The `all.json` file in the age folder is an array of objects, one for each age c
 ```
 
 #### Severe
-The `all.json` file in the severe folder is an array of objects, one for each age category. Each category has a format like:
+The [`all.json` file in the severe folder](severe/all.json) is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
   "category": "Under 1 Year",
