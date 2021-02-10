@@ -8,7 +8,7 @@
     />
 </template>
 <script>
-import allData from '../../dailyCaseCounts.json'
+import allData from '../../data/dailyCaseCounts.json'
 allData.sort((a,b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)
 import QuickChart from './Chart/QuickChart.vue'
 export default {
@@ -22,7 +22,7 @@ export default {
                 "active cases",
                 "current hospitalizations",
                 "current ICU",
-                "total deaths",
+                "total deaths"
             ]
         }
     }

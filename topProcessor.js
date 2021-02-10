@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-var {parse, HTMLElement, TextNode} = require('node-html-parser');
+var {parse} = require('node-html-parser');
 const {toNumber, isEmpty} = require('lodash')
 
 let files = fs.readdirSync(path.join(__dirname, "pages"));
@@ -39,5 +39,4 @@ let final = [{
     name: 'Alberta', 
     data: all
 }]
-fs.writeFileSync("dailyCaseCounts.json", JSON.stringify(final));
-// console.dir(all, {depth: 9999});
+fs.writeFileSync("data/dailyCaseCounts.json", JSON.stringify(final));

@@ -24,6 +24,9 @@
               <template v-if="item == 'Daily Data'">
                 <daily-data />
               </template>
+              <template v-if="item == 'Variants'">
+                <variant-data />
+              </template>
               <template v-if="item == 'Location Chart'">
                 <v-layout row reverse>
                   <v-flex md12 lg9>
@@ -152,9 +155,8 @@ import AgeCharts from './AgeCharts.vue';
 import DailyData from './DailyData.vue';
 import SevereChart from './SevereChart.vue';
 import MunicipalChart from './MunicipalCharts.vue';
-let x = data.find((e) => e.name.match(/Bonnie/));
-let d = x.data.map((data) => ({ x: data.x, y: data.active }));
-console.log(d);
+import VariantData from './VariantData.vue';
+
 function merger(rest, first) {
   for (let one of first) {
     let existing = rest.find((x) => x.x == one.x);
@@ -181,13 +183,14 @@ export default {
     CustomTable,
     AgeCharts,
     SevereChart,
-    MunicipalChart
+    MunicipalChart,
+    VariantData
   },
   data() {
     return {
       drawer: false, 
       tab: 0,
-      items: ["Daily Data", "Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
+      items: ["Daily Data", "Variants", "Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",
