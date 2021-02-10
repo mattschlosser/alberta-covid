@@ -33,7 +33,7 @@ On Ubuntu/WSL/Linux:
 ./update.sh
 ```
 
-Below are the various scripts that `update.sh` does
+Below are the various scripts that `update.sh` does:
 
 ## Pull webpage
 
@@ -233,7 +233,7 @@ The `all.json` file in the severe folder is an array of objects, one for each ag
 }
 ```
 
-#### data/dailyCaseCounts.json
+#### [data/dailyCaseCounts.json](data/dailyCaseCounts.json)
 
 Only one category, "Alberta" with the names and values of the six tiles for each date. 
 *Note:* The content of the six tiles have not all been consistent. While `active cases`, `current ICU`, 
@@ -255,7 +255,7 @@ tiles may change from day to day.
 }]
 ```
 
-### data/dailyVariantCounts.json
+#### [data/dailyVariantCounts.json](data/dailyVariantCounts.json)
 
 There are six categories in this file: `In Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category contains array of objects, one for each date, and the keys `total`, `B.1.1.7`, and `B.1.351`, whose values are the respective case counts in each category for that date. 
 
