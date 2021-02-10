@@ -19,8 +19,7 @@ for (let link of links) {
         let task = () => {
             spawn('wget', [link, '-O', `pages/${ts}.htm`])
         }
+        // spamming too often makes web.archive.org return an empty page
         setTimeout(task, i++ * 4000);
-    } else {
-        console.log(`${ts}.htm already exists`)
     }
 }
