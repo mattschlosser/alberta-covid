@@ -18,7 +18,9 @@ function make_date_from_regex_match(date) {
     return `${x.getUTCFullYear()}-${("0"+(x.getUTCMonth()+1)).slice(-2)}-${("0"+(x.getUTCDate())).slice(-2)}`
 }
 
-let done = {};
+let done = {
+    'In Alberta': {}
+};
 for (let filename of files) {
     if (filename.match(/\.aspx/)) {
         let data = fs.readFileSync(path.join(__dirname, "summary", filename));
@@ -55,17 +57,18 @@ for (let filename of files) {
                         name: zone, 
                         data: []
                     }
+                    done[zone] = {};
                 }
                 let date = table.querySelector('em').text.match(/Table updated ([A-Z][a-z]*?\.) (\d\d?)/);
                 let niceDate = make_date_from_regex_match(date);
-                if (!done[niceDate]) {
+                if (!done[zone][niceDate]) {
                     keyedFinal[zone].data.push({
                         x: niceDate,
                         'B.1.1.7': +nums[0].text, 
                         'B.1.351': +nums[1].text,
                         "total": +nums[2].text
                     })
-                    date[niceDate] = true; // mark this date as done
+                    done[zone][niceDate] = true; // mark this date as done
                 }
             })
         }
