@@ -64,10 +64,11 @@ for (let filename of files) {
                 if (!done[zone][niceDate]) {
                     keyedFinal[zone].data.push({
                         x: niceDate,
-                        'B.1.1.7': +nums[0].text, 
+                        'B.1.1.7': +nums[0].text.split(/\s/)[0], 
                         'B.1.351': +nums[1].text,
                         "total": +nums[2].text
                     })
+                    console.log(keyedFinal[zone])
                     done[zone][niceDate] = true; // mark this date as done
                 }
             })
