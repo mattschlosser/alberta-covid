@@ -32,7 +32,7 @@
                     }"
                 >
                     <v-list-item-title>
-                    {{ mode }}
+                    {{ friendlyModes[mode] || mode }}
                     </v-list-item-title>
                     <v-list-item-action-text>
                       {{ allData[category] && allData[category].data.slice(-1)[0][mode] }} 
@@ -75,6 +75,10 @@ export default {
   props: {
     initMode: String,
     modes: Array, 
+    friendlyModes: {
+      type: Object,
+      default: () => ({}),
+    },
     initCategory: Number, 
     allData: Array,
     keyedBy: String
@@ -108,10 +112,10 @@ export default {
             label: selected,
             borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
             backgroundColor: "#fff0",
-            data: this.allData[this.category].data.map((e) => ({
+            data: this.allData[this.category]?.data.map((e) => ({
               x: e.x,
               y: e[selected],
-            })),
+            })) || [],
             xAxisID: "1"
           })
         ),
