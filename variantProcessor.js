@@ -59,7 +59,9 @@ for (let filename of files) {
                     }
                     done[zone] = {};
                 }
-                let date = table.querySelector('em').text.match(/Table updated ([A-Z][a-z]*?\.) (\d\d?)/);
+                let date = table.querySelector('em').text.match(/Table updated ([A-Z][a-z]*?\.?) (\d{1,2})/);
+console.log(date);
+
                 let niceDate = make_date_from_regex_match(date);
                 if (!done[zone][niceDate]) {
                     keyedFinal[zone].data.push({
