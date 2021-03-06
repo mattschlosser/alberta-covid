@@ -17,7 +17,7 @@ mv *.aspx summary/$(date '+%Y%m%d%H%M%S').aspx
 # Extract Data
 node localProcessor.js && \
 node topProcessor.js && \
-# node variantProcessor.js && \
+node variantProcessor.js && \
 node municipalProcessor.js && \
 node ageProcessor.js && \
 node severeProcessor.js && \
