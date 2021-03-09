@@ -16,16 +16,33 @@ export default {
   },
   data() {
  return {
-      myData,
+      myData: myData.map((f) => {
+        f.data = f.data.map((e,i,a) => {
+          if (!i) return e;
+          // figure out how many days it has been
+          const diff = Math.round((new Date(e.x) - new Date(a[i-1].x))/1000/60/60/24);
+          e.new_male_cases = (e.male_cases - a[i-1].male_cases)/diff;
+          e.new_female_cases = (e.female_cases - a[i-1].female_cases)/diff;
+          e.new_unknown_cases = (e.unknown_cases - a[i-1].unknown_cases)/diff;
+          e.new_all_cases = (e.all_cases - a[i-1].all_cases)/diff;
+          
+          return e;
+        });
+        return f;
+      }),
       selectedMode: "male_cases",
       modes: [
         "male_cases",
+        "new_male_cases",
         "male_percent",
         "female_cases",
+        "new_female_cases",
         "female_percent",
         "unknown_cases",
+        "new_unknown_cases",
         "unknown_percent",
         "all_cases",
+        "new_all_cases",
         "percent",
       ],
       category: 0

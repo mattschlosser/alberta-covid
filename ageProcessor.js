@@ -27,10 +27,10 @@ for (let filename of files) {
                         let text = (node.childNodes[0].rawText.split(',').join(''));
                     rags[i][j] = j ? Number(text) : String(text.split('\n').join('').split('\r').join('')).trim();       
                     });
-
-                    if (myDate == 201123) {
+                    let obj;
+                    if (myDate == 201123 || myDate == 201026) {
                         // an extra column was present on this day, remove it
-                        stats.push({
+                        obj = {
                             category: rags[i][0], 
                             male_cases: rags[i][3], 
                             male_percent: rags[i][4], 
@@ -40,10 +40,24 @@ for (let filename of files) {
                             unknown_percent: rags[i][8], 
                             all_cases: rags[i][9], 
                             percent: rags[i][10]
-                        })
+                        }
+                    } else if (myDate == 200509 || myDate == 210212 || myDate == 210213 || myDate == 210214) {
+                        // an extra colum was present on this day/ 3rd column
+                        obj = { 
+                            category: rags[i][0], 
+                            male_cases: rags[i][1], 
+                            male_percent: rags[i][2], 
+                            female_cases: rags[i][3], 
+                            female_percent: rags[i][4], 
+                            unknown_cases: rags[i][7], 
+                            unknown_percent: rags[i][8], 
+                            all_cases: rags[i][9], 
+                            percent: rags[i][10]
+                        }
+
                     }
                     else if (rags[i].length == 9) {
-                        stats.push({
+                        obj = {
                             category: rags[i][0], 
                             male_cases: rags[i][1], 
                             male_percent: rags[i][2], 
@@ -53,9 +67,9 @@ for (let filename of files) {
                             unknown_percent: rags[i][6], 
                             all_cases: rags[i][7], 
                             percent: rags[i][8]
-                        });
+                        };
                     } else {
-                        stats.push({
+                        obj = {
                             category: rags[i][0], 
                             male_cases: rags[i][1], 
                             male_percent: rags[i][2], 
@@ -65,8 +79,10 @@ for (let filename of files) {
                             unknown_percent: 0, 
                             all_cases: rags[i][5], 
                             percent: rags[i][6]
-                        })
+                        }
                     }
+
+                    stats.push(obj);
                 });
                 let deets = JSON.stringify(stats);
                 fs.writeFileSync(`age/20${myDate}.json`, deets);
