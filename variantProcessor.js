@@ -60,17 +60,21 @@ for (let filename of files) {
                     done[zone] = {};
                 }
                 let date = table.querySelector('em').text.match(/Table updated ([A-Z][a-z]*?\.?) (\d{1,2})/);
-console.log(date);
 
                 let niceDate = make_date_from_regex_match(date);
                 if (!done[zone][niceDate]) {
-                    keyedFinal[zone].data.push({
+                    keyedFinal[zone].data.push(niceDate < "2021-03-15" ? {
                         x: niceDate,
                         'B.1.1.7': +nums[0].text.split(/\s/)[0], 
                         'B.1.351': +nums[1].text,
                         "total": +nums[2].text
+                    }: {
+                        x: niceDate,
+                        'B.1.1.7': +nums[0].text.split(/\s/)[0], 
+                        'B.1.351': +nums[1].text,
+                        'P.1': +nums[2].text,
+                        "total": +nums[3].text
                     })
-                    console.log(keyedFinal[zone])
                     done[zone][niceDate] = true; // mark this date as done
                 }
             })
