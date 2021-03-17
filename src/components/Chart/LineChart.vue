@@ -1,10 +1,18 @@
 <template>
-  <canvas ref="myChart" style="width: 100%;"></canvas>
+  <canvas ref="myChart" style="margin: 0 auto;"></canvas>
 </template>
 <script>
 import chart from "chart.js";
 export default {
-  props: ["chartData"],
+  props: {
+    chartData: {
+      type: Object
+    }, 
+    type: {
+      type: String, 
+      default: "line"
+    },
+  },
   data: () => ({ c: null }),
   watch: {
     chartData() {
@@ -25,7 +33,7 @@ export default {
   methods: {
     createChart() {
       return new chart(this.$refs.myChart, {
-        type: "line",
+        type: this.type,
         data: this.chartData,
         options: {
           responsive: true, 

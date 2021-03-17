@@ -2,16 +2,14 @@
     <v-layout row reverse>
         <v-flex md12 lg9>
             <div
+            class="chart-container"
             style="
-                postion: sticky;
-                top: 0;
+                postion: relative;
+                width: 75%;
                 margin: 0 auto;
-                width: 100%;
-                max-height: 100vh;
             "
-            :style="{ width: autoWidth }"
             >
-            <LineChart :chart-data="chartData" />
+            <LineChart :chart-data="chartData" :type="type" />
             </div>
         </v-flex>
         <v-flex md12 lg3 
@@ -57,17 +55,6 @@
 <script>
 import LineChart from "./LineChart.vue";
 
-// function genLabels() {
-//   let l = [];
-//   let start = new Date(2020, 3,15);
-//   let now = new Date();
-//   while (start < now) {
-//     l.push(`${start.getUTCFullYear()}-${("0"+(start.getUTCMonth()+1)).slice(-2)}-${("0"+start.getUTCDate()).slice(-2)}`)
-//     start.setDate(start.getDate()+1);
-//   }
-//   return l;
-// }
-
 export default {
   components: {
     LineChart,
@@ -81,7 +68,11 @@ export default {
     },
     initCategory: Number, 
     allData: Array,
-    keyedBy: String
+    keyedBy: String,
+    type: {
+      type: String, 
+      default: "line"
+    }
   }, 
   data() {
     return {

@@ -63,15 +63,15 @@ for (let filename of files) {
 
                 let niceDate = make_date_from_regex_match(date);
                 if (!done[zone][niceDate]) {
-                    let f = (n) => n.split(',').join('');
+                    let f = (n) => n.split(/\s/)[0].split(',').join('');
                     keyedFinal[zone].data.push(niceDate < "2021-03-15" ? {
                         x: niceDate,
                         'B.1.1.7': +nums[0].text.split(/\s/)[0], 
-                        'B.1.351': +nums[1].text,
+                        'B.1.351': +nums[1].text.split(/\s/)[0],
                         "total": +nums[2].text
                     }: {
                         x: niceDate,
-                        'B.1.1.7': +f(nums[0].text.split(/\s/)[0]), 
+                        'B.1.1.7': +f(nums[0].text), 
                         'B.1.351': +f(nums[1].text),
                         'P.1': +f(nums[2].text),
                         "total": +f(nums[3].text)

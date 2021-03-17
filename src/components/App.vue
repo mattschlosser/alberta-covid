@@ -32,14 +32,12 @@
                   <v-flex md12 lg9>
                     <QuickStats :stats="stats" />
                     <div
+                      class="chart-container"
                       style="
-                        postion: sticky;
-                        top: 0;
+                        postion: relative;
+                        width: 75%;
                         margin: 0 auto;
-                        width: 100%;
-                        max-height: 100vh;
                       "
-                      :style="{ width: autoWidth }"
                     >
                       <LineChart :chart-data="chartData" />
                     </div>
