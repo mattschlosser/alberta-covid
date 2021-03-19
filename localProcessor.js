@@ -17,7 +17,7 @@ for (let filename of files) {
         if (!fs.existsSync(`local/20${myDate}.json`)) {
 
             // get local data and save to local
-            let scripts = file.querySelectorAll('[type=application/json]')
+            let scripts = file.querySelectorAll('[type="application/json"]')
             for (let script of scripts) {
                 let node = script.childNodes[0]
                 if (node instanceof TextNode) {
