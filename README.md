@@ -13,6 +13,7 @@ The dashboard contains various charts including:
 * History of hospitalizations, ICU, and deaths rates, by age.
 * History of age/gender distribution of cases. 
 * History of CoViD-19 variants in Alberta, broken down by region.
+* Total vaccines administered as of each day
 
 # Developing 
 
@@ -73,6 +74,23 @@ https://covid19stats.alberta.ca. This produces a file, `data/dailyCaseCounts.jso
 
 
 ### Formats
+
+#### Vaccine Rollout
+In [`/data/dailyVaccineCounts.json`](data/dailyVaccineCounts.json), the form is as follows:
+```json
+[
+  {
+    "Vaccines": {
+      "data": [
+        { "x": "2021-02-02", "Doses": 123000}, 
+        { "x": "2021-02-03", "Doses": 125000}, 
+        // ...
+      ]
+    }
+  }
+]
+```
+
 
 #### Local 
 Each JSON file contains all of Alberta's geospatial data related to covid cases for that day. Each JSON file has the following format:
