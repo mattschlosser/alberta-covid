@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-var {parse} = require('node-html-parser');
+const {parse} = require('node-html-parser');
+const {make_date_from_regex_match} = require('./lib/utils');
 
 let files = fs.readdirSync(path.join(__dirname, "summary"));
 
@@ -11,12 +12,6 @@ let keyedFinal = {
     }
 };
 
-function make_date_from_regex_match(date) {
-    month = date[1];
-    day = date[2];
-    let x = new Date(`2021, ${month} ${day}`);
-    return `${x.getUTCFullYear()}-${("0"+(x.getUTCMonth()+1)).slice(-2)}-${("0"+(x.getUTCDate())).slice(-2)}`
-}
 
 let done = {
     'In Alberta': {}

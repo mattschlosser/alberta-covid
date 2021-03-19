@@ -134,6 +134,9 @@
               <template v-if="item == 'Severe Outcomes'">
                 <severe-chart/>
               </template>
+              <template v-if="item == 'Vaccine Rollout'">
+                <vaccine-data/>
+              </template>
             </v-tab-item>
           </v-tabs-items>
         </div>
@@ -154,6 +157,7 @@ import DailyData from './DailyData.vue';
 import SevereChart from './SevereChart.vue';
 import MunicipalChart from './MunicipalCharts.vue';
 import VariantData from './VariantData.vue';
+import VaccineData from './VaccineData.vue';
 
 function merger(rest, first) {
   for (let one of first) {
@@ -182,13 +186,14 @@ export default {
     AgeCharts,
     SevereChart,
     MunicipalChart,
-    VariantData
+    VariantData,
+    VaccineData
   },
   data() {
     return {
       drawer: false, 
       tab: 0,
-      items: ["Daily Data", "Variants", "Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
+      items: ["Daily Data", "Vaccine Rollout", "Variants", "Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",
