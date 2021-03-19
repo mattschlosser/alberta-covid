@@ -1,4 +1,4 @@
-# COVID-19 Date Dashboard for Alberta, Canada
+# COVID-19 Data Dashboard for Alberta, Canada
 
 This is a data collection of various data of interest related to CoViD-19 in Alberta. It includes active, recovered, and total cases of the disease, as well as total deaths caused by it. It also includes the geographical distribution of cases, broken down by region per day. 
 
