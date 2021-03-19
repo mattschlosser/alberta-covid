@@ -83,8 +83,8 @@ In [`/data/dailyVaccineCounts.json`](data/dailyVaccineCounts.json), the form is 
     "Vaccines": {
       "data": [
         { "x": "2021-02-02", "Doses": 123000}, 
-        { "x": "2021-02-03", "Doses": 125000}, 
-        // ...
+        { "x": "2021-02-03", "Doses": 125000},
+        { "x": "2021-02-04", "Doses": 127000}
       ]
     }
   }
