@@ -16,7 +16,7 @@ for (let filename of files) {
         let myDate = `${("" + d.getFullYear()).slice(-2)}${("0" + (d.getMonth() + 1)).slice(-2)}${("0" + d.getDate()).slice(-2)}`;
         if (!fs.existsSync(`municipal/20${myDate}.json`)) {
             // get local data and save to local
-            let scripts = file.querySelectorAll('[type=application/json]')
+            let scripts = file.querySelectorAll('[type="application/json"]')
             for (let script of scripts) {
                 let node = script.childNodes[0]
                 if (node instanceof TextNode) {
