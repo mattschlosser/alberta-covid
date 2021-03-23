@@ -22,7 +22,7 @@
              <v-subheader>Mode</v-subheader>
               <v-list-item-group multiple v-model="selectedMode">
                 <v-list-item
-                    v-for="(mode) in modes"
+                    v-for="({name: mode}) in processedModes"
                     :key="mode"
                     :value="mode"
                     :style="{
@@ -54,7 +54,6 @@
 </template>
 <script>
 import LineChart from "./LineChart.vue";
-
 export default {
   components: {
     LineChart,
@@ -81,6 +80,19 @@ export default {
     };
   },
   computed: {
+    processedModes() {
+      let m = {};
+      for (let mode of this.modes) {
+        if (typeof mode === 'string') {
+          m[mode] = this.defaultMode(mode);
+        } else {
+          m[mode.name] = {...this.defaultMode(mode.name), ...mode}
+          //
+          // m.push(this.defaultMode(mode))
+        }
+      }
+      return m;
+    }, 
     categories() {
       return this.allData.map((e) => e[this.keyedBy]);
     },
@@ -102,17 +114,29 @@ export default {
         datasets: this.selectedMode.map((selected, i) => ({
             label: selected,
             borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
-            backgroundColor: "#fff0",
-            data: this.allData[this.category]?.data.map((e) => ({
-              x: e.x,
-              y: e[selected],
-            })) || [],
+            backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
+            type: this.processedModes[selected].type,
+           
+
+            data:  this.allData[this.category]?.data.map(e => e[selected]) || [],
             xAxisID: "1"
           })
         ),
+        labels: this.allData[this.category]?.data.map(e => e.x) || []
         // labels: null
       };
     },
   },
+  methods: {
+    defaultMode(mode) {
+      return {
+        type: "line", 
+        name: mode, 
+        backgroundColor: "#fff0",
+        title: this.friendlyModes[mode] || mode,
+        key: mode
+      }
+    }
+  }
 };
 </script>
