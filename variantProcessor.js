@@ -13,6 +13,8 @@ let keyedFinal = {
 };
 
 
+let f = (n) => n.split(/\s/)[0].split(',').join('');
+let g = (n) => f(n.split(/\r|\n/).join(''))
 let done = {
     'In Alberta': {}
 };
@@ -30,7 +32,7 @@ for (let filename of files) {
             let b1351 = +e[1].text.split(/\s/)[0];
             let niceDate = make_date_from_regex_match(date);
             if (!done[niceDate]) {
-                let d = {
+                let d = {   
                     x: niceDate,
                     "B.1.1.7": b117,
                     "B.1.351": b1351,
@@ -42,12 +44,13 @@ for (let filename of files) {
         } else {
             // we will assume the variants
             let table = file.querySelectorAll(".goa-table")[1];
-            if (!table)  return; 
+            if (!table)  break; 
             rows = table.querySelectorAll('tr')
             rows.splice(0,1);
             rows.forEach(row => {
                 let zone = row.querySelector('th').text;
                 let nums = row.querySelectorAll('td');
+                // console.log(nums[0].text);
                 if (!keyedFinal[zone]) {
                     keyedFinal[zone] = {
                         name: zone, 
@@ -59,7 +62,6 @@ for (let filename of files) {
 
                 let niceDate = make_date_from_regex_match(date);
                 if (!done[zone][niceDate]) {
-                    let f = (n) => n.split(/\s/)[0].split(',').join('');
                     keyedFinal[zone].data.push(niceDate < "2021-03-15" ? {
                         x: niceDate,
                         'B.1.1.7': +nums[0].text.split(/\s/)[0], 
@@ -72,11 +74,52 @@ for (let filename of files) {
                         'P.1': +f(nums[2].text),
                         "total": +f(nums[3].text)
                     })
+                    
                     done[zone][niceDate] = true; // mark this date as done
                 }
             })
         }
     }
 }
+// on March 23, variants of concern table was moved to teh data app
+files = fs.readdirSync(path.join(__dirname, "pages"));
+for (let filename of files) {
+    // we want to 'skip' files that have already been read
+    let d = `${filename.slice(0,4)}-${filename.slice(4,6)}-${filename.slice(6,8)}`;
+    if (filename >= "20210323") {
+        let data = fs.readFileSync(path.join(__dirname, "pages", filename));
+        let file = parse(data);
+        let table = file.querySelector('#variants-of-concern table')
+        rows = table.querySelectorAll('tr')
+        rows.splice(0,1);
+        rows.forEach(row => {
+            let nums =row.querySelectorAll('td') 
+            let zone = nums.splice(0,1)[0].text.split(/\r|\n/).join('')
+            if (zone == 'Alberta') {
+                // name of chart also changed
+                zone = 'In Alberta';
+            }
+            if (!keyedFinal[zone]) {
+                keyedFinal[zone] = {
+                    name: zone, 
+                    data: []
+                }
+                done[zone] = {};
+            }
+            let niceDate = d;
+            if (!done[zone][niceDate]) {
+                keyedFinal[zone].data.push({
+                    x: niceDate,
+                    'B.1.1.7': +g(nums[0].text), 
+                    'B.1.351': +g(nums[1].text),
+                    'P.1': +g(nums[2].text),
+                    "total": +g(nums[3].text)
+                })
+                done[zone][niceDate] = true; // mark this date as done
+            }
+        })
+    }
+}
+
 let final = Object.values(keyedFinal);
 fs.writeFileSync("data/dailyVariantCounts.json", JSON.stringify(final));
