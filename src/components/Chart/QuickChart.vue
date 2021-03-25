@@ -16,7 +16,7 @@
                     align-self-start
                     style="overflow: auto; max-height: 100vh; margin: 0px">
             <v-alert prominent>
-              Data is current until end of day {{allData[0].data.slice(-1)[0].x}}
+            Data is current until end of day {{allData.length && allData[0].data.slice(-1)[0].x || 'loading'}}
             </v-alert>
             <v-list subheader>
              <v-subheader>Mode</v-subheader>
@@ -66,7 +66,10 @@ export default {
       default: () => ({}),
     },
     initCategory: Number, 
-    allData: Array,
+    allData: {
+      type: Array,
+      default: () => []
+    },
     keyedBy: String,
     type: {
       type: String, 
@@ -87,8 +90,6 @@ export default {
           m[mode] = this.defaultMode(mode);
         } else {
           m[mode.name] = {...this.defaultMode(mode.name), ...mode}
-          //
-          // m.push(this.defaultMode(mode))
         }
       }
       return m;
@@ -116,14 +117,11 @@ export default {
             borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
             backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
             type: this.processedModes[selected].type,
-           
-
             data:  this.allData[this.category]?.data.map(e => e[selected]) || [],
             xAxisID: "1"
           })
         ),
         labels: this.allData[this.category]?.data.map(e => e.x) || []
-        // labels: null
       };
     },
   },

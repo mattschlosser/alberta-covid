@@ -42,6 +42,7 @@ for (let filename of files) {
         } else {
             // we will assume the variants
             let table = file.querySelectorAll(".goa-table")[1];
+            if (!table)  return; 
             rows = table.querySelectorAll('tr')
             rows.splice(0,1);
             rows.forEach(row => {

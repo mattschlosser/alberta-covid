@@ -19,7 +19,6 @@ export default {
       // recreate the chart if data changes
       if (this.c) {
         this.c?.destroy();
-        console.log("DESTROYED");
       }
       this.c = this.createChart();
     }
@@ -50,13 +49,8 @@ export default {
                     day: "ll",
                   },
                 },
-                // ticks: {
-                //     source: 'data'
-                // }
               },
             ],
-            // min: new Date("2020-03-15")
-            // }]
           },
           cubicInterpolationMode: "monotone",
         },

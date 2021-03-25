@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <v-app-bar app>
-        <v-app-bar-nav-icon  @click="toggleDrawer"/>
+        <v-app-bar-nav-icon v-if="showHamburger" @click="toggleDrawer"/>
         <v-toolbar-title>
           Alberta Covid Data
         </v-toolbar-title>
@@ -12,7 +12,7 @@
         <v-list>
           <v-list-item-group v-model="tab">
             <v-list-item link v-for="item in items" :key="item">
-              {{item}}
+              <v-icon class="mr-2">{{item.icon}}</v-icon>{{item.name}}
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -20,7 +20,7 @@
       <v-container app fluid>
         <div>
           <v-tabs-items v-model="tab">
-            <v-tab-item v-for="item in items" :key="item">
+            <v-tab-item v-for="{name:   item} in items" :key="item">
               <template v-if="item == 'Daily Data'">
                 <daily-data />
               </template>
@@ -193,14 +193,59 @@ export default {
     return {
       drawer: false, 
       tab: 0,
-      items: ["Daily Data", "Vaccine Rollout", "Variants", "Location Chart", "Location Table", "Municipal Chart", "Age Chart", "Severe Outcomes"],
+      items: [{
+        name: "Daily Data",
+        icon: 'show_chart'
+      }, 
+      {
+        name: "Vaccine Rollout", 
+        icon: 'show_chart', 
+      }, 
+        { 
+          name: "Variants", 
+          icon: 'show_chart'
+        }, 
+        { 
+          name: "Location Chart",
+          icon: 'show_chart'
+        }, 
+        { 
+          name: "Location Table",
+          icon: 'table_chart'
+        }, 
+        { 
+          name: "Municipal Chart",
+          icon: 'show_chart'
+        }, 
+        { 
+          name: "Age Chart",
+          icon: 'show_chart'
+        }, 
+        { 
+          name: "Severe Outcomes", 
+          icon: 'show_chart'
+        }, 
+      ], 
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",
       selected: ["Edmonton - Bonnie Doon (& Nearby Neighbourhoods)"],
     };
   },
+  watch: {
+    showHamburger: {
+      handler(val) {
+        if (!val) {
+          this.drawer = true; 
+        }
+      }, 
+      immediate: true
+    }
+  }, 
   computed: {
+    showHamburger() {
+      return this.$vuetify.breakpoint.name.match(/xs|sm/)
+    }, 
     allAreSelected() {
       return this.selected.length == this.names.length
     }, 

@@ -9,7 +9,6 @@
 </template>
 <script>
 import variantData from '../../data/dailyVariantCounts.json'
-// variantData.sort((a,b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)
 variantData[0].data.sort((a,b) => a.x < b.x ? -1 : 1)
 import QuickChart from './Chart/QuickChart.vue'
 export default {

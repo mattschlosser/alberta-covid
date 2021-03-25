@@ -3,7 +3,7 @@
         :all-data="allData"
         keyed-by="name"
         :modes="modes"
-        init-category=0
+        :init-category=0
         init-mode="active cases"
     />
 </template>
@@ -17,7 +17,6 @@ export default {
         let allData = await  import("../../data/dailyCaseCounts.json").then(r=>r.default);
         /* eslint-disable-next-line */
         let allAllData = await import("../../data/allCaseCounts.json").then(r=>r.default);
-        console.log(allAllData);
         let newCases = allAllData[0].x.reduce((a,e,i) => {
             if (!i) {
                 a[e] = 0;
@@ -26,7 +25,6 @@ export default {
             }
             return a;
         }, {})
-        console.log(newCases);
         allData.sort((a,b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)
         allData.forEach((e) => {
             e.data.forEach((e,i,a) => { 
