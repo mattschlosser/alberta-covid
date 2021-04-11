@@ -24,8 +24,8 @@ Data is avilable for some categories by individual dates. Each of the [local/]/(
 contain files with filenames formated as `YYYYMMDD.json` representing the end reporting date for the data. 
 
 
-### Local 
-Each JSON file formated as `YYYYMMDD.json` in [local/](local/) contains all of Alberta's geospatial data related to covid cases for that day. Each JSON file has the following format:
+### Local Georgraphical Area
+Each JSON file formated as `YYYYMMDD.json` in [local/](local/) contains all of Alberta's geospatial data related to COVID-19 cases for that day. Each JSON file has the following format:
 ```json
 [
  { 
@@ -37,6 +37,27 @@ Each JSON file formated as `YYYYMMDD.json` in [local/](local/) contains all of A
  },
  { 
    "name" : "Another Region Here", 
+   "cases": 3, 
+   "recovered": 1, 
+   "deaths": 1, 
+   "active": 1
+ }
+]
+```
+
+### Municipal
+Each JSON file formated as `YYYYMMDD.json` in [municipal/](municipal/) contains COVID-19 data for each municipal aerasfor that day. Each date is an object representing the cummulative total of each of the categories `cases`, `recovered`, `deaths`, and `active` as reported to the end of that date. Each JSON file has the following format:
+```json
+[
+ { 
+   "name": "Municipality Name Here", 
+   "cases": 3, 
+   "recovered": 1, 
+   "deaths": 1, 
+   "active": 1
+ },
+ { 
+   "name" : "Another Municipality Name Here", 
    "cases": 3, 
    "recovered": 1, 
    "deaths": 1, 
