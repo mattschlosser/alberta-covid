@@ -16,26 +16,16 @@ The dashboard contains various charts including:
 * Total vaccines administered as of each day
 
 # Formats
-
-#### Vaccine Rollout
-In [`/data/dailyVaccineCounts.json`](data/dailyVaccineCounts.json), the form is as follows:
-```json
-[
-  {
-    "Vaccines": {
-      "data": [
-        { "x": "2021-02-02", "Doses": 123000}, 
-        { "x": "2021-02-03", "Doses": 125000},
-        { "x": "2021-02-04", "Doses": 127000}
-      ]
-    }
-  }
-]
-```
+Below is a list of all the different types of data available. 
 
 
-#### Local 
-Each JSON file contains all of Alberta's geospatial data related to covid cases for that day. Each JSON file has the following format:
+## Per Day Files. 
+Data is avilable for some categories by individual dates. Each of the [local/]/(local/), [age/]/(age/), and [severe/]/(severe/) directories 
+contain files with filenames formated as `YYYYMMDD.json` representing the end reporting date for the data. 
+
+
+### Local 
+Each JSON file formated as `YYYYMMDD.json` in [local/](local/) contains all of Alberta's geospatial data related to covid cases for that day. Each JSON file has the following format:
 ```json
 [
  { 
@@ -54,8 +44,9 @@ Each JSON file contains all of Alberta's geospatial data related to covid cases 
  }
 ]
 ```
-#### Age
-Each JSON file is an array of objects, one for each age category. Each category has a format like:
+
+### Age
+Each JSON file formated as `YYYYMMDD.json` in [age/](age/) is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
   "category": "Under 1 Year", 
@@ -70,7 +61,7 @@ Each JSON file is an array of objects, one for each age category. Each category 
 }
 ```
 
-#### Severe Outcomes
+### Severe Outcomes
 [Severe outcome JSON files](severe/) are an array of objects, each
 object representing an age category. Each category has a format like:
 ```json
@@ -89,19 +80,13 @@ object representing an age category. Each category has a format like:
 }
 ```
 
-## Run the first aggregator
-Run:
-```
-node data-shaper.js 
-```
-Which produces an `all.json` file, in [local](local/all.json), [age](age/all.json), and [severe](severe/all.json), each which contains all the data for each day
+## Aggregate Data
+Each `all.json` file in `local`, `age`, and `severe` directories, as well as each of the files in the [data/](data/) directory, is formated as a colleciton of time series data for each category/region.
 
-### Formats
-Each `all.json`, as well as each of the files in the `data` dir, is formated as a colleciton of time series data for each category/region.
+### Local
+[local/all.json](local/all.json)
 
-#### Local
-
-An array of objects. One for each region. Each region has a format like:
+An array of objects. One for each local region. Each region has a format like:
 ```json
 {
   "name": "Calgary - West",
@@ -126,7 +111,7 @@ An array of objects. One for each region. Each region has a format like:
 ```
 **Note:** There is a distinction between data before April 9, 2020, and onwards. Data before April 9 only includes total number of cases, whereas data after that date includes active cases, recoveries, and deaths. 
 
-#### Age
+### Age
 
 The [`all.json` file in the age folder](age/all.json) is an array of objects, one for each age category. Each category has a format like:
 ```json
@@ -159,7 +144,7 @@ The [`all.json` file in the age folder](age/all.json) is an array of objects, on
 }
 ```
 
-#### Severe
+### Severe
 The [`all.json` file in the severe folder](severe/all.json) is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
@@ -193,10 +178,11 @@ The [`all.json` file in the severe folder](severe/all.json) is an array of objec
 }
 ```
 
-#### [data/dailyCaseCounts.json](data/dailyCaseCounts.json)
+### Daily Case Counts
+[data/dailyCaseCounts.json](data/dailyCaseCounts.json)
 
-Only one category, "Alberta" with the names and values of the six tiles for each date. 
-*Note:* The content of the six tiles have not all been consistent. While `active cases`, `current ICU`, 
+Only one category, `Alberta` with the names and values of the six tiles on the main page of the Alberta covid dashboard for each date. 
+*Note:* The content of the six tiles is not always the same six categories.  While `active cases`, `current ICU`, 
 `current hospitalisations` and `total deaths` have always been present, the other keys/values to the other 
 tiles may change from day to day.
 
@@ -215,7 +201,8 @@ tiles may change from day to day.
 }]
 ```
 
-#### [data/dailyVariantCounts.json](data/dailyVariantCounts.json)
+### Variant (By Type)
+[data/dailyVariantCounts.json](data/dailyVariantCounts.json)
 
 An array of six categories: `In Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category is an object containing it's name, `cateogry`, and an array of objects, `data`, one for each date. Each object has the keys `total`, `B.1.1.7`, and `B.1.351`, whose values represent the respective cummulative case counts in each category as reported on that date `x`. 
 
@@ -233,7 +220,8 @@ An array of six categories: `In Alberta`, `Edmonton Zone`, `Calgary Zone`, `Nort
 }]
 ```
 
-#### [data/dailyVariantActiveDiedRecoveredCounts.json](data/dailyVariantActiveDiedRecoveredCounts.json)
+### Varaint (Active/Recovred/Deaths)
+[data/dailyVariantActiveDiedRecoveredCounts.json](data/dailyVariantActiveDiedRecoveredCounts.json)
 
 An array of six categories: `Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category is an object containing it's name, `category`, and array of objects `date`. Each object has the keys `Active`, `Recovered`, `Deaths`, `Total` and `x`, where each of `Active`, `Recovered`, `Deaths`, and `Total` is the cummulative total of cases in each category as it was reported on the date `x`. 
 
@@ -282,14 +270,14 @@ On Ubuntu/WSL/Linux:
 ./update.sh
 ```
 
-Below are the various scripts that `update.sh` does:
+Below are the various tasks that `update.sh` does:
 
 ## Pull webpage
 
 First, get a recent copy of the Alberta Covid data dashboard.
 
 ```
-mkdir pages
+mkdir -p pages
 cd pages
 wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 ```
@@ -319,6 +307,15 @@ Each of these produce a single file in the data directory.
 https://covid19stats.alberta.ca. This produces a file, `data/dailyCaseCounts.json`, which is the summary of # of people in hospital (both ICU and non-ICU cases) per day, current active cases, and total deaths. 
 
 `variantProcessor.js` processes the variant table found at https://alberta.ca/covid19.
+
+
+## Run the first aggregator
+Run:
+```
+node data-shaper.js 
+```
+Which produces an `all.json` file, in [local](local/all.json), [age](age/all.json), and [severe](severe/all.json), each which contains all the data for each day
+
 
 ## Run the second aggregator
 ```
