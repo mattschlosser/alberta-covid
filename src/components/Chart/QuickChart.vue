@@ -117,6 +117,7 @@ export default {
             borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
             backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
             type: this.processedModes[selected].type,
+            tension:0,
             data:  this.allData[this.category]?.data.map(e => e[selected]) || [],
             xAxisID: "1"
           })

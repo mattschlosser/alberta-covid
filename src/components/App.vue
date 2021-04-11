@@ -24,8 +24,11 @@
               <template v-if="item == 'Daily Data'">
                 <daily-data />
               </template>
-              <template v-if="item == 'Variants'">
+              <template v-if="item == 'Variants (By Type)'">
                 <variant-data />
+              </template>
+              <template v-if="item == 'Variants (Active)'">
+                <variant-active-data />
               </template>
               <template v-if="item == 'Location Chart'">
                 <v-layout row reverse>
@@ -157,6 +160,7 @@ import DailyData from './DailyData.vue';
 import SevereChart from './SevereChart.vue';
 import MunicipalChart from './MunicipalCharts.vue';
 import VariantData from './VariantData.vue';
+import VariantActiveData from './VariantActiveData.vue';
 import VaccineData from './VaccineData.vue';
 
 function merger(rest, first) {
@@ -187,6 +191,7 @@ export default {
     SevereChart,
     MunicipalChart,
     VariantData,
+    VariantActiveData,
     VaccineData
   },
   data() {
@@ -202,7 +207,11 @@ export default {
         icon: 'show_chart', 
       }, 
         { 
-          name: "Variants", 
+          name: "Variants (By Type)", 
+          icon: 'show_chart'
+        }, 
+        { 
+          name: "Variants (Active)", 
           icon: 'show_chart'
         }, 
         { 

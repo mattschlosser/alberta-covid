@@ -12,12 +12,19 @@ let keyedFinal = {
     }
 };
 
+let keyedOtherFinal = {
+    // 'Alberta'
+}
+
 
 let f = (n) => n.split(/\s/)[0].split(',').join('');
 let g = (n) => f(n.split(/\r|\n/).join(''))
 let done = {
     'In Alberta': {}
 };
+let otherDone = {
+
+}
 for (let filename of files) {
     if (filename.match(/\.aspx/)) {
         let data = fs.readFileSync(path.join(__dirname, "summary", filename));
@@ -81,7 +88,8 @@ for (let filename of files) {
         }
     }
 }
-// on March 23, variants of concern table was moved to teh data app
+let finalOther = [];
+// on March 23, variants of concern table was moved to the data app
 files = fs.readdirSync(path.join(__dirname, "pages"));
 for (let filename of files) {
     // we want to 'skip' files that have already been read
@@ -89,8 +97,8 @@ for (let filename of files) {
     if (filename >= "20210323") {
         let data = fs.readFileSync(path.join(__dirname, "pages", filename));
         let file = parse(data);
-        let table = file.querySelector('#variants-of-concern table')
-        rows = table.querySelectorAll('tr')
+        let table = file.querySelectorAll('#variants-of-concern table')
+        rows = table[0].querySelectorAll('tr')
         rows.splice(0,1);
         rows.forEach(row => {
             let nums =row.querySelectorAll('td') 
@@ -118,8 +126,38 @@ for (let filename of files) {
                 done[zone][niceDate] = true; // mark this date as done
             }
         })
+
+        if (table[1]) {
+                
+            rows = table[1].querySelectorAll('tr')
+            rows.splice(0,1);
+            rows.forEach(row => {
+                let nums = row.querySelectorAll('td') 
+                let zone = nums.splice(0,1)[0].text.split(/\r|\n/).join('')
+                if (!keyedOtherFinal[zone]) {
+                    keyedOtherFinal[zone] = {
+                        name: zone, 
+                        data: []
+                    }
+                    otherDone[zone] = {};
+                }
+                let niceDate = d;
+                if (!otherDone[zone][niceDate]) {
+                    keyedOtherFinal[zone].data.push({
+                        x: niceDate,
+                        'Active': +g(nums[0].text), 
+                        'Died': +g(nums[1].text),
+                        'Recovered': +g(nums[2].text),
+                        "Total": +g(nums[3].text)
+                    })
+                    otherDone[zone][niceDate] = true; // mark this date as done
+                }
+            })
+        }
     }
 }
 
 let final = Object.values(keyedFinal);
+// console.dir(keyedOtherFinal, {depth: 999})
 fs.writeFileSync("data/dailyVariantCounts.json", JSON.stringify(final));
+fs.writeFileSync('data/dailyVariantActiveDiedRecoveredCounts.json', JSON.stringify(Object.values(keyedOtherFinal)))
