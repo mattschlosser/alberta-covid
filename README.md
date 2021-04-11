@@ -275,7 +275,7 @@ tiles may change from day to day.
 
 #### [data/dailyVariantCounts.json](data/dailyVariantCounts.json)
 
-There are six categories in this file: `In Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category contains array of objects, one for each date, and the keys `total`, `B.1.1.7`, and `B.1.351`, whose values are the respective case counts in each category for that date. 
+An array of six categories: `In Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category is an object containing it's name, `cateogry`, and an array of objects, `data`, one for each date. Each object has the keys `total`, `B.1.1.7`, and `B.1.351`, whose values represent the respective cummulative case counts in each category as reported on that date `x`. 
 
 ```json
 [{
@@ -286,6 +286,34 @@ There are six categories in this file: `In Alberta`, `Edmonton Zone`, `Calgary Z
       "B.1.1.7": 97,
       "B.1.351": 7, 
       "total" : 104
+    }
+  ]
+}]
+```
+
+#### [data/dailyVariantActiveDiedRecoveredCounts.json](data/dailyVariantActiveDiedRecoveredCounts.json)
+
+An array of six categories: `Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category is an object containing it's name, `category`, and array of objects `date`. Each object has the keys `Active`, `Recovered`, `Deaths`, `Total` and `x`, where each of `Active`, `Recovered`, `Deaths`, and `Total` is the cummulative total of cases in each category as it was reported on the date `x`. 
+
+**Note:** The cateory `Alberta` here differs from the category `In Alberta` above due to the way data for the types of variants were initalliy reported. 
+
+```json
+[{
+  "category": "Alberta", 
+  "data": [
+    {
+      "x": "2021-03-29",
+      "Active": 2152,
+      "Died": 22,
+      "Recovored": 1143, 
+      "Total" : 3317
+    }, 
+    {
+      "x": "2021-03-30", 
+      "Active": 2660, 
+      "Died": 23, 
+      "Recovered": 1372, 
+      "Total":  4055
     }
   ]
 }]
