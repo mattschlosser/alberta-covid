@@ -15,65 +15,7 @@ The dashboard contains various charts including:
 * History of CoViD-19 variants in Alberta, broken down by region.
 * Total vaccines administered as of each day
 
-# Developing 
-
-```
-git clone https://github.com/mattschlosser/alberta-covid
-cd alberta-covid
-npm install
-````
-
-# Pipeline
-
-This is how to update the data/what each script is for. 
-
-A simple script is provided to update the data. 
-
-On Ubuntu/WSL/Linux:
-```sh
-./update.sh
-```
-
-Below are the various scripts that `update.sh` does:
-
-## Pull webpage
-
-First, get a recent copy of the Alberta Covid data dashboard.
-
-```
-mkdir pages
-cd pages
-wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
-```
-
-## Run various processors
-
-### Historical Processors
-
-#### Per-Day Files
-
-```
-node localProcessor.js
-node ageProcessor.js
-node severeProcessor.js
-node municipalProcessor.js
-```
-Each of these produces a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. Data is pulled from each pae in the `pages/` directory. Dates that already have been processed are skipped.  The data in each dated file is cureent up to the end of it's date. 
-
-#### Aggregate Files
-```
-node topProcessor.js
-node variantProcessor.js
-```
-Each of these produce a single file in the data directory. 
-
-`topProcessor.js` processes the tiles from the Alberta dashboard at 
-https://covid19stats.alberta.ca. This produces a file, `data/dailyCaseCounts.json`, which is the summary of # of people in hospital (both ICU and non-ICU cases) per day, current active cases, and total deaths. 
-
-`variantProcessor.js` processes the variant table found at https://alberta.ca/covid19.
-
-
-### Formats
+# Formats
 
 #### Vaccine Rollout
 In [`/data/dailyVaccineCounts.json`](data/dailyVaccineCounts.json), the form is as follows:
@@ -318,6 +260,65 @@ An array of six categories: `Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Z
   ]
 }]
 ```
+
+
+# Developing 
+
+```
+git clone https://github.com/mattschlosser/alberta-covid
+cd alberta-covid
+npm install
+````
+
+
+# Pipeline
+
+This is how to update the data/what each script is for. 
+
+A simple script is provided to update the data. 
+
+On Ubuntu/WSL/Linux:
+```sh
+./update.sh
+```
+
+Below are the various scripts that `update.sh` does:
+
+## Pull webpage
+
+First, get a recent copy of the Alberta Covid data dashboard.
+
+```
+mkdir pages
+cd pages
+wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
+```
+
+## Run various processors
+
+### Historical Processors
+
+#### Per-Day Files
+
+```
+node localProcessor.js
+node ageProcessor.js
+node severeProcessor.js
+node municipalProcessor.js
+```
+Each of these produces a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. Data is pulled from each pae in the `pages/` directory. Dates that already have been processed are skipped.  The data in each dated file is cureent up to the end of it's date. 
+
+#### Aggregate Files
+```
+node topProcessor.js
+node variantProcessor.js
+```
+Each of these produce a single file in the data directory. 
+
+`topProcessor.js` processes the tiles from the Alberta dashboard at 
+https://covid19stats.alberta.ca. This produces a file, `data/dailyCaseCounts.json`, which is the summary of # of people in hospital (both ICU and non-ICU cases) per day, current active cases, and total deaths. 
+
+`variantProcessor.js` processes the variant table found at https://alberta.ca/covid19.
 
 ## Run the second aggregator
 ```
