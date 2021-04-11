@@ -24,7 +24,7 @@ Data is avilable for some categories by individual dates. Each of the [local/]/(
 contain files with filenames formated as `YYYYMMDD.json` representing the end reporting date for the data. 
 
 
-### Local Georgraphical Area
+### By Local Geographical Area
 Each JSON file formated as `YYYYMMDD.json` in [local/](local/) contains all of Alberta's geospatial data related to COVID-19 cases for that day. Each JSON file has the following format:
 ```json
 [
@@ -45,7 +45,7 @@ Each JSON file formated as `YYYYMMDD.json` in [local/](local/) contains all of A
 ]
 ```
 
-### Municipal
+### By Municipality
 Each JSON file formated as `YYYYMMDD.json` in [municipal/](municipal/) contains COVID-19 data for each municipal aerasfor that day. Each date is an object representing the cummulative total of each of the categories `cases`, `recovered`, `deaths`, and `active` as reported to the end of that date. Each JSON file has the following format:
 ```json
 [
@@ -66,7 +66,7 @@ Each JSON file formated as `YYYYMMDD.json` in [municipal/](municipal/) contains 
 ]
 ```
 
-### Age
+### By Age
 Each JSON file formated as `YYYYMMDD.json` in [age/](age/) is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
@@ -82,7 +82,7 @@ Each JSON file formated as `YYYYMMDD.json` in [age/](age/) is an array of object
 }
 ```
 
-### Severe Outcomes
+### By Types of Severe Outcome
 [Severe outcome JSON files](severe/) are an array of objects, each
 object representing an age category. Each category has a format like:
 ```json
@@ -104,7 +104,7 @@ object representing an age category. Each category has a format like:
 ## Aggregate Data
 Each `all.json` file in `local`, `age`, and `severe` directories, as well as each of the files in the [data/](data/) directory, is formated as a colleciton of time series data for each category/region.
 
-### Local
+### By Local Geographical Area
 [local/all.json](local/all.json)
 
 An array of objects. One for each local region. Each region has a format like:
@@ -132,7 +132,10 @@ An array of objects. One for each local region. Each region has a format like:
 ```
 **Note:** There is a distinction between data before April 9, 2020, and onwards. Data before April 9 only includes total number of cases, whereas data after that date includes active cases, recoveries, and deaths. 
 
-### Age
+### By Municipality
+[municipal/all.json](municipal/all.json)
+
+### By Age
 
 The [`all.json` file in the age folder](age/all.json) is an array of objects, one for each age category. Each category has a format like:
 ```json
@@ -165,7 +168,7 @@ The [`all.json` file in the age folder](age/all.json) is an array of objects, on
 }
 ```
 
-### Severe
+### By Types of Severe Outcome
 The [`all.json` file in the severe folder](severe/all.json) is an array of objects, one for each age category. Each category has a format like:
 ```json
 {
@@ -222,7 +225,7 @@ tiles may change from day to day.
 }]
 ```
 
-### Variant (By Type)
+### By Types of Varaint (Total Only)
 [data/dailyVariantCounts.json](data/dailyVariantCounts.json)
 
 An array of six categories: `In Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category is an object containing it's name, `cateogry`, and an array of objects, `data`, one for each date. Each object has the keys `total`, `B.1.1.7`, and `B.1.351`, whose values represent the respective cummulative case counts in each category as reported on that date `x`. 
@@ -241,7 +244,7 @@ An array of six categories: `In Alberta`, `Edmonton Zone`, `Calgary Zone`, `Nort
 }]
 ```
 
-### Varaint (Active/Recovred/Deaths)
+###  By Outcome of Varaints (Active/Recovred/Deaths)
 [data/dailyVariantActiveDiedRecoveredCounts.json](data/dailyVariantActiveDiedRecoveredCounts.json)
 
 An array of six categories: `Alberta`, `Edmonton Zone`, `Calgary Zone`, `North Zone`, `South Zone`, and `Central Zone`. Each category is an object containing it's name, `category`, and array of objects `date`. Each object has the keys `Active`, `Recovered`, `Deaths`, `Total` and `x`, where each of `Active`, `Recovered`, `Deaths`, and `Total` is the cummulative total of cases in each category as it was reported on the date `x`. 
