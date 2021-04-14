@@ -20,7 +20,7 @@ Below is a list of all the different types of data available.
 
 
 ## Per Day Files. 
-Data is avilable for some categories by individual dates. Each of the [local/]/(local/), [age/]/(age/), and [severe/]/(severe/) directories 
+Data is avilable for some categories by individual dates. Each of the [local](local/) , [age](age/), and [severe/](severe/) directories 
 contain files with filenames formated as `YYYYMMDD.json` representing the end reporting date for the data. 
 
 
