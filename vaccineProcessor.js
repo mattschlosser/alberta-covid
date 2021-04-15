@@ -21,7 +21,7 @@ for (let filename of files) {
         for (let i of [...c]) {
             let txt = i.parentNode.text;
             // console.log(i.parentNode.text);
-            let doses = txt.match(/\d{3,4},\d{3}/)
+            let doses = txt.match(/\d{1,3},\d{1,3}(,\d{3})?/)
             if (doses) {
                 // console.log(txt);
                 date = txt.match(/ (\w*?) (\d{1,2}).?$/);
