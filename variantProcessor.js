@@ -116,12 +116,19 @@ for (let filename of files) {
             }
             let niceDate = d;
             if (!done[zone][niceDate]) {
-                keyedFinal[zone].data.push({
+                keyedFinal[zone].data.push(niceDate < "2021-04-23" ? {
                     x: niceDate,
                     'B.1.1.7': +g(nums[0].text), 
                     'B.1.351': +g(nums[1].text),
                     'P.1': +g(nums[2].text),
                     "total": +g(nums[3].text)
+                } : {
+                    x: niceDate,
+                    'B.1.1.7': +g(nums[0].text), 
+                    'B.1.351': +g(nums[1].text),
+                    'B.1.617': +g(nums[2].text),
+                    'P.1': +g(nums[3].text),
+                    "total": +g(nums[4].text)
                 })
                 done[zone][niceDate] = true; // mark this date as done
             }

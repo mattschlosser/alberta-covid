@@ -21,6 +21,7 @@ export default {
             modes: [
                 "B.1.1.7",
                 "B.1.351",
+                "B.1.617",
                 "P.1",
                 "total"
             ]
