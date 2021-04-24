@@ -22,17 +22,22 @@ for (let filename of files) {
                 if (node instanceof TextNode) {
                     if (node.rawText.match(/Local geograph/)) {
                         let data = JSON.parse(node.rawText);
-                        
+                        // console.log(data);
                         let objs = [];;
-                        // this changes over time. 
+                        // this changes over time. look for call with addPolygons
                         let tree
-                        if (myDate >= '201123') {
+                        if (myDate >= '210420') {
+                            tree = data.x.calls[2].args[4] 
+                        } else if (myDate >= '201123') {
                             tree = data.x.calls[2].args[6] 
                         } else {
                             tree = data.x.calls[1].args[6]
                         }
+                        console.log("THIS IS BEFORE", myDate, data.x.calls[2].args[6]);
 
                         let r= parse(tree)
+                        // console.dir(data.x.calls[3].args[4]);
+                        
                         let next = '';
                         let obj = {};
                         for (let each of r.childNodes) {
@@ -47,7 +52,7 @@ for (let filename of files) {
                                 }
                             } else if (each instanceof TextNode) {
                                 let n = Number(each.rawText.split(' ')[1]);
-                                if (each.rawText.match(/ase/)) {
+                                if (each.rawText.match(/ase/) && !obj.cases /* only match the first - assuming there has been at least a case in every region */) {
                                     obj.cases = n
                                 } else if (each.rawText.match(/Active/)) {
                                     obj.active = n

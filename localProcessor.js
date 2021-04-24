@@ -27,7 +27,9 @@ for (let filename of files) {
                         let objs = [];;
                         // this changes over time. 
                         let tree
-                        if (filename >= '20201109') {
+                        if (filename >= '20210420') {
+                            tree = data.x.calls[3].args[4]
+                        } else if (filename >= '20201109') {
                             tree = data.x.calls[3].args[6] 
                         } else {
                             tree = data.x.calls[2].args[6]
@@ -48,7 +50,7 @@ for (let filename of files) {
                                 }
                             } else if (each instanceof TextNode) {
                                 let n = Number(each.rawText.split(' ')[1]);
-                                if (each.rawText.match(/ase/)) {
+                                if (each.rawText.match(/ase/) && !obj.cases /* only match the first - assuming there has been at least case in every region */) {
                                     obj.cases = n
                                 } else if (each.rawText.match(/Active/)) {
                                     obj.active = n
