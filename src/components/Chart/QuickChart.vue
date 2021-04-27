@@ -9,6 +9,9 @@
                 margin: 0 auto;
             "
             >
+            <v-alert v-if='$scopedSlots.note' color="warning">
+              <slot name="note"></slot>
+            </v-alert>
             <LineChart :chart-data="chartData" :type="type" />
             </div>
         </v-flex>

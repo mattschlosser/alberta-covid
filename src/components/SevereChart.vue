@@ -6,7 +6,12 @@
         :friendlyModes="friendlyModes"
         init-category=0
         init-mode="deaths"
-    />
+        
+    >
+    <template #note>
+        On April 27, 2021, AHS adjusted the number of deaths, decreasing the total for all ages by 14 after further review of past cases, deeming that COVID was not a contributing factor for those 14 deaths. 
+    </template>
+    </quick-chart>
 </template>
 <script>
 import allData from '../../severe/all.json'
