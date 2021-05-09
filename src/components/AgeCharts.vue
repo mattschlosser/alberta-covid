@@ -2,6 +2,7 @@
     <quick-chart
       :modes="modes"
       keyed-by="category"
+      :friendlyModes="friendlyModes"
       :all-data="myData"
       init-category=0
       init-mode="male_cases"
@@ -30,7 +31,7 @@ export default {
         });
         return f;
       }),
-      selectedMode: "male_cases",
+      selectedMode: "all_cases",
       modes: [
         "male_cases",
         "new_male_cases",
@@ -43,8 +44,20 @@ export default {
         "unknown_percent",
         "all_cases",
         "new_all_cases",
-        "percent",
       ],
+      friendlyModes: {
+        "male_cases": "Male Cases",
+        "new_male_cases": "New Male Cases",
+        "male_percent": "% of Cases that are Male",
+        "female_cases": "Female Cases",
+        "new_female_cases": "New Female Cases",
+        "female_percent": "% of Cases that are Female",
+        "unknown_cases": "Unknown Sex",
+        "new_unknown_cases": "New Unknown Sex",
+        "unknown_percent": "% of Caess w\\ Unknown Sex",
+        "all_cases": "All Cases",
+        "new_all_cases": "New All Cases",
+      },
       category: 0
     };
   },
