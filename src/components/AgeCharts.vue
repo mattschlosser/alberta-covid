@@ -48,15 +48,15 @@ export default {
       friendlyModes: {
         "male_cases": "Male Cases",
         "new_male_cases": "New Male Cases",
-        "male_percent": "% of Cases that are Male",
+        "male_percent": "% of Male Cases",
         "female_cases": "Female Cases",
         "new_female_cases": "New Female Cases",
-        "female_percent": "% of Cases that are Female",
+        "female_percent": "% of Female Cases",
         "unknown_cases": "Unknown Sex",
         "new_unknown_cases": "New Unknown Sex",
-        "unknown_percent": "% of Caess w\\ Unknown Sex",
+        "unknown_percent": "% of Unknwon Sex Cases",
         "all_cases": "All Cases",
-        "new_all_cases": "New All Cases",
+        "new_all_cases": "New Cases",
       },
       category: 0
     };
