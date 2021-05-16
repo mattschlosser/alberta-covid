@@ -18,11 +18,10 @@ for (let filename of files) {
             // get local data and save to local
             let scripts = file.querySelectorAll('[type="application/json"]')
             for (let script of scripts) {
-                let node = script.childNodes[0]
+                let node = script.childNodes[0];
                 if (node instanceof TextNode) {
                     if (node.rawText.match(/Local geograph/)) {
                         let data = JSON.parse(node.rawText);
-                        // console.log(data);
                         let objs = [];;
                         // this changes over time. look for call with addPolygons
                         let tree
@@ -33,10 +32,8 @@ for (let filename of files) {
                         } else {
                             tree = data.x.calls[1].args[6]
                         }
-                        console.log("THIS IS BEFORE", myDate, data.x.calls[2].args[6]);
 
                         let r= parse(tree)
-                        // console.dir(data.x.calls[3].args[4]);
                         
                         let next = '';
                         let obj = {};
@@ -67,6 +64,7 @@ for (let filename of files) {
                         if (objs.length) {
                             fs.writeFileSync(`municipal/20${myDate}.json`, str);
                         }
+                        break;
                     }
                 }
             }
