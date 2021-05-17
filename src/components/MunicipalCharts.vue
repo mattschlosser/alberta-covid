@@ -3,8 +3,8 @@
         :all-data="allData"
         keyed-by="name"
         :modes="modes"
-        init-category=0
-        init-mode="deaths"
+        init-category=14
+        init-mode="active"
     />
 </template>
 <script>

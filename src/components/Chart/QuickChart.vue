@@ -13,6 +13,16 @@
               <slot name="note"></slot>
             </v-alert>
             <LineChart :chart-data="chartData" :type="type" />
+            <v-row >
+                <v-col sm="12" md="6">
+                  <div>Last 30 Days</div>
+                  <LineChart :chart-data="last30" :type="type" />
+                </v-col>
+                <v-col sm="12" md="6">
+                  <div>Last 7 Days</div>
+                  <LineChart :chart-data="last7" :type="type" />
+                </v-col>
+            </v-row>
             </div>
         </v-flex>
         <v-flex md12 lg3 
@@ -82,7 +92,7 @@ export default {
   data() {
     return {
       selectedMode: [this.initMode],
-      category: 0
+      category: this.initCategory
     };
   },
   computed: {
@@ -113,10 +123,17 @@ export default {
       }
       return "100%";
     },
+    currentCategoryName() {
+      if (this.allData[this.category]) {
+        return this.allData[this.category][this.keyedBy];
+      } else {
+        return "";
+      }
+    },  
     chartData() {
       return {
         datasets: this.selectedMode.map((selected, i) => ({
-            label: selected,
+            label: `${selected} - ${this.currentCategoryName}` ,
             borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
             backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
             type: this.processedModes[selected].type,
@@ -128,8 +145,30 @@ export default {
         labels: this.allData[this.category]?.data.map(e => e.x) || []
       };
     },
+    last30() {
+      
+      let data = {...this.chartData};
+      return this.last(data, 30);
+    },
+    last7() {
+      let data = {...this.chartData};
+      return this.last(data, 7);
+    }
   },
   methods: {
+    last(data, n) {
+      let myDatasets = [];
+      for (let dataset of data.datasets) {
+        // clone
+        let myDataset = {...dataset};
+        myDataset.data = [...dataset.data];
+        myDataset.data = dataset.data.slice(-n)
+        myDatasets.push(myDataset);
+      }
+      data.labels = [...data.labels].slice(-n)
+      data.datasets = myDatasets;
+      return data;
+    }, 
     defaultMode(mode) {
       return {
         type: "line", 
