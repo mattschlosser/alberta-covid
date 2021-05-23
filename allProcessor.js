@@ -26,7 +26,7 @@ let myDate = `${("" + d.getFullYear()).slice(-2)}${("0" + (d.getMonth() + 1)).sl
                 let deets = JSON.parse(node.rawText).x.data;
                 console.dir(deets, {depth: 999});
                 fs.writeFileSync("data/allCaseCounts.json", JSON.stringify(deets))
-                break;
+                // break;
             }
             // if (node.rawText.match(/Local geograph/)) {
             //     let data = JSON.parse(node.rawText);
