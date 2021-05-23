@@ -40,6 +40,7 @@ export default {
           scales: {
             xAxes: [
               {
+                offset: true, 
                 id: "1",
                 type: "time",
                 time: {
@@ -50,7 +51,7 @@ export default {
                   },
                 },
               },
-            ],
+            ]
           },
           cubicInterpolationMode: "monotone",
         },
