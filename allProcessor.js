@@ -21,10 +21,12 @@ let myDate = `${("" + d.getFullYear()).slice(-2)}${("0" + (d.getMonth() + 1)).sl
     for (let script of scripts) {
         let node = script.childNodes[0]
         if (node instanceof TextNode) {
-            if (node.rawText.match(/COVID-19 Cases/i) && node.rawText.match(/16343/)) {
+            let i = node.rawText;
+            if (i.match(/COVID-19 Cases \(n\)/i) && i.match(/Active/)) {
                 let deets = JSON.parse(node.rawText).x.data;
                 console.dir(deets, {depth: 999});
                 fs.writeFileSync("data/allCaseCounts.json", JSON.stringify(deets))
+                break;
             }
             // if (node.rawText.match(/Local geograph/)) {
             //     let data = JSON.parse(node.rawText);
