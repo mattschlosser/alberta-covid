@@ -33,7 +33,7 @@
             </v-alert>
             <v-list subheader>
              <v-subheader>Mode</v-subheader>
-              <v-list-item-group multiple v-model="selectedMode">
+              <v-list-item-group mandatory multiple v-model="selectedMode">
                 <v-list-item
                     v-for="({name: mode}) in processedModes"
                     :key="mode"
@@ -44,7 +44,7 @@
                 >
                     <v-list-item-title>
                     {{ friendlyModes[mode] || mode }}
-                    </v-list-item-title>
+                    </v-list-item-title>  
                     <v-list-item-action-text>
                       {{ allData[category] && allData[category].data.slice(-1)[0][mode] }} 
                       ({{allData[category] && allData[category].data.slice(-1)[0][mode] - allData[category].data.slice(-2)[0][mode] }})
@@ -54,7 +54,7 @@
             </v-list>
             <v-list subheader>
             <v-subheader>Category</v-subheader>
-            <v-list-item-group v-model="category">
+            <v-list-item-group mandatory v-model="category">
                 <v-list-item v-for="(cat, i) in categories" :key="cat" :value="i">
                     <v-list-item-title>
                     {{ cat }}
@@ -167,7 +167,7 @@ export default {
       }
       data.labels = [...data.labels].slice(-n)
       data.datasets = myDatasets;
-      return data;
+      return data;  
     }, 
     defaultMode(mode) {
       return {
