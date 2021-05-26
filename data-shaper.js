@@ -42,4 +42,4 @@ shape_dir("severe", "category", ["all_cases", "hospitalized", "hospitalized_pct"
 shape_dir("municipal", "name", ["active", "cases", "recovered", "deaths"]);
 
 // ageVaccinatoins 
-shape_dir("ageVaccinations", "age_group", ["population", "dose_1", "dose_1_oct", "dose_2", "dose_2_pct", "total" ])
+shape_dir("ageVaccinations", "age_group", ["population", "dose_1", "dose_1_pct", "dose_2", "dose_2_pct", "total" ])
