@@ -140,6 +140,9 @@
               <template v-if="item == 'Vaccine Rollout'">
                 <vaccine-data/>
               </template>
+              <template v-if="item == 'Vaccine Rollout (By Age)'">
+                <age-vaccine-chart/>
+              </template>
             </v-tab-item>
           </v-tabs-items>
         </div>
@@ -162,7 +165,7 @@ import MunicipalChart from './MunicipalCharts.vue';
 import VariantData from './VariantData.vue';
 import VariantActiveData from './VariantActiveData.vue';
 import VaccineData from './VaccineData.vue';
-
+import AgeVaccineChart from './AgeVaccineChart.vue';
 function merger(rest, first) {
   for (let one of first) {
     let existing = rest.find((x) => x.x == one.x);
@@ -192,7 +195,8 @@ export default {
     MunicipalChart,
     VariantData,
     VariantActiveData,
-    VaccineData
+    VaccineData, 
+    AgeVaccineChart
   },
   data() {
     return {
@@ -204,6 +208,10 @@ export default {
       }, 
       {
         name: "Vaccine Rollout", 
+        icon: 'show_chart', 
+      }, 
+      {
+        name: "Vaccine Rollout (By Age)", 
         icon: 'show_chart', 
       }, 
         { 
