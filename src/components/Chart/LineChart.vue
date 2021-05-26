@@ -51,7 +51,12 @@ export default {
                   },
                 },
               },
-            ]
+            ], 
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
           },
           cubicInterpolationMode: "monotone",
         },
