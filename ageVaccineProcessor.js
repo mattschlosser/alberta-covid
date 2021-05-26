@@ -24,7 +24,7 @@ for (let filename of files) {
                 let stats = [];
                 for (let table of [...tables]) {
                     if (!table.rawText.match(/00-11/)) continue;
-                    let nodes = tables[12].childNodes.filter(e => !(e instanceof TextNode))
+                    let nodes = table.childNodes.filter(e => !(e instanceof TextNode))
                     nodes.forEach((childNode, i) => {
                         let rags = [];
                         rags[i] = [];
