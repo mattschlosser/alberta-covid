@@ -15,6 +15,7 @@ export default {
     }, 
     async created() {
         let allData = await  import("../../data/dailyCaseCounts.json").then(r=>r.default);
+        
         /* eslint-disable-next-line */
         let allAllData = await import("../../data/allCaseCounts.json").then(r=>r.default);
         let newCases = allAllData[0].x.reduce((a,e,i) => {
@@ -31,6 +32,7 @@ export default {
                 if (!i) return;
                 e["new cases"] = newCases[e.x];
                 e["net change"] = e["active cases"] - a[i-1]["active cases"]
+                e["new deaths"] = e["total deaths"] - a[i-1]["total deaths"]
             });
         })
         this.allData = allData;
@@ -48,7 +50,12 @@ export default {
                 "active cases",
                 "current hospitalizations",
                 "current ICU",
-                "total deaths"
+                "total deaths",
+                {
+                    name: "new deaths",
+                    type: "bar",
+                    backgroundColor: "#66ff66"
+                }, 
             ]
         }
     }
