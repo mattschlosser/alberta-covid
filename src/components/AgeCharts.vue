@@ -4,8 +4,8 @@
       keyed-by="category"
       :friendlyModes="friendlyModes"
       :all-data="myData"
-      init-category=0
-      init-mode="male_cases"
+      :init-category=12
+      init-mode="new_all_cases"
     />
 </template>
 <script>
@@ -34,16 +34,32 @@ export default {
       selectedMode: "all_cases",
       modes: [
         "male_cases",
-        "new_male_cases",
+        {
+          name: "new_male_cases",
+          type: "bar", 
+          backgroundColor: "#6666ff"
+        },
         "male_percent",
         "female_cases",
-        "new_female_cases",
+        {
+          name: "new_female_cases",
+          type: "bar", 
+          backgroundColor: "#66ff66"
+        },
         "female_percent",
         "unknown_cases",
-        "new_unknown_cases",
+        {
+          name: "new_unknown_cases",
+          type: "bar", 
+          backgroundColor: "#99ff66"
+        },
         "unknown_percent",
         "all_cases",
-        "new_all_cases",
+        {
+          name: "new_all_cases",
+          type: "bar", 
+          backgroundColor: "#ff6666"
+        }
       ],
       friendlyModes: {
         "male_cases": "Male Cases",
