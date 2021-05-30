@@ -2,6 +2,7 @@
     <quick-chart
         :all-data="allData"
         keyed-by="name"
+        :friendly-modes="friendlyModes"
         :modes="modes"
         :init-category=0
         init-mode="active cases"
@@ -56,7 +57,10 @@ export default {
                     type: "bar",
                     backgroundColor: "#66ff66"
                 }, 
-            ]
+            ], 
+            friendlyModes: {
+                "new cases": "By Date Identified"
+            }
         }
     }
 }

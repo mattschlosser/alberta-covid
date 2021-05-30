@@ -22,7 +22,7 @@ let myDate = `${("" + d.getFullYear()).slice(-2)}${("0" + (d.getMonth() + 1)).sl
         let node = script.childNodes[0]
         if (node instanceof TextNode) {
             let i = node.rawText;
-            if (i.match(/COVID-19 Cases \(n\)/i) && i.match(/Active/)) {
+            if (i.match(/COVID-19 Cases \(n\)/i) && i.match(/Active/) && i.match(/Recovered/)) {
                 let deets = JSON.parse(node.rawText).x.data;
                 console.dir(deets, {depth: 999});
                 fs.writeFileSync("data/allCaseCounts.json", JSON.stringify(deets))
