@@ -47,7 +47,7 @@
                     </v-list-item-title>  
                     <v-list-item-action-text>
                       {{ allData[category] && allData[category].data.slice(-1)[0][mode] }} 
-                      ({{allData[category] && allData[category].data.slice(-1)[0][mode] - allData[category].data.slice(-2)[0][mode] }})
+                      ({{ Math.round((allData[category] && allData[category].data.slice(-1)[0][mode] - allData[category].data.slice(-2)[0][mode])*10)/10 }})
                     </v-list-item-action-text>
                 </v-list-item>
               </v-list-item-group>

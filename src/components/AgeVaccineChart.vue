@@ -4,7 +4,7 @@
         keyed-by="age_group"
         :modes="modes"
         :friendlyModes="friendlyModes"
-        init-category=4
+        :init-category="20"
         init-mode="total"
         
     >
