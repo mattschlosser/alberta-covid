@@ -15,11 +15,11 @@
             <LineChart :chart-data="chartData" :type="type" />
             <v-row >
                 <v-col sm="12" md="6">
-                  <div>Last 30 Days</div>
+                  <div>Last 30 Reports</div>
                   <LineChart :chart-data="last30" :type="type" />
                 </v-col>
                 <v-col sm="12" md="6">
-                  <div>Last 7 Days</div>
+                  <div>Last 7 Reports</div>
                   <LineChart :chart-data="last7" :type="type" />
                 </v-col>
             </v-row>
@@ -133,7 +133,7 @@ export default {
     chartData() {
       return {
         datasets: this.selectedMode.map((selected, i) => ({
-            label: `${selected} - ${this.currentCategoryName}` ,
+            label: `${this.friendlyModes[selected] || selected} - ${this.currentCategoryName}` ,
             borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
             backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
             type: this.processedModes[selected].type,
