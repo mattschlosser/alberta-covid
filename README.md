@@ -362,11 +362,6 @@ git add . && git commit -m "Update for $(date)" && git push
 
 To run a dev server for local dev of the UI pages
 
-1. Install vue cli
 ```
-npm i -g @vue/cli @vue/cli-service-global
-```
-2. Serve
-```
-vue serve ./src
+npm run webpack serve
 ```
