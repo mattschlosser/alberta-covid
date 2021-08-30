@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-function shape_dir(dirname, nameKey, keysToCopy) {
+function shape_dir(dirname, nameKey, keysToCopy, reducer = null) {
     let keys = {};
     let files = fs.readdirSync(path.join(__dirname, dirname));
     for (let filename of files) {
@@ -19,14 +19,19 @@ function shape_dir(dirname, nameKey, keysToCopy) {
 
                 let obj = {x: date};
                 for (let key of keysToCopy) {
-                    obj[key] = datum[key];
+                    if (reducer) {
+                        obj[key] = datum[key]?.[reducer]
+                    } else {
+                        obj[key] = datum[key];
+                    }
+                    
                 }
                 
                 keys[datum[nameKey]].data.push(obj)
             }
         }
     }
-    let out = JSON.stringify(Object.values(keys));
+    let out = JSON.stringify(Object.values(keys), null);
     fs.writeFileSync(path.join(__dirname, dirname, "all.json"), out)
 }
 // local
@@ -43,3 +48,5 @@ shape_dir("municipal", "name", ["active", "cases", "recovered", "deaths"]);
 
 // ageVaccinatoins 
 shape_dir("ageVaccinations", "age_group", ["population", "dose_1", "dose_1_pct", "dose_2", "dose_2_pct", "total" ])
+
+shape_dir("localVaccine", "place", ["75+", "60-74", "40-59","20-39", "12-19", "12+", "All ages"], 'count');

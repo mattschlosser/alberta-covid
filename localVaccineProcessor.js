@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 var {parse, TextNode} = require('node-html-parser');
 
-let objs = [];
 let files = fs.readdirSync(path.join(__dirname, "pages"));
 for (let filename of files) {
+    let objs = [];
     if (filename.match(/\.htm/)) {
         // vacinne data added May 16
         if (filename < '20210516') continue;
@@ -34,14 +34,16 @@ for (let filename of files) {
                             if (!lines.length) {
                                 continue
                             }
-                            if (interval % 8 == 0) {
+                            if (interval % 9 == 0) {
+                                // console.log(lines[0]);
                                 d = {
                                     place: lines[0]
                                 }
                                 interval++;
                                 continue;
                             }
-                            if (interval - 1 & 8 == 0) {
+                            if (interval - 1 & 9 == 0) {
+                                // console.log(lines[0]);
                                 interval++;
                                 continue;
                             }
@@ -57,8 +59,8 @@ for (let filename of files) {
                             // } else if (each instanceof TextNode) {
                                 // let lines = each.rawText.split(/\s{2,}/).filter(e => e != '' && e != ',');
                                 if (lines.length) {
-                                    console.log(1);
-                                    console.log(lines);
+                                    // console.log(1);
+                                    // console.log(lines);
                                     let ageCategory = lines[0].match(/(\d{2}[\+\-](\d{2})*)\:/);
                                     if (ageCategory) {
                                         d[ageCategory[1]] = {
@@ -90,7 +92,7 @@ for (let filename of files) {
                                 objs.push(d);
                             }
                         }
-                        console.log(objs);
+                        // console.log(objs);
                         let str = JSON.stringify(objs);
                         if (objs.length) {
                             fs.writeFileSync(`localVaccine/20${myDate}.json`, str);

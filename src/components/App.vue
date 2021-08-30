@@ -143,6 +143,9 @@
               <template v-if="item == 'Vaccine Rollout (By Age)'">
                 <age-vaccine-chart/>
               </template>
+              <template v-if="item == 'Local Vaccine'">
+                <LocalVaccine />
+              </template>
             </v-tab-item>
           </v-tabs-items>
         </div>
@@ -163,6 +166,7 @@ import DailyData from './DailyData.vue';
 import SevereChart from './SevereChart.vue';
 import MunicipalChart from './MunicipalCharts.vue';
 import VariantData from './VariantData.vue';
+import LocalVaccine from './LocalVaccine.vue';
 import VariantActiveData from './VariantActiveData.vue';
 import VaccineData from './VaccineData.vue';
 import AgeVaccineChart from './AgeVaccineChart.vue';
@@ -196,7 +200,8 @@ export default {
     VariantData,
     VariantActiveData,
     VaccineData, 
-    AgeVaccineChart
+    AgeVaccineChart,
+    LocalVaccine
   },
   data() {
     return {
@@ -240,6 +245,10 @@ export default {
         }, 
         { 
           name: "Severe Outcomes", 
+          icon: 'show_chart'
+        }, 
+        { 
+          name: "Local Vaccine", 
           icon: 'show_chart'
         }, 
       ], 
