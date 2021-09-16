@@ -146,6 +146,9 @@
               <template v-if="item == 'Local Vaccine'">
                 <LocalVaccine />
               </template>
+              <template v-if="item == 'Changes'">
+                <Changes />
+              </template>
             </v-tab-item>
           </v-tabs-items>
         </div>
@@ -165,6 +168,7 @@ import AgeCharts from './AgeCharts.vue';
 import DailyData from './DailyData.vue';
 import SevereChart from './SevereChart.vue';
 import MunicipalChart from './MunicipalCharts.vue';
+import Changes from './Changes.vue';
 import VariantData from './VariantData.vue';
 import LocalVaccine from './LocalVaccine.vue';
 import VariantActiveData from './VariantActiveData.vue';
@@ -201,7 +205,8 @@ export default {
     VariantActiveData,
     VaccineData, 
     AgeVaccineChart,
-    LocalVaccine
+    LocalVaccine,
+    Changes
   },
   data() {
     return {
@@ -251,6 +256,10 @@ export default {
           name: "Local Vaccine", 
           icon: 'show_chart'
         }, 
+        {
+          name: "Changes", 
+          icon: 'table_chart'
+        }
       ], 
       allData: data,
       modes: ["cases", "active", "recovered", "deaths"],
