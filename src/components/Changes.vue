@@ -28,16 +28,16 @@ export default {
                     value: "category"
                 }, 
                 {
-                    text: "Unvaccinated or less than two weeks since dose 1", 
-                    value: 'unvaxed',
+                    text: "Cases", 
+                    value: 'cases',
                 }, 
                 {
-                    text: "At least one dose", 
-                    value: 'vaxed'
+                    text: "Hospitialized", 
+                    value: 'hospitalized'
                 }, 
                 {
-                    text: "Total", 
-                    value: "total"
+                    text: "Deaths", 
+                    value: "deaths"
                 }
             ],
             headers: [
@@ -77,9 +77,9 @@ export default {
                 let dataLength = f.data.length;
                 return {
                     category: f.category,
-                    unvaxed: f.data[dataLength - 1].unvaxed - f.data[dataLength - 2].unvaxed,
-                    vaxed: f.data[dataLength - 1].vaxed - f.data[dataLength - 2].vaxed,
-                    total: f.data[dataLength - 1].total - f.data[dataLength - 2].total
+                    cases: f.data[dataLength - 1].cases - f.data[dataLength - 2].cases,
+                    hospitalized: f.data[dataLength - 1].hospitalized - f.data[dataLength - 2].hospitalized,
+                    deaths: f.data[dataLength - 1].deaths - f.data[dataLength - 2].deaths
                 }
             })
         }

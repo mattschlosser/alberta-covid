@@ -19,7 +19,7 @@
       </v-navigation-drawer>
       <v-container app fluid>
         <div>
-          <v-tabs-items v-model="tab">
+          <v-tabs-items mandatory v-model="tab">
             <v-tab-item v-for="{name:   item} in items" :key="item">
               <template v-if="item == 'Daily Data'">
                 <daily-data />

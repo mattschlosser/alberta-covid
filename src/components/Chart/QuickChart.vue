@@ -6,14 +6,16 @@
             style="
                 postion: relative;
                 width: 75%;
-                margin: 0 auto;
+                margin: 25px; auto;
             "
             >
             <v-alert v-if='$scopedSlots.note' color="warning">
               <slot name="note"></slot>
             </v-alert>
-            <LineChart :chart-data="chartData" :type="type" />
             <v-row >
+              <v-col sm="12">
+                <LineChart :chart-data="chartData" :type="type" /> 
+              </v-col>
                 <v-col sm="12" md="6">
                   <div>Last 30 Reports</div>
                   <LineChart :chart-data="last30" :type="type" />
@@ -46,15 +48,15 @@
                     {{ friendlyModes[mode] || mode }}
                     </v-list-item-title>  
                     <v-list-item-action-text>
-                      {{ allData[category] && allData[category].data.slice(-1)[0][mode] }} 
-                      ({{ Math.round((allData[category] && allData[category].data.slice(-1)[0][mode] - allData[category].data.slice(-2)[0][mode])*10)/10 }})
+                      {{ getTotal(mode) }} 
+                      ({{ getDiff(mode) }})
                     </v-list-item-action-text>
                 </v-list-item>
               </v-list-item-group>
             </v-list>
             <v-list subheader>
             <v-subheader>Category</v-subheader>
-            <v-list-item-group mandatory v-model="category">
+            <v-list-item-group mandatory multiple v-model="selectedCategories">
                 <v-list-item v-for="(cat, i) in categories" :key="cat" :value="i">
                     <v-list-item-title>
                     {{ cat }}
@@ -92,6 +94,7 @@ export default {
   data() {
     return {
       selectedMode: [this.initMode],
+      selectedCategories: [this.initCategory],
       category: this.initCategory
     };
   },
@@ -123,25 +126,34 @@ export default {
       }
       return "100%";
     },
-    currentCategoryName() {
-      if (this.allData[this.category]) {
-        return this.allData[this.category][this.keyedBy];
-      } else {
-        return "";
-      }
-    },  
+    modeTotals() {
+      return Object.values(this.processedModes).reduce((obj, {name: mode}) => {
+        let {allData} = this;
+        obj[mode] =  {
+          total: this.selectedCategories.reduce((a, category) => {
+            return a + (allData[category] && allData[category].data.slice(-1)[0][mode])
+          }, 0), 
+          diff: this.selectedCategories.reduce((a, category) => {
+            return a + (Math.round((allData[category] && allData[category].data.slice(-1)[0][mode] - allData[category].data.slice(-2)[0][mode])*10)/10)
+          }, 0)
+        }
+        return obj
+      }, {})
+    }, 
     chartData() {
       return {
-        datasets: this.selectedMode.map((selected, i) => ({
-            label: `${this.friendlyModes[selected] || selected} - ${this.currentCategoryName}` ,
-            borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
-            backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
-            type: this.processedModes[selected].type,
-            tension:0,
-            data:  this.allData[this.category]?.data.map(e => e[selected]) || [],
-            xAxisID: "1"
-          })
-        ),
+        datasets: this.selectedCategories.map(category => {
+            return this.selectedMode.map((selected, i) => ({
+              label: `${this.friendlyModes[selected] || selected} - ${this.getCategoryName(category)}` ,
+              borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
+              backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
+              type: this.processedModes[selected].type,
+              tension:0,
+              data:  this.allData[category]?.data.map(e => e[selected]) || [],
+              xAxisID: "1"
+            }))
+          }
+        ).reduce((a,e) => [...a, ...e], []),
         labels: this.allData[this.category]?.data.map(e => e.x) || []
       };
     },
@@ -156,6 +168,19 @@ export default {
     }
   },
   methods: {
+    getCategoryName(category) {
+      if (this.allData[category]) {
+        return this.allData[category][this.keyedBy];
+      } else {
+        return "";
+      }
+    },  
+    getTotal(mode) {
+      return this.modeTotals[mode].total ?? "Loading"
+    }, 
+    getDiff(mode) {
+      return this.modeTotals[mode].diff ?? "~"
+    }, 
     last(data, n) {
       let myDatasets = [];
       for (let dataset of data.datasets) {

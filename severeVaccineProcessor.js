@@ -16,21 +16,19 @@ for (let filename of files) {
         let myDate = `${("" + d.getFullYear()).slice(-2)}${("0" + (d.getMonth() + 1)).slice(-2)}${("0" + d.getDate()).slice(-2)}`;
         if (!fs.existsSync(`severeVaccine/20${myDate}.json`)) {
             let tables = file.querySelectorAll('#vaccine-outcomes ul');
-            let stats = [];
+            let stats = {unvaxed: { category: 'Unvaccinated'}, vaxed: {category: 'Vaccinated'}, total: {category: 'Total'}};
             for (let match of ['cases', 'hospitalized', 'deaths']) {
                 let row = tables[0]?.childNodes.filter(e => e.innerText.match(match));
                 let [_, unvaxed, total] = row[0]?.innerText.match(/\(([\d,]*)\/([\d,]*)\)/);
                 // remove commas from the numbers
                 unvaxed = unvaxed.split(',').join('');
                 total = total.split(',').join('');
-                stats.push({
-                    category: match.toString(),
-                    unvaxed: Number(unvaxed.split(',').join('')), 
-                    vaxed: total-unvaxed, 
-                    total: Number(total)
-                })
+                stats['unvaxed'][match] = Number(unvaxed);
+                stats['vaxed'][match] = total-unvaxed,
+                stats['total'][match] = Number(total);
             }
-            let deets = JSON.stringify(stats);
+            console.log(stats);
+            let deets = JSON.stringify(Object.values(stats));
             fs.writeFileSync(`severeVaccine/20${myDate}.json`, deets);
         }
     }

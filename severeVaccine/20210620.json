@@ -1,1 +1,1 @@
-[{"category":"cases","unvaxed":122451,"vaxed":5720,"total":128171},{"category":"hospitalized","unvaxed":5153,"vaxed":407,"total":5560},{"category":"deaths","unvaxed":665,"vaxed":96,"total":761}]
+[{"category":"Unvaccinated","cases":122451,"hospitalized":5153,"deaths":665},{"category":"Vaccinated","cases":5720,"hospitalized":407,"deaths":96},{"category":"Total","cases":128171,"hospitalized":5560,"deaths":761}]

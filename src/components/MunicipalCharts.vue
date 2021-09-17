@@ -3,7 +3,7 @@
         :all-data="allData"
         keyed-by="name"
         :modes="modes"
-        init-category=14
+        :init-category="14"
         init-mode="active"
     />
 </template>

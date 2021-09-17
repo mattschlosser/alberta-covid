@@ -5,7 +5,7 @@
         :modes="modes"
         :friendlyModes="friendlyModes"
         :init-category="0"
-        init-mode="unvaxed"
+        init-mode="cases"
         
     >
     </quick-chart>
@@ -33,9 +33,9 @@ export default {
         return {
             allData: [],
             modes: [
-                "vaxed",
-                "unvaxed",
-                "total"
+                "cases",
+                "hospitalized",
+                "deaths"
             ],
             friendlyModes: {
                 "vaxed": "At Least One Dose +2 weeks",
