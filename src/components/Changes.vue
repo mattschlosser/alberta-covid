@@ -28,15 +28,15 @@ export default {
                     value: "category"
                 }, 
                 {
-                    text: "Cases", 
+                    text: "New Cases", 
                     value: 'cases',
                 }, 
                 {
-                    text: "Hospitialized", 
+                    text: "New Hospitialized", 
                     value: 'hospitalized'
                 }, 
                 {
-                    text: "Deaths", 
+                    text: "New Deaths", 
                     value: "deaths"
                 }
             ],
