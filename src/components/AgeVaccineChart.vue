@@ -11,24 +11,28 @@
     </quick-chart>
 </template>
 <script>
-import allData from '../../ageVaccinations/all.json'
-for (let category of allData) {
-    // if (!i) continue;
-    for (let i in category.data) {
-        if (!i) continue;
-        category.data[i].new_dose_1 = category.data[i].dose_1 - category.data[i-1]?.dose_1
-        category.data[i].new_dose_2 = category.data[i].dose_2 - category.data[i-1]?.dose_2
-        category.data[i].new_total = category.data[i].total - category.data[i-1]?.total
-    }
-}
 import QuickChart from './Chart/QuickChart.vue'
 export default {
     components: {
         QuickChart
     }, 
+    async created() {
+        let allData = await import('../../ageVaccinations/all.json').then(r => r.default);
+
+        for (let category of allData) {
+            // if (!i) continue;
+            for (let i in category.data) {
+                if (!i) continue;
+                category.data[i].new_dose_1 = category.data[i].dose_1 - category.data[i-1]?.dose_1
+                category.data[i].new_dose_2 = category.data[i].dose_2 - category.data[i-1]?.dose_2
+                category.data[i].new_total = category.data[i].total - category.data[i-1]?.total
+            }
+        }
+        this.allData = allData;
+    }, 
     data() {
         return {
-            allData,
+            allData: [],
             modes: [
                 "dose_1",
                 {

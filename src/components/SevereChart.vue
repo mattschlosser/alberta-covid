@@ -14,24 +14,27 @@
     </quick-chart>
 </template>
 <script>
-import allData from '../../severe/all.json'
 import QuickChart from './Chart/QuickChart.vue'
 export default {
     components: {
         QuickChart
     }, 
+    async created() {
+        let allData = await import('../../severe/all.json').then(r =>r.default);
+        this.allData = allData.map(f => {
+            f.data = f.data.map((e,i,a) => {
+                if (!i) return e;
+                e.new_hospitalized = e.hospitalized - a[i-1].hospitalized;
+                e.new_icu = e.icu - a[i-1].icu;
+                e.new_deaths = e.deaths - a[i-1].deaths;
+                return e;
+            })
+            return f;
+        })
+    }, 
     data() {
         return {
-            allData: allData.map(f => {
-                f.data = f.data.map((e,i,a) => {
-                    if (!i) return e;
-                    e.new_hospitalized = e.hospitalized - a[i-1].hospitalized;
-                    e.new_icu = e.icu - a[i-1].icu;
-                    e.new_deaths = e.deaths - a[i-1].deaths;
-                    return e;
-                })
-                return f;
-            }),
+            allData: [],
             modes: [
                 "hospitalized",
                 {

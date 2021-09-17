@@ -8,16 +8,19 @@
     />
 </template>
 <script>
-import allData from '../../municipal/all.json'
-allData.sort((a,b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)
 import QuickChart from './Chart/QuickChart.vue'
 export default {
     components: {
         QuickChart
     }, 
+    async created() {
+        let allData = await import('../../municipal/all.json').then(r => r.default);
+        allData.sort((a,b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)
+        this.allData = allData;
+    }, 
     data() {
         return {
-            allData,
+            allData: [],
             modes: [
                 "cases",
                 "active",

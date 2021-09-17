@@ -11,7 +11,7 @@
       <v-navigation-drawer app v-model="drawer">
         <v-list>
           <v-list-item-group v-model="tab">
-            <v-list-item link v-for="item in items" :key="item">
+            <v-list-item link v-for="item in items" :key="item.name">
               <v-icon class="mr-2">{{item.icon}}</v-icon>{{item.name}}
             </v-list-item>
           </v-list-item-group>
@@ -134,8 +134,11 @@
               <template v-if="item == 'Age Chart'">
                 <age-charts/>
               </template>
-              <template v-if="item == 'Severe Outcomes'">
+              <template v-if="item == 'Severe Outcomes (By Age)'">
                 <severe-chart/>
+              </template>
+              <template v-if="item == 'Severe Outcomes (By Vax. Status)'">
+                <severe-vax-chart />
               </template>
               <template v-if="item == 'Vaccine Rollout'">
                 <vaccine-data/>
@@ -162,11 +165,11 @@
 <script>
 import LineChart from "./Chart/LineChart.vue";
 import QuickStats from "./QuickStats.vue";
-import data from "../../local/all2.json";
 import CustomTable from "./CustomTable.vue";
 import AgeCharts from './AgeCharts.vue';
 import DailyData from './DailyData.vue';
 import SevereChart from './SevereChart.vue';
+import SevereVaxChart from './SevereVaxChart.vue';
 import MunicipalChart from './MunicipalCharts.vue';
 import Changes from './Changes.vue';
 import VariantData from './VariantData.vue';
@@ -206,7 +209,8 @@ export default {
     VaccineData, 
     AgeVaccineChart,
     LocalVaccine,
-    Changes
+    Changes,
+    SevereVaxChart
   },
   data() {
     return {
@@ -249,7 +253,11 @@ export default {
           icon: 'show_chart'
         }, 
         { 
-          name: "Severe Outcomes", 
+          name: "Severe Outcomes (By Age)", 
+          icon: 'show_chart'
+        }, 
+        { 
+          name: "Severe Outcomes (By Vax. Status)", 
           icon: 'show_chart'
         }, 
         { 
@@ -261,7 +269,7 @@ export default {
           icon: 'table_chart'
         }
       ], 
-      allData: data,
+      allData: [],
       modes: ["cases", "active", "recovered", "deaths"],
       selectedMode: "cases",
       selected: ["Edmonton - Bonnie Doon (& Nearby Neighbourhoods)"],
@@ -303,9 +311,9 @@ export default {
       return names;
     },
     mergedData() {
-      return this.selected
+      return this.allData.length ? this.selected
         .map((selected) => this.allData.find((e) => e.name === selected))
-        .reduce((a, e) => merger(a, e.data), []);
+        .reduce((a, e) => merger(a, e.data), []) : null;
     },
     selectedData() {
       return this.mergedData?.map((data) => ({
@@ -373,14 +381,14 @@ export default {
     stats() {
       return {
         regions: this.selected,
-        ...this.mergedData.slice(-1)[0]
+        ...this.mergedData?.slice(-1)[0]
       }
     },
     lastActive() {
       return this.stats.x;
     }, 
     lastLastActive() {
-      return this.mergedData.slice(-2)[0].x;
+      return this.mergedData?.slice(-2)[0].x;
     }, 
     chartData() {
       return {
@@ -395,6 +403,10 @@ export default {
       };
     },
   },
+  async created() {
+    let data = await import('../../local/all2.json').then(r => r.default);
+    this.allData = data;
+  }, 
   methods: {
     toggleDrawer() {
       console.log("CLICKED");

@@ -31,7 +31,6 @@ export default {
             }).filter(e => e!==null);
             return x;
         });
-        console.log(this.allData);
     }, 
     data() {
         return {

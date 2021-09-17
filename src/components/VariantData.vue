@@ -8,16 +8,19 @@
     />
 </template>
 <script>
-import variantData from '../../data/dailyVariantCounts.json'
-variantData[0].data.sort((a,b) => a.x < b.x ? -1 : 1)
 import QuickChart from './Chart/QuickChart.vue'
 export default {
     components: {
         QuickChart
     }, 
+    async created() {
+        let variantData = await import('../../data/dailyVariantCounts.json').then(r => r.default);
+        variantData[0].data.sort((a,b) => a.x < b.x ? -1 : 1)
+        this.variantData = variantData;
+    }, 
     data() {
         return {
-            variantData,
+            variantData: [],
             modes: [
                 "B.1.1.7",
                 "B.1.351",
