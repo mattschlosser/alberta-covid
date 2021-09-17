@@ -30,6 +30,7 @@ export default {
       });
       return f;
     })
+    this.myData = myData;
   },
   data() {
  return {
