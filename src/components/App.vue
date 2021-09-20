@@ -327,10 +327,12 @@ export default {
         let diffs = x.data.slice(-2);
         let yesterday = diffs[0];
         let today = diffs[1] || yesterday;
+        console.log(today);
         x.active = today.active;
         x.cases = today.cases;
         x.recovered = today.recovered;
         x.deaths = today.deaths;
+        x.capita = today.capita;
         x.newActive = today.active - yesterday.active;
         x.newRecovered = today.recovered - yesterday.recovered;
         x.newDeaths = today.deaths - yesterday.deaths;

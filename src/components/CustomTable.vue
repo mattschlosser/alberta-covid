@@ -15,6 +15,7 @@ export default {
                 {text: 'Total Cases', value: 'cases'}, 
                 {text: 'New Cases',   value: 'newCases'}, 
                 {text: 'Active',      value: 'active'}, 
+                {text: 'Active cases per 100k', value: 'capita'},
                 {text: 'Trend',      value: 'newActive'}, 
                 {text: 'Recovered',   value: 'recovered'}, 
                 {text: 'New Recovieres',   value: 'newRecovered'}, 

@@ -35,7 +35,7 @@ function shape_dir(dirname, nameKey, keysToCopy, reducer = null) {
     fs.writeFileSync(path.join(__dirname, dirname, "all.json"), out)
 }
 // local
-shape_dir("local", "name", ["active", "cases", "recovered", "deaths"]);
+shape_dir("local", "name", ["active", "cases", "recovered", "deaths", "capita"]);
 
 // age
 shape_dir("age", "category", ["male_cases", "male_percent", "female_cases", "female_percent", "unknown_cases", "unknown_percent", "all_cases", "percent"])

@@ -50,8 +50,12 @@ for (let filename of files) {
                                 }
                             } else if (each instanceof TextNode) {
                                 let n = Number(each.rawText.split(' ')[1]);
-                                if (each.rawText.match(/ase/) && !obj.cases /* only match the first - assuming there has been at least case in every region */) {
-                                    obj.cases = n
+                                if (each.rawText.match(/ase/)) {
+                                    if (!obj.cases /* only match the first - assuming there has been at least case in every region */) {
+                                        obj.cases = n
+                                    } else {
+                                        obj.capita = n
+                                    }
                                 } else if (each.rawText.match(/Active/)) {
                                     obj.active = n
                                 } else if (each.rawText.match(/Recovered/)) {
