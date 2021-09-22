@@ -31,18 +31,32 @@ for (let filename of files) {
                         childNode.childNodes.filter((e,i) => !(e instanceof TextNode)).forEach((node, j) => {
                         // rows = node.childNodes.filter(e => !(e instanceof TextNode));
                             let text = (node.childNodes[0].rawText.split(',').join(''));
+                            console.log(text);
                             rags[i][j] = j ? Number(text) : String(text.split('\n').join('').split('\r').join('')).trim();       
                         });
-
-                        stats.push({
-                            age_group: rags[i][0], 
-                            population: rags[i][1], 
-                            dose_1: rags[i][2], 
-                            dose_1_pct: rags[i][3], 
-                            dose_2: rags[i][4], 
-                            dose_2_pct: rags[i][5], 
-                            total: rags[i][6]
-                        })
+                        console.log(rags);
+                        if (rags[i].length > 7) {
+                            stats.push({
+                                age_group: rags[i][0], 
+                                population: rags[i][1], 
+                                dose_1: rags[i][2], 
+                                dose_1_pct: rags[i][3], 
+                                dose_2: rags[i][4], 
+                                dose_2_pct: rags[i][5], 
+                                dose_3: rags[i][6],
+                                total: rags[i][7]
+                            })
+                        } else {
+                            stats.push({
+                                age_group: rags[i][0], 
+                                population: rags[i][1], 
+                                dose_1: rags[i][2], 
+                                dose_1_pct: rags[i][3], 
+                                dose_2: rags[i][4], 
+                                dose_2_pct: rags[i][5], 
+                                total: rags[i][6]
+                            })
+                        }
                     });
                     // console.log(stats)
                 }

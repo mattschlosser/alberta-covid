@@ -25,6 +25,7 @@ export default {
                 if (!i) continue;
                 category.data[i].new_dose_1 = category.data[i].dose_1 - category.data[i-1]?.dose_1
                 category.data[i].new_dose_2 = category.data[i].dose_2 - category.data[i-1]?.dose_2
+                category.data[i].new_dose_3 = category.data[i].dose_3 - category.data[i-1]?.dose_3
                 category.data[i].new_total = category.data[i].total - category.data[i-1]?.total
             }
         }
@@ -48,6 +49,12 @@ export default {
                     backgroundColor: "#00ff99"
                 },
                 "dose_2_pct",
+                "dose_3",
+                {
+                    name: "new_dose_3", 
+                    type: "bar",
+                    backgroundColor: "#ffff99"
+                },
                 "total",
                 {
                     name: "new_total", 
@@ -62,6 +69,8 @@ export default {
                 "dose_2": "Cummulative Dose 2",
                 "new_dose_2": "Dose 2 Per Day",
                 "dose_2_pct": "% of age category with dose 2",
+                "dose_3": "Cummulative Dose 3",
+                "new_dose_3": "Dose 3 Per Day",
                 "total": "Total",
                 "new_total": "Per Day"
             }

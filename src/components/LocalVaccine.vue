@@ -4,8 +4,8 @@
         :all-data="allData"
         keyed-by="place"
         :modes="modes"
-        init-category=1
-        init-mode="75+"
+        :init-category="1"
+        init-mode="All ages"
     />
 </template>
 <script>

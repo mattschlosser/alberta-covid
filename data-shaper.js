@@ -47,7 +47,7 @@ shape_dir("severe", "category", ["all_cases", "hospitalized", "hospitalized_pct"
 shape_dir("municipal", "name", ["active", "cases", "recovered", "deaths"]);
 
 // ageVaccinatoins 
-shape_dir("ageVaccinations", "age_group", ["population", "dose_1", "dose_1_pct", "dose_2", "dose_2_pct", "total" ])
+shape_dir("ageVaccinations", "age_group", ["population", "dose_1", "dose_1_pct", "dose_2", "dose_2_pct", "dose_3", "total" ])
 
 shape_dir("localVaccine", "place", ["75+", "60-74", "40-59","20-39", "12-19", "12+", "All ages"], 'count');
 shape_dir("severeVaccine", "category", ["cases", "hospitalized", "deaths"]);
