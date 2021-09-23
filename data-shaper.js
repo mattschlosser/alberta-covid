@@ -51,3 +51,4 @@ shape_dir("ageVaccinations", "age_group", ["population", "dose_1", "dose_1_pct",
 
 shape_dir("localVaccine", "place", ["75+", "60-74", "40-59","20-39", "12-19", "12+", "All ages"], 'count');
 shape_dir("severeVaccine", "category", ["cases", "hospitalized", "deaths"]);
+shape_dir("vaccineReactions", "category", ["count"]);

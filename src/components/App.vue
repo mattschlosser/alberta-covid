@@ -146,6 +146,9 @@
               <template v-if="item == 'Vaccine Rollout (By Age)'">
                 <age-vaccine-chart/>
               </template>
+              <template v-if="item == 'Vaccine Reactions'">
+                <vaccine-reactions/>
+              </template>
               <template v-if="item == 'Local Vaccine'">
                 <LocalVaccine />
               </template>
@@ -176,6 +179,7 @@ import VariantData from './VariantData.vue';
 import LocalVaccine from './LocalVaccine.vue';
 import VariantActiveData from './VariantActiveData.vue';
 import VaccineData from './VaccineData.vue';
+import VaccineReactions from './VaccineReactions.vue';
 import AgeVaccineChart from './AgeVaccineChart.vue';
 function merger(rest, first) {
   for (let one of first) {
@@ -210,7 +214,8 @@ export default {
     AgeVaccineChart,
     LocalVaccine,
     Changes,
-    SevereVaxChart
+    SevereVaxChart,
+    VaccineReactions
   },
   data() {
     return {
@@ -226,6 +231,10 @@ export default {
       }, 
       {
         name: "Vaccine Rollout (By Age)", 
+        icon: 'show_chart', 
+      }, 
+      {
+        name: "Vaccine Reactions", 
         icon: 'show_chart', 
       }, 
         { 
