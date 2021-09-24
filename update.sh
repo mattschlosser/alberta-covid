@@ -23,6 +23,9 @@ node municipalProcessor.js && \
 node ageProcessor.js && \
 node severeProcessor.js && \
 node ageVaccineProcessor.js && \
+node localVaccineProcessor.js && \
+node severeVaccineProcessor.js && \
+node diffProcessor.js && \
 node data-shaper.js && \
 node data-shaper2.js && \
 node allProcessor.js
