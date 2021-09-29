@@ -1,18 +1,71 @@
 <template>
     <div>
-            
-        <v-data-table :items="severeChanges" :items-per-page="-1" :headers="headers">
-        </v-data-table>
-        <v-data-table :items="ohNoChanges" :items-per-page="-1" :headers="ohhoHeaders">
-        </v-data-table>
-        <v-data-table :items="vaccineReactionChanges" :items-per-page="-1" :headers="vaccineReactionHeaders">
-        </v-data-table>
+        <v-row>
+            <v-col sm="12" md="6">
+                <v-card>
+                    <v-card-title>New Severe Outcomes</v-card-title>
+                    <v-card-text>
+                        <v-data-table :items="severeChanges" :items-per-page="-1" :headers="headers">
+                        </v-data-table>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col sm="12" md="6">
+                <v-card>
+                    <v-card-title>
+                        By Vaccination Status
+                    </v-card-title>
+                    <v-card-text>
+                        <v-data-table :items="ohNoChanges" :items-per-page="-1" :headers="ohhoHeaders">
+                        </v-data-table>
+                        <p><b>Definitions:</b></p>
+                        <p><b>Vaccinated</b> individuals are those who have at least one dose administered more than two seeks ago.</p>
+                        <p><b>Unvaccinated</b> individuals are those who have no dose, or had one dose administerd less than two weeks ago</p>
+                        <p><b>How to interpret this data:</b></p>
+                        <p><b>Unvaccinated</b> individuals make up {{unvaccinatedPercent}} of the population, but are  {{unvaccinatedRiskFactor}} times more likely to get covid.</p>
+                        <p><b>Vaccinated</b> individuals make up {{vaccinatedPercent}} of the population, but are  {{1/vaccinatedRiskFactor}} times less likely to get covid</p>
+                        <p>Based on today's data only, the vaccines are generally {{vaccineEffectiveness}}% effective against infection. 
+                            meaning {{vaccineEffectiveness}}% of the time when you are exposted to the virus, 
+                            you do not become infected, because your immune system is ready and able to quickly respond to and destory the virus
+                            before it has a chance to have any effect
+                        </p>
+                        
+                             
+                    </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col sm="12" md="6">
+                <v-card>
+                    <v-card-title>
+                        New Deaths by Region
+                    </v-card-title>
+                    <v-card-text>
+                        <v-data-table :items="newDeathRegions" :items-per-page="-1" :headers="newDeathRegionHeaders">
+                        </v-data-table>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+            <v-col sm="12" md="6">
+                <v-card>
+                    <v-card-title>
+                        New AEFIs
+                    </v-card-title>
+                    <v-card-text>
+                        <v-data-table :items="vaccineReactionChanges" :items-per-page="-1" :headers="vaccineReactionHeaders">
+                        </v-data-table>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+        </v-row>
     </div>
+
 </template>
 
 <script>;
+import VaccineData from './VaccineData.vue';
 // import QuickChart from "./Chart/QuickChart.vue";
 export default {
+  components: { VaccineData },
     mounted() {
 
     }, 
@@ -21,13 +74,31 @@ export default {
         this.ohno = await import('../../severeVaccine/all.json').then(r => r.default);
         this.vaccines = await import('../../data/dailyVaccineCounts.json').then(r => r.default);
         this.vaccineReaction = await import('../../vaccineReactions/all.json').then(r => r.default);
+        this.local = await import('../../local/all.json').then(r => r.default);
+        this.stats = await import('../../data/dailyCaseCounts.json').then(r => r.default)
     },
     data() {
         return {
             severe: [], 
             ohno: [],
             vaccineReaction: [],
+            local: [], 
             vaccines: [],
+            stats: [], 
+            newDeathRegionHeaders: [
+                {
+                    text: "Region", 
+                    value: 'region'
+                }, 
+                {
+                    text: "New Deaths", 
+                    value: "new_deaths"
+                }, 
+                {
+                    text: "Total Deaths", 
+                    value: "deaths"
+                }
+            ], 
             ohhoHeaders: [
                 {
                     text: "Outcome",
@@ -36,6 +107,10 @@ export default {
                 {
                     text: "New Cases", 
                     value: 'cases',
+                }, 
+                {
+                    text: 'Proportion Adjusted for Population', 
+                    value: "caseRiskFactor"
                 }, 
                 {
                     text: "New Hospitialized", 
@@ -77,6 +152,18 @@ export default {
         }
     },
     computed: {
+        vaccinatedPercent() {
+            let category = this.stats.find(e => e.name == "Alberta");
+            if (category) {
+                let dataLength = category.data.length;
+                return category.data[dataLength-1]['12+ population who received at least one dose'];
+            } else {
+                return 0;
+            }
+        }, 
+        unvaccinatedPercent() {
+            return 100 - this.vaccinatedPercent
+        },
         severeChanges() {
             return this.severe.map(f => {
                 let dataLength = f.data.length;
@@ -88,6 +175,16 @@ export default {
                 }
             })
         }, 
+        newDeathRegions() {
+            return this.local.map(f => {
+                let dataLength = f.data.length;
+                return {    
+                    region: f.name,
+                    new_deaths: f.data[dataLength - 1].deaths - f.data[dataLength - 2].deaths, 
+                    deaths: f.data[dataLength - 1].deaths
+                }
+            }).filter(e => e.new_deaths > 0)
+        }, 
         ohNoChanges() {
             return this.ohno.map(f => {
                 let dataLength = f.data.length;
@@ -97,8 +194,30 @@ export default {
                     hospitalized: f.data[dataLength - 1].hospitalized - f.data[dataLength - 2].hospitalized,
                     deaths: f.data[dataLength - 1].deaths - f.data[dataLength - 2].deaths
                 }
+            }).map((e, i,  a) => {
+                let total = a.find(e => e.category === 'Total') 
+                let unvax = a.find(e => e.category === 'Unvaccinated');
+                let vax = a.find(e => e.category === 'Vaccinated');
+                if (e.category == "Unvaccinated") {
+                    e.caseRiskFactor = e.cases/vax.cases * this.vaccinatedPercent / this.unvaccinatedPercent;
+                    e.hospRiskFactor = e.hospitalized/total.hospitalized / 0.19
+                } else if (e.category == "Vaccinated") {
+                    e.caseRiskFactor = e.cases/unvax.cases * this.unvaccinatedPercent / this.vaccinatedPercent;
+                } else {
+                    e.caseRiskFactor = 'n/a'
+                }
+                return e
             })
         },
+        unvaccinatedRiskFactor() {
+            return this.ohNoChanges.find(e => e.category == "Unvaccinated")?.caseRiskFactor ?? 0
+        }, 
+        vaccinatedRiskFactor() {
+            return this.ohNoChanges.find(e => e.category == "Vaccinated")?.caseRiskFactor ?? 0
+        }, 
+        vaccineEffectiveness() {
+            return Math.round((100 - 1/this.unvaccinatedRiskFactor * 100) * 100) /100;
+        }, 
         vaccineReactionChanges() {
             let total = 0;
             let totalCount = 0;

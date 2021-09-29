@@ -24,7 +24,8 @@ for (let filename of files) {
             let ddd = {};
             for (let tile of tiles) {
                 let name = tile.querySelector('.info-tile-small-text')?.text
-                ddd[name] = toNumber(tile.querySelector('.info-tile-large-text')?.text.split(',').join(''))
+                ddd[name] = toNumber(tile.querySelector('.info-tile-large-text')?.text.split(/[^\d.]/).join(''))
+                console.log(name, ddd[name]);
             }
             if (!isEmpty(ddd)) {
                 ddd.x = myDate // `${filename.slice(0, 4)}-${filename.slice(4, 6)}-${filename.slice(6,8)}`;
