@@ -8,7 +8,8 @@ module.exports = {
     }, 
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: 'index.js',
+        filename: '[name].[contenthash].js',
+        clean: true
     },
     module: {
         rules: [{
