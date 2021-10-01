@@ -1,4 +1,5 @@
 let HtmlWebpackPlugin = require("html-webpack-plugin");
+let CopyWebpackPlugin = require("copy-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const path = require("path");
 module.exports = {
@@ -42,6 +43,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new CopyWebpackPlugin({
+      patterns: ["public/CNAME"],
+    }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
