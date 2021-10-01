@@ -20,7 +20,6 @@ export default {
         let allData = await import('../../ageVaccinations/all.json').then(r => r.default);
 
         for (let category of allData) {
-            // if (!i) continue;
             for (let i in category.data) {
                 if (!i) continue;
                 category.data[i].new_dose_1 = category.data[i].dose_1 - category.data[i-1]?.dose_1

@@ -41,9 +41,6 @@ export default {
                 "vaxed": "At Least One Dose +2 weeks",
                 "unvaxed": "No Dose or < 2 weeks",
                 "total": "Total",
-                // "new_hospitalized": "New Hospitalized",
-                // "deaths": "Total Deaths",
-                // "new_deaths": "New Deaths",
             }
         }
     }

@@ -336,7 +336,6 @@ export default {
         let diffs = x.data.slice(-2);
         let yesterday = diffs[0];
         let today = diffs[1] || yesterday;
-        console.log(today);
         x.active = today.active;
         x.cases = today.cases;
         x.recovered = today.recovered;
@@ -420,7 +419,6 @@ export default {
   }, 
   methods: {
     toggleDrawer() {
-      console.log("CLICKED");
       this.drawer = !this.drawer;
     },
     selectAll() {

@@ -41,9 +41,6 @@ export default {
             friendlyModes: {
                 "count": "Count",
                 "new": "New"
-                // "new_hospitalized": "New Hospitalized",
-                // "deaths": "Total Deaths",
-                // "new_deaths": "New Deaths",
             }
         }
     }
