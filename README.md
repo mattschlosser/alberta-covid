@@ -202,6 +202,53 @@ The [`all.json` file in the severe folder](severe/all.json) is an array of objec
 }
 ```
 
+### Severe Outcomes (BY Vaccination Status)
+[severeVaccine/all.json](severeVaccine)
+Contains **cumulative** `cases`, `hospitalized`, and `deaths` numbers as they were reported for each day `x` for each of `Unvaccinated`, `Vaccinated`, and `Total` categories. 
+
+First date reported: `2021-06-18`
+
+
+```json
+[
+  {
+    "category": "Unvaccianted", 
+    "data": [
+      {
+        "x": "2021-06-02",
+        "cases": 120224, 
+        "hospitalized" : 4974, 
+        "deaths": 624 
+      }, 
+      // ... 
+    ]
+  }, 
+  {
+    "category": "Vaccinated", 
+    "data": [
+      { 
+        "x": "2021-06-02", 
+        "cases": 5025, 
+        "hospitalized": 350, 
+        "deaths": 82
+     }, 
+    // ... 
+    ],
+  }, 
+  {
+    "category": "Total", 
+    "data": [
+      { 
+        "x": "2021-06-02", 
+        "cases": 125249, 
+        "hospitalized": 5324, 
+        "deaths": 706, 
+      }
+    ]
+  }
+]
+```
+
 ### Daily Case Counts
 [data/dailyCaseCounts.json](data/dailyCaseCounts.json)
 
@@ -224,6 +271,7 @@ tiles may change from day to day.
   ]
 }]
 ```
+
 
 ### By Types of Varaint (Total Only)
 [data/dailyVariantCounts.json](data/dailyVariantCounts.json)
@@ -316,6 +364,8 @@ wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm
 node localProcessor.js
 node ageProcessor.js
 node severeProcessor.js
+node severeVaccine.js
+node vaccineReactions.js
 node municipalProcessor.js
 ```
 Each of these produces a 2020MMDD.json in the `local`, `age`, `severe` and `municipal` folders respectively,  where MM is the two digit month, and DD is the two digit date. Data is pulled from each pae in the `pages/` directory. Dates that already have been processed are skipped.  The data in each dated file is cureent up to the end of it's date. 
