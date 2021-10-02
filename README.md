@@ -101,6 +101,36 @@ object representing an age category. Each category has a format like:
 }
 ```
 
+### Severe Outcomes (By Vaccination Status)
+[severeVaccine/YYYYMMDD.json](severeVaccine)
+Contains **cumulative** `cases`, `hospitalized`, and `deaths` numbers as they were reported for each of `Unvaccinated`, `Vaccinated`, and `Total` categories. 
+
+First date reported: `2021-06-02`
+
+
+```json
+[
+  {
+    "category": "Unvaccinated",
+    "cases": 120224,
+    "hospitalized": 4974,
+    "deaths": 624
+  },
+  {
+    "category": "Vaccinated",
+    "cases": 5025,
+    "hospitalized": 350,
+    "deaths": 82
+  },
+  {
+    "category": "Total",
+    "cases": 125249,
+    "hospitalized": 5324,
+    "deaths":706
+  }
+]
+```
+
 ## Aggregate Data
 Each `all.json` file in `local`, `age`, and `severe` directories, as well as each of the files in the [data/](data/) directory, is formated as a colleciton of time series data for each category/region.
 
@@ -202,7 +232,7 @@ The [`all.json` file in the severe folder](severe/all.json) is an array of objec
 }
 ```
 
-### Severe Outcomes (BY Vaccination Status)
+### Severe Outcomes (By Vaccination Status)
 [severeVaccine/all.json](severeVaccine)
 Contains **cumulative** `cases`, `hospitalized`, and `deaths` numbers as they were reported for each day `x` for each of `Unvaccinated`, `Vaccinated`, and `Total` categories. 
 
