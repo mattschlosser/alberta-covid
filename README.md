@@ -206,7 +206,7 @@ The [`all.json` file in the severe folder](severe/all.json) is an array of objec
 [severeVaccine/all.json](severeVaccine)
 Contains **cumulative** `cases`, `hospitalized`, and `deaths` numbers as they were reported for each day `x` for each of `Unvaccinated`, `Vaccinated`, and `Total` categories. 
 
-First date reported: `2021-06-18`
+First date reported: `2021-06-02`
 
 
 ```json
@@ -220,7 +220,6 @@ First date reported: `2021-06-18`
         "hospitalized" : 4974, 
         "deaths": 624 
       }, 
-      // ... 
     ]
   }, 
   {
@@ -232,7 +231,6 @@ First date reported: `2021-06-18`
         "hospitalized": 350, 
         "deaths": 82
      }, 
-    // ... 
     ],
   }, 
   {
