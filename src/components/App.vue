@@ -279,7 +279,7 @@ export default {
         }
       ], 
       allData: [],
-      modes: ["cases", "active", "recovered", "deaths"],
+      modes: ["cases", "active", "capita", "recovered", "deaths"],
       selectedMode: "cases",
       selected: ["Edmonton - Bonnie Doon (& Nearby Neighbourhoods)"],
     };
