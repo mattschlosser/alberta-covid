@@ -8,6 +8,7 @@ let all = [];
 let done = {};
 for (let filename of files) {
   if (filename.match(/\.htm/)) {
+    console.log(filename);
     let data = fs.readFileSync(path.join(__dirname, "pages", filename));
     let file = parse(data);
     if (filename > "20200615") {

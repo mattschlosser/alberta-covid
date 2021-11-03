@@ -18,7 +18,7 @@ export default {
         let allData = await  import("../../data/dailyCaseCounts.json").then(r=>r.default);
         
         /* eslint-disable-next-line */
-        let allAllData = await import("../../data/allCaseCounts.json").then(r=>r.default);
+        let allAllData = await import("../../data/allCaseCounts.json").then(r=>r.default);     
         let newCases = allAllData[0].x.reduce((a,e,i) => {
             if (!i) {
                 a[e] = 0;

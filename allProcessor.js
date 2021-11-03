@@ -28,6 +28,7 @@ for (let script of scripts) {
       let deets = JSON.parse(node.rawText).x.data;
       console.dir(deets, { depth: 999 });
       fs.writeFileSync("data/allCaseCounts.json", JSON.stringify(deets));
+      break;
     }
   }
 }
