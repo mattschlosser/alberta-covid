@@ -15,11 +15,11 @@ echo "Download complete"
 # mv *.aspx summary/$(date '+%Y%m%d%H%M%S').aspx
 
 # Extract Data
-# node vaccineProcessor.js && \
 node localProcessor.js && \
 node topProcessor.js && \
 node variantProcessor.js && \
 node municipalProcessor.js && \
+node vaccineProcessor.js && \
 node ageProcessor.js && \
 node severeProcessor.js && \
 node ageVaccineProcessor.js && \

@@ -19,19 +19,23 @@ for (let filename of files) {
     let file = parse(data);
     c = file.querySelectorAll('a[href="/covid19-vaccine.aspx"]');
     for (let i of [...c]) {
-      let txt = i.parentNode.text;
-      let doses = txt.match(/\d{1,3},\d{1,3}(,\d{3})?/);
-      if (doses) {
-        date = txt.match(/ (\w*?) (\d{1,2}).?$/);
-        realDate = make_date_from_regex_match(date);
+      try {
+        let txt = i.parentNode.text;
+        let doses = txt.match(/\d{1,3},\d{1,3}(,\d{3})?/);
+        if (doses) {
+          date = txt.match(/ (\w*?) (\d{1,2}).?$/);
+          realDate = make_date_from_regex_match(date);
 
-        if (!processed[realDate]) {
-          keyedFinal.Vaccines.data.push({
-            x: realDate,
-            Doses: Number(doses[0].split(",").join("")),
-          });
-          processed[realDate] = true;
+          if (!processed[realDate]) {
+            keyedFinal.Vaccines.data.push({
+              x: realDate,
+              Doses: Number(doses[0].split(",").join("")),
+            });
+            processed[realDate] = true;
+          }
         }
+      } catch (e) {
+        //
       }
     }
   }
