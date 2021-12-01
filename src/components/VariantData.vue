@@ -3,6 +3,7 @@
         :all-data="variantData"
         keyed-by="name"
         :modes="modes"
+        :friendly-modes="friendlyModes"
         init-category=0
         init-mode="B.1.1.7"
     />
@@ -26,8 +27,17 @@ export default {
                 "B.1.351",
                 "B.1.617",
                 "P.1",
+                "Kappa",
                 "total"
-            ]
+            ], 
+            friendlyModes: {
+                "B.1.1.7": "B.1.1.7 (Alpha)",
+                "B.1.351": "B.1.351 (Beta)",
+                "B.1.617": "B.1.617 (Delta)",
+                "P.1": "P.1 (Gamma)",
+                "Kappa": "B.1.617.1 (Kappa)",
+                "total": "total"
+            }
         }
     }
 }
