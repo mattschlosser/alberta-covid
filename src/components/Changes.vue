@@ -19,9 +19,8 @@
                             <p><b>Vaccinated</b> individuals make up {{vaccinatedPercent}}% of the population, so they are {{unvaccinatedRisk.timesTheVaccine}} times more common than their unvaccinated counterparts, 
                             but have {{unvaccinatedRisk.timesTheCases}} less times the cases as compared to their unvaccinated individuals, mean they are   {{unvaccinatedRisk.factor}} times less likely to test postiive for the virus</p>
                             <p>Based on today's data only, the vaccines are generally {{vaccineEffectiveness}}% effective against infection. 
-                                meaning {{vaccineEffectiveness}}% of the time when you are exposted to the virus, 
-                                you do not become infected, because your immune system is ready and able to quickly respond to and destory the virus
-                                before it has a chance to have any effect
+                                meaning {{vaccineEffectiveness}}% of the time when a vaccinated individual is exposted to the virus, 
+                                they do not become infected. 
                             </p>
                         </div>
                         
