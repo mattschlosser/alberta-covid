@@ -146,6 +146,17 @@ for (let filename of files) {
                 "P.1": +g(nums[3].text),
                 total: +g(nums[4].text),
               }
+            : niceDate < "2021-12-01"
+            ? {
+                x: niceDate,
+                "B.1.1.7": +g(nums[0].text),
+                "B.1.351": +g(nums[1].text),
+                "B.1.617": +g(nums[2].text),
+                "P.1": +g(nums[3].text),
+                Kappa: +g(nums[4].text),
+                Omicron: +g(nums[5].text),
+                total: +g(nums[6].text),
+              }
             : {
                 x: niceDate,
                 "B.1.1.7": +g(nums[0].text),

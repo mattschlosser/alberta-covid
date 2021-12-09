@@ -28,6 +28,7 @@ export default {
                 "B.1.617",
                 "P.1",
                 "Kappa",
+                "Omicron",
                 "total"
             ], 
             friendlyModes: {
@@ -36,6 +37,7 @@ export default {
                 "B.1.617": "B.1.617 (Delta)",
                 "P.1": "P.1 (Gamma)",
                 "Kappa": "B.1.617.1 (Kappa)",
+                "Omicron": "B.1.1.529 (Omicron)",
                 "total": "total"
             }
         }
