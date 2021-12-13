@@ -7,13 +7,13 @@ node scraper.js
 echo "Download complete"
 
 # Download Dashboard
-# curl https://web.archive.org/save/https://www.alberta.ca/stats/covid-19-alberta-statistics.htm > /dev/null 2>&1
-# wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm && \
-#mv *.htm pages/$(date '+%Y%m%d%H%M%S').htm
+curl https://web.archive.org/save/https://www.alberta.ca/stats/covid-19-alberta-statistics.htm > /dev/null 2>&1
+wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm && \
+mv *.htm pages/$(date '+%Y%m%d%H%M%S').htm
 
 # Download Summary
-#wget https://www.alberta.ca/covid-19-alberta-data.aspx && \
-#	mv *.aspx summary/$(date '+%Y%m%d%H%M%S').aspx
+wget https://www.alberta.ca/covid-19-alberta-data.aspx && \
+	mv *.aspx summary/$(date '+%Y%m%d%H%M%S').aspx
 
 # Extract Data
 node localProcessor.js && \
