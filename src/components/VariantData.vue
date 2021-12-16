@@ -4,7 +4,7 @@
         keyed-by="name"
         :modes="modes"
         :friendly-modes="friendlyModes"
-        init-category=0
+        :init-category="0"
         init-mode="B.1.1.7"
     />
 </template>

@@ -204,7 +204,6 @@ for (let filename of files) {
 }
 
 let final = Object.values(keyedFinal);
-// console.dir(keyedOtherFinal, {depth: 999})
 fs.writeFileSync("data/dailyVariantCounts.json", JSON.stringify(final));
 fs.writeFileSync(
   "data/dailyVariantActiveDiedRecoveredCounts.json",
