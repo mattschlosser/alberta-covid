@@ -3,7 +3,7 @@
         :all-data="variantData"
         keyed-by="name"
         :modes="modes"
-        init-category=0
+        :init-category="0"
         init-mode="Active"
     />
 </template>
