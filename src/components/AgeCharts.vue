@@ -4,7 +4,7 @@
       keyed-by="category"
       :friendlyModes="friendlyModes"
       :all-data="myData"
-      :init-category=12
+      :init-category="12"
       init-mode="new_all_cases"
     />
 </template>

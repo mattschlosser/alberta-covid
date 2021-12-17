@@ -4,7 +4,7 @@
         keyed-by="name"
         :friendly-modes="friendlyModes"
         :modes="modes"
-        :init-category=0
+        :init-category="0"
         init-mode="active cases"
     />
 </template>

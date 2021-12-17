@@ -3,7 +3,7 @@
         :all-data="vaccineData"
         keyed-by="name"
         :modes="modes"
-        init-category=0
+        :init-category="0"
         init-mode="Doses"
     />
 </template>
