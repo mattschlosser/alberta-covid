@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { parse } = require("node-html-parser");
 const { make_date_from_regex_match } = require("./lib/utils");
+const { exit } = require("process");
 
 let files = fs.readdirSync(path.join(__dirname, "summary"));
 
@@ -95,6 +96,7 @@ for (let filename of files) {
   }
 }
 let finalOther = [];
+let archived = [];
 // on March 23, variants of concern table was moved to the data app
 files = fs.readdirSync(path.join(__dirname, "pages"));
 for (let filename of files) {
@@ -199,6 +201,53 @@ for (let filename of files) {
           otherDone[zone][niceDate] = true; // mark this date as done
         }
       });
+    }
+
+    let figures = file.querySelectorAll(
+      "#variants-of-concern .figure script"
+    )[0];
+    // json.parse
+    let deets = JSON.parse(figures.rawText);
+    // console.log(deets.x.data);
+    let deet = deets.x.data;
+    let deetIndex = {};
+    for (let i of deet) {
+      if (i.name) {
+        let results = {};
+        for (let A in i.x) {
+          results[i.x[A]] = i.y[A];
+        }
+        deetIndex[i.name] = results;
+        // console.log(results);
+      }
+    }
+    archived.push(deetIndex);
+    console.log(`On ${d}`);
+    if (archived.length > 1) {
+      let todayDeetIndex = archived[archived.length - 1];
+      let yesterdayDeetIndex = archived[archived.length - 2];
+      for (let variant in todayDeetIndex) {
+        if (Object.keys(yesterdayDeetIndex).includes(variant)) {
+          // loop over every variant
+          let diffs = {};
+          for (let day in todayDeetIndex[variant]) {
+            if (Object.keys(yesterdayDeetIndex[variant]).includes(day)) {
+              let diff =
+                todayDeetIndex[variant][day] - yesterdayDeetIndex[variant][day];
+              if (diff !== 0) {
+                diffs[day] = diff;
+              }
+            } else {
+              if (todayDeetIndex[variant][day] != 0) {
+                diffs[day] = todayDeetIndex[variant][day];
+              }
+            }
+          }
+          if (Object.keys(diffs).length > 0) {
+            console.table(diffs);
+          }
+        }
+      }
     }
   }
 }
