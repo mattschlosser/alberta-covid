@@ -238,11 +238,18 @@ for (let filename of files) {
               let diff =
                 todayDeetIndex[variant][day] - yesterdayDeetIndex[variant][day];
               if (diff !== 0) {
-                diffs[day] = diff;
+                diffs[day] = {
+                  diff: diff,
+                  total: todayDeetIndex[variant][day],
+                };
               }
             } else {
               if (todayDeetIndex[variant][day] != 0) {
-                diffs[day] = todayDeetIndex[variant][day];
+                let diff = todayDeetIndex[variant][day];
+                diffs[day] = {
+                  diff,
+                  total: diff,
+                };
               }
             }
           }
@@ -260,7 +267,8 @@ latestDiff = Object.keys(latestDiff).reduce((a, variant) => {
         // console.log(acc[variant], variant, acc);
         acc.data.push({
           x: date,
-          y: latestDiff[variant][date],
+          y: latestDiff[variant][date].diff,
+          total: latestDiff[variant][date].total,
         });
         return acc;
       },

@@ -114,6 +114,10 @@ export default {
                 {
                     text: "Difference", 
                     value: 'y'
+                }, 
+                {
+                    text: "New Total for Day", 
+                    value: 'total'
                 }
             ], 
             newDeathRegionHeaders: [
