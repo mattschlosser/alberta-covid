@@ -59,6 +59,21 @@
                     </v-card-text>
                 </v-card>
             </v-col>
+            <template v-for="variant in dailyDiffs">
+                <v-col sm="12" md="6"  :key="variant.name">
+                    <v-card>
+                        <v-card-title>
+                            New {{variant.name}} Cases
+                        </v-card-title>
+                        <v-card-text>
+                            This is a breakdown of the {{variant.data.reduce((a,e)=>a+e.y,0)}} new {{variant.name}} cases
+                            <v-data-table :items="variant.data" :items-per-page="-1" :headers="variantHeaders">
+                            </v-data-table>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+            </template>
+            
         </v-row>
     </div>
 
@@ -80,15 +95,27 @@ export default {
         this.vaccineReaction = await import('../../vaccineReactions/all.json').then(r => r.default);
         this.local = await import('../../local/all.json').then(r => r.default);
         this.stats = await import('../../data/dailyCaseCounts.json').then(r => r.default)
+        this.dailyDiffs = await import("../../data/dailyDiffs.json").then(r => r.default);
     },
     data() {
         return {
             severe: [], 
             ohno: [],
+            dailyDiffs: [],
             vaccineReaction: [],
             local: [], 
             vaccines: [],
             stats: [], 
+            variantHeaders: [
+                {
+                    text: "Date", 
+                    value: 'x'
+                }, 
+                {
+                    text: "Difference", 
+                    value: 'y'
+                }
+            ], 
             newDeathRegionHeaders: [
                 {
                     text: "Region", 

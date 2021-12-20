@@ -31,6 +31,7 @@ for (let filename of files) {
   if (filename.match(/\.aspx/)) {
     let data = fs.readFileSync(path.join(__dirname, "summary", filename));
     let file = parse(data);
+
     c = file.querySelectorAll("#goa-grid34045");
     // pull the date from the paragraph
     date = c[0].text.match(/As of ([A-Z][a-z]*) (\d\d?)/);
@@ -97,6 +98,7 @@ for (let filename of files) {
 }
 let finalOther = [];
 let archived = [];
+let latestDiff = {};
 // on March 23, variants of concern table was moved to the data app
 files = fs.readdirSync(path.join(__dirname, "pages"));
 for (let filename of files) {
@@ -226,6 +228,7 @@ for (let filename of files) {
     if (archived.length > 1) {
       let todayDeetIndex = archived[archived.length - 1];
       let yesterdayDeetIndex = archived[archived.length - 2];
+      let variantDiff = {};
       for (let variant in todayDeetIndex) {
         if (Object.keys(yesterdayDeetIndex).includes(variant)) {
           // loop over every variant
@@ -243,16 +246,34 @@ for (let filename of files) {
               }
             }
           }
-          if (Object.keys(diffs).length > 0) {
-            console.table(diffs);
-          }
+          variantDiff[variant] = diffs;
         }
       }
+      latestDiff = variantDiff;
     }
   }
 }
-
+latestDiff = Object.keys(latestDiff).reduce((a, variant) => {
+  if (Object.values(latestDiff[variant]).length) {
+    a[variant] = Object.keys(latestDiff[variant]).reduce(
+      (acc, date) => {
+        // console.log(acc[variant], variant, acc);
+        acc.data.push({
+          x: date,
+          y: latestDiff[variant][date],
+        });
+        return acc;
+      },
+      {
+        name: variant,
+        data: [],
+      }
+    );
+  }
+  return a;
+}, {});
 let final = Object.values(keyedFinal);
+fs.writeFileSync("data/dailyDiffs.json", JSON.stringify(latestDiff));
 fs.writeFileSync("data/dailyVariantCounts.json", JSON.stringify(final));
 fs.writeFileSync(
   "data/dailyVariantActiveDiedRecoveredCounts.json",
