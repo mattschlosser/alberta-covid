@@ -7,7 +7,7 @@ for (let filename of files) {
   let objs = [];
   if (filename.match(/\.htm/)) {
     // vacinne data added May 16
-    if (filename < "20210516") continue;
+    if (filename < "20211101") continue;
     let data = fs.readFileSync(path.join(__dirname, "pages", filename));
     let file = parse(data);
     date = file.querySelector("#last-updated").childNodes[0].rawText;
@@ -31,7 +31,6 @@ for (let filename of files) {
             let tree = data.x.calls[2].args[4];
             let r = parse(tree);
 
-            let interval = 0;
             let d;
             for (let each of r.childNodes) {
               let lines = each.rawText
@@ -40,37 +39,39 @@ for (let filename of files) {
               if (!lines.length) {
                 continue;
               }
-              if (interval % 9 == 0) {
+              // if this line represents a place name
+              if (!lines[0].match(/:/) && !lines[0].match(/Percent/)) {
+                // push the last object, if any
+                if (d) {
+                  objs.push(d);
+                }
+                // create a new object
+                let place = lines[0].match(/([\w.\s\-]+)+/)?.[0].trim().toUpperCase();
+                console.log(place);
                 d = {
-                  place: lines[0],
+                  place: place,
                 };
-                interval++;
+                // go to next line
                 continue;
               }
-              if ((interval - 1) & (9 == 0)) {
-                interval++;
-                continue;
-              }
+              // if this is not an empty line
               if (lines.length) {
                 let ageCategory = lines[0].match(/(\d{2}[\+\-](\d{2})*)\:/);
+                // console.log(ageCategory);
                 if (ageCategory) {
                   d[ageCategory[1]] = {
-                    percent: Number(lines[0].match(/(\d*)%/)[1]),
+                    percent: Number(lines[0].match(/(\d+)(.\d+)?(\s+)?%/)[1]),
                     count: Number(lines[0].match(/(\d*) people/)[1]),
                   };
                 } else {
                   ageCategory = lines[0].match(/All ages/);
                   if (ageCategory) {
                     d[ageCategory] = {
-                      percent: Number(lines[0].match(/(\d*)%/)[1]),
+                      percent: Number(lines[0].match(/(\d+)(.\d+)?(\s+)?%/)[1]),
                       count: Number(lines[0].match(/(\d*) people/)[1]),
                     };
                   }
                 }
-              }
-              interval++;
-              if (interval % 8 == 0) {
-                objs.push(d);
               }
             }
             let str = JSON.stringify(objs);
