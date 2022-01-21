@@ -1,5 +1,6 @@
 <template>
     <v-data-table
+        class="width-adjustment"
         :headers="headers"
         :items="chartData"
     >
@@ -27,3 +28,10 @@ export default {
     }
 }
 </script>
+<style scoped>
+    .width-adjustment {
+        margin-left: -12px;
+        margin-right: -12px;
+        max-width: calc(100% + 24px)
+    }
+</style>

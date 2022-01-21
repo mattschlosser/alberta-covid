@@ -18,11 +18,11 @@
               </v-col>
                 <v-col sm="12" md="6">
                   <div>Last 30 Reports</div>
-                  <LineChart :chart-data="last30" :type="type" />
+                  <LineChart :aspect-ratio="0.5" :chart-data="last30" :type="type" />
                 </v-col>
                 <v-col sm="12" md="6">
                   <div>Last 7 Reports</div>
-                  <LineChart :chart-data="last7" :type="type" />
+                  <LineChart :aspect-ratio="0.5" :chart-data="last7" :type="type" />
                 </v-col>
             </v-row>
             </div>
@@ -69,6 +69,7 @@
 </template>
 <script>
 import LineChart from "./LineChart.vue";
+import distinctColors from 'distinct-colors'
 export default {
   components: {
     LineChart,
@@ -141,12 +142,17 @@ export default {
       }, {})
     }, 
     chartData() {
+      let categoryCount = this.selectedCategories.length;
+      let modeCount = this.selectedMode.length;
+      let colors = distinctColors({
+        count: categoryCount * modeCount
+      })
       return {
-        datasets: this.selectedCategories.map(category => {
+        datasets: this.selectedCategories.map((category, j) => {
             return this.selectedMode.map((selected, i) => ({
               label: `${this.friendlyModes[selected] || selected} - ${this.getCategoryName(category)}` ,
-              borderColor: i == 0 ? "#7979f8" : i == 1 ? '#f97979' : i == 2 ? '#79f979' : '#797979',
-              backgroundColor: this.processedModes[selected].backgroundColor || "#fff0",
+              borderColor: colors[j * modeCount + i].hex(),
+              backgroundColor:  this.processedModes[selected].backgroundColor !== "#fff0" ? colors[j * modeCount + i].hex() :  "#fff0",
               type: this.processedModes[selected].type,
               tension:0,
               data:  this.allData[category]?.data.map(e => e[selected]) || [],

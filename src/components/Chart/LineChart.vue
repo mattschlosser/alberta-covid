@@ -8,6 +8,10 @@ export default {
     chartData: {
       type: Object
     }, 
+    aspectRatio: {
+      type: Number, 
+      default: 1.3
+    },
     type: {
       type: String, 
       default: "line"
@@ -36,7 +40,7 @@ export default {
         data: this.chartData,
         options: {
           responsive: true, 
-          aspectRatio: 1.3,
+          aspectRatio: this.aspectRatio, 
           scales: {
             xAxes: [
               {
