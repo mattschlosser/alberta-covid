@@ -1,4 +1,4 @@
-<template>
+  <template>
   <v-app>
     <v-main>
       <v-app-bar app>
