@@ -1,1 +1,0 @@
-(self.webpackChunkalberta_covid_analysis=self.webpackChunkalberta_covid_analysis||[]).push([[726],{7179:a=>{"use strict";a.exports=JSON.parse('{"Delta":{"name":"Delta","data":[{"x":"2022-01-01","y":1,"total":25},{"x":"2022-01-26","y":1,"total":3},{"x":"2022-01-27","y":1,"total":2},{"x":"2022-01-29","y":2,"total":2}]}}')}}]);
