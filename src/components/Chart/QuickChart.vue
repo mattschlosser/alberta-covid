@@ -55,9 +55,14 @@
               </v-list-item-group>
             </v-list>
             <v-list subheader>
-            <v-subheader>Category</v-subheader>
-            <v-list-item-group mandatory multiple v-model="selectedCategories">
-                <v-list-item v-for="(cat, i) in categories" :key="cat" :value="i">
+            <v-subheader>
+              Category
+            </v-subheader>
+            <v-subheader>
+              <v-text-field label="Search" placeholder="Enter a search term" v-model="search"></v-text-field>
+            </v-subheader>
+            <v-list-item-group mandatory multiple v-model="selectedCategories">  
+                <v-list-item v-for="({category: cat, index: i}) in filteredCategories" :key="cat" :value="i">
                     <v-list-item-title>
                     {{ cat }}
                     </v-list-item-title>
@@ -96,10 +101,21 @@ export default {
     return {
       selectedMode: [this.initMode],
       selectedCategories: [this.initCategory],
-      category: this.initCategory
+      category: this.initCategory, 
+      search: ''
     };
   },
   computed: {
+    filteredCategories() {  
+      return this.categories.map((category, index) => ({category, index}))
+        .filter(({category}) => {
+          if (this.search) {
+            return category.includes(this.search);
+          } else {
+            return true
+          }
+      });
+    }, 
     processedModes() {
       let m = {};
       for (let mode of this.modes) {

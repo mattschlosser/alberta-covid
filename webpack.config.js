@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = {
   entry: "./src/index.js",
   devServer: {
-    port: 8082,
+    port: 8083,
   },
   output: {
     path: path.resolve(__dirname, "docs"),

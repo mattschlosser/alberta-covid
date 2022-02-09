@@ -6,12 +6,7 @@
         :friendlyModes="friendlyModes"
         :init-category="0"
         init-mode="deaths"
-        
-    >
-    <template #note>
-        On April 27, 2021, AHS adjusted the number of deaths, decreasing the total for all ages by 14 after further review of past cases, deeming that COVID was not a contributing factor for those 14 deaths. 
-    </template>
-    </quick-chart>
+    />
 </template>
 <script>
 import QuickChart from './Chart/QuickChart.vue'
@@ -25,6 +20,7 @@ export default {
             f.data = f.data.map((e,i,a) => {
                 if (!i) return e;
                 e.new_hospitalized = e.hospitalized - a[i-1].hospitalized;
+                e.new_hospitalized_rate = e.new_hospitalized / Math.floor((new Date(e.x) - new Date(a[i-1].x))/1000/3600/24)/4.442
                 e.new_icu = e.icu - a[i-1].icu;
                 e.new_deaths = e.deaths - a[i-1].deaths;
                 return e;
@@ -44,6 +40,7 @@ export default {
                 },
                 "hospitalized_pct",
                 "hospitalized_rate",
+                "new_hospitalized_rate",
                 "icu",
                 {
                     name: "new_icu",
@@ -66,6 +63,7 @@ export default {
                 "new_hospitalized": "New Hospitalized",
                 "hospitalized_pct": "% of cases Hospitalized",
                 "hospitalized_rate": "Hospitalized per 100,000",
+                "new_hospitalized_rate": "New Hospitilizations per 100,000",
                 "icu": "Total ICU",
                 "new_icu": "New ICU Admissions",
                 "icu_pct": "% of cases admmitted to ICU",
