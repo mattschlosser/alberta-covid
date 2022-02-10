@@ -1,12 +1,13 @@
 <template>
     <v-layout row reverse>
-        <v-flex md12 lg9>
+        <v-flex md12 lg9 
+            :class="{'max-height': !['xs', 'sm', 'md'].includes($vuetify.breakpoint.name)}">
             <div
             class="chart-container"
             style="
                 postion: relative;
                 width: 75%;
-                margin: 25px; auto;
+                margin: 25px auto;
             "
             >
             <v-alert v-if='$scopedSlots.note' color="warning">
@@ -29,7 +30,9 @@
         </v-flex>
         <v-flex md12 lg3 
                     align-self-start
-                    style="overflow: auto; max-height: 100vh; margin: 0px">
+                    style="margin: 0px" 
+                    :class="{'max-height': !['xs', 'sm', 'md'].includes($vuetify.breakpoint.name)}"
+        >
             <v-alert prominent>
             Data is current until end of day {{allData.length && allData[0].data.slice(-1)[0].x || 'loading'}}
             </v-alert>
@@ -228,3 +231,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+  .max-height {
+    max-height: calc(100vh - 100px);
+    overflow-x: auto;
+  }
+</style>

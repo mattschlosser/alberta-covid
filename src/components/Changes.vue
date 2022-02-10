@@ -191,7 +191,7 @@ export default {
             let category = this.stats.find(e => e.name == "Alberta");
             if (category) {
                 let dataLength = category.data.length;
-                return category.data[dataLength-1]['12+ population who received at least one dose'];
+                return category.data[dataLength-1]['12+ population with 1 dose'];
             } else {
                 return 0;
             }
