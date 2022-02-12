@@ -9,15 +9,48 @@
                     <v-card-text>
                         <v-data-table :items="ohNoChanges" :items-per-page="-1" :headers="ohhoHeaders">
                         </v-data-table>
+                        The follwoing numbers are based on <b>today's</b> data only. They can vary widely. 
+                        <v-row class="pa-3" no-gutters>
+                          <v-col cols="4">
+                        <v-card style="height: 100%;" class="green">
+                            <v-card-title>
+                            {{ vaccineEffectiveness }}%
+                            </v-card-title> 
+                            <v-card-text>
+                            effective against infection
+	                    </v-card-text>
+                        </v-card>
+                        </v-col>
+                        <v-col cols="4">	
+                        <v-card style="height: 100%;" class="orange">
+                            <v-card-title>
+                            {{ vaccineEffectivenessHosp }}%
+                            </v-card-title> 
+                            <v-card-text>
+                            effective against hospitalization
+	                    </v-card-text>
+                        </v-card>
+                        </v-col>
+                        <v-col>	
+                        <v-card style="height: 100%;" class="red">
+                            <v-card-title>
+                            {{ vaccineEffectivenessDeath }}%
+                            </v-card-title> 
+                            <v-card-text>
+                            effect against death
+	                    </v-card-text>
+                        </v-card>
+	                </v-col>
+                        </v-row>	
                         <div class="journal">
                             <p><b>Definitions:</b></p>
                             <p><b>Vaccinated</b> individuals are those who have at least one dose administered more than two seeks ago.</p>
                             <p><b>Unvaccinated</b> individuals are those who have no dose, or had one dose administerd less than two weeks ago</p>
                             <p><b>How to interpret this data:</b></p>
                             <p><b>Unvaccinated</b> individuals make up {{unvaccinatedPercent}}% of the population, so they are {{unvaccinatedRisk.timesTheVaccine}} times less common than their vaccianted counterparts, but
-                            make up {{unvaccinatedRisk.timesTheCases}} times the cases as compared to vaccianted individuals, meaning they  are  {{unvaccinatedRisk.factor}} times more likely to test positive for the virus.</p>  
+                            make up {{unvaccinatedRisk.timesTheCases}}% more cases compared to vaccianted individuals, meaning they  are  {{unvaccinatedRisk.factor}} times more likely to test positive for the virus.</p>  
                             <p><b>Vaccinated</b> individuals make up {{vaccinatedPercent}}% of the population, so they are {{unvaccinatedRisk.timesTheVaccine}} times more common than their unvaccinated counterparts, 
-                            but have {{unvaccinatedRisk.timesTheCases}} less times the cases as compared to their unvaccinated individuals, mean they are   {{unvaccinatedRisk.factor}} times less likely to test postiive for the virus</p>
+                            but have {{unvaccinatedRisk.timesTheCases*100}}% less cases, compared to unvaccinated individuals, meaning they are   {{unvaccinatedRisk.factor}} times less likely to test postiive for the virus</p>
                             <p>Based on today's data only, the vaccines are generally {{vaccineEffectiveness}}% effective against infection. 
                                 meaning {{vaccineEffectiveness}}% of the time when a vaccinated individual is exposted to the virus, 
                                 they do not become infected. 
@@ -236,8 +269,11 @@ export default {
                 if (e.category == "Unvaccinated") {
                     e.timesTheCases = round(e.cases/vax.cases, 2);
                     e.timesTheVaccine = round(this.vaccinatedPercent / this.unvaccinatedPercent, 2);
+                    e.timesTheHosp = round(e.hospitalized/vax.hospitalized, 2);
+                    e.timesTheDeath = round(e.deaths/vax.deaths, 2);
                     e.caseRiskFactor = round(e.timesTheCases * e.timesTheVaccine, 2);
-                    e.hospRiskFactor = e.hospitalized/total.hospitalized / 0.19
+                    e.hospRiskFactor = round(e.timesTheHosp * e.timesTheVaccine, 2);
+                    e.deathRiskFactor = round(e.timesTheDeath * e.timesTheVaccine, 2); 
                 } else if (e.category == "Vaccinated") {
                     e.timesTheCases = round(e.cases/unvax.cases, 2);
                     e.timesTheVaccine = round(this.unvaccinatedPercent / this.vaccinatedPercent, 2);
@@ -257,6 +293,8 @@ export default {
                 timesTheCases: x.timesTheCases ?? 0, 
                 timesTheVaccine: x.timesTheVaccine ?? 0,
                 factor: x.caseRiskFactor ?? 0, 
+                hospFactor: x.hospRiskFactor ?? 0, 
+                deathFactor: x.deathRiskFactor ?? 0
             }
         }, 
         vaccinatedRisk() {
@@ -269,6 +307,12 @@ export default {
         }, 
         vaccineEffectiveness() {
             return Math.round((100 - 1/this.unvaccinatedRisk.factor * 100) * 100) /100;
+        }, 
+        vaccineEffectivenessHosp() {
+            return Math.round((100 - 1/this.unvaccinatedRisk.hospFactor * 100) * 100) / 100;
+        }, 
+        vaccineEffectivenessDeath() {
+            return Math.round((100 - 1/this.unvaccinatedRisk.deathFactor * 100) * 100) / 100;
         }, 
         vaccineReactionChanges() {
             let total = 0;
