@@ -21,9 +21,16 @@ export default {
         this.allData = allData.map(f => {
             f.data = f.data.map((e,i,a) => {
                 if (!i) return e;
-                e[`new`] = e.count - a[i-1].count
+                e[`new`] = {x: e.x, y: e.count - a[i-1].count}
                 return e;
             })
+            f.data.forEach(datum => {
+              Object.keys(datum).forEach(key => {
+               if (key !== 'new' && key !== 'x') {
+                 datum[key] = {x: datum.x, y: datum[key]}
+               }
+             })
+            });
             return f;
         })
     }, 

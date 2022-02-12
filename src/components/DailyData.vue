@@ -21,9 +21,9 @@ export default {
         let allAllData = await import("../../data/allCaseCounts.json").then(r=>r.default);     
         let newCases = allAllData[0].x.reduce((a,e,i) => {
             if (!i) {
-                a[e] = 0;
+                a[e] = {x: new Date(e), y: 0};
             } else {
-                a[e] = allAllData[0].y[i] - allAllData[0].y[i-1] ;
+                a[e] = {x: new Date(e), y: allAllData[0].y[i] - allAllData[0].y[i-1]};
             }
             return a;
         }, {})
@@ -32,8 +32,14 @@ export default {
             e.data.forEach((e,i,a) => { 
                 if (!i) return;
                 e["new cases"] = newCases[e.x];
-                e["net change"] = e["active cases"] - a[i-1]["active cases"]
-                e["new deaths"] = e["total deaths"] - a[i-1]["total deaths"]
+                e["net change"] = {x: new Date(e.x), y: e["active cases"] - a[i-1]["active cases"]};
+                e["new deaths"] = {x: new Date(e.x), y: e["total deaths"] - a[i-1]["total deaths"]};
+            });
+            e.data.forEach(e => {
+                e["active cases"] = {x: new Date(e.x), y: e["active cases"]};
+                e["current hospitalizations"] = {x: new Date(e.x), y: e["current hospitalizations"]};
+                e["total deaths"] = {x: new Date(e.x), y: e["total deaths"]};
+                e["current ICU"] = {x: new Date(e.x), y: e["current ICU"]};
             });
         })
         this.allData = allData;

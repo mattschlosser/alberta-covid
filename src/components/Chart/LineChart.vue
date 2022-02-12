@@ -3,10 +3,16 @@
 </template>
 <script>
 import chart from "chart.js";
+import "chartjs-annotation";
+import moment from 'moment';
 export default {
   props: {
     chartData: {
       type: Object
+    }, 
+    annotate: {
+      type: Boolean, 
+      default: false
     }, 
     aspectRatio: {
       type: Number, 
@@ -39,13 +45,36 @@ export default {
         type: this.type,
         data: this.chartData,
         options: {
+          annotation: this.annotate ? {
+             annotations: [{
+                 drawTime: 'afterDatasetsDraw',
+                 id: `rep-start-${Math.random()}`, 
+                 type: "line",
+                 mode: "vertical",  
+                 borderColor: 'black', 
+                 borderWidth: 4, 
+                 label: { content: "REP Start", enabled: true },
+                 value: new Date("2021-09-23"), 
+                 scaleID: this.annotate ? "annotate-1" : "1" // this conflicts with other charts on the page otherwise
+             }, {
+                 drawTime: 'afterDatasetsDraw',
+                 id: `rep-start-${Math.random()}`, 
+                 type: "line",
+                 mode: "vertical",  
+                 borderColor: 'black', 
+                 borderWidth: 4, 
+                 label: { content: "REP End", enabled: true },
+                 value: new Date("2022-02-09"), 
+                 scaleID: this.annotate ? "annotate-1" : "1" // this conflicts with other charts on the page otherwise
+             }]
+          } : undefined, 
           responsive: true, 
           aspectRatio: this.aspectRatio, 
           scales: {
             xAxes: [
               {
                 offset: true, 
-                id: "1",
+                id: this.annotate ? "annotate-1" : "1",
                 type: "time",
                 time: {
                   parser: "YYYY-MM-DD",
@@ -53,6 +82,7 @@ export default {
                   displayFormats: {
                     day: "ll",
                   },
+                  tooltipFormat: "ll"
                 },
               },
             ], 

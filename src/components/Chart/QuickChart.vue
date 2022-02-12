@@ -15,7 +15,7 @@
             </v-alert>
             <v-row >
               <v-col sm="12">
-                <LineChart :chart-data="chartData" :type="type" /> 
+                <LineChart annotate :chart-data="annotateChartData" :type="type" /> 
               </v-col>
                 <v-col sm="12" md="6">
                   <div>Last 30 Reports</div>
@@ -78,6 +78,7 @@
 <script>
 import LineChart from "./LineChart.vue";
 import distinctColors from 'distinct-colors'
+import moment from 'moment';
 export default {
   components: {
     LineChart,
@@ -151,10 +152,24 @@ export default {
         let {allData} = this;
         obj[mode] =  {
           total: this.selectedCategories.reduce((a, category) => {
-            return a + (allData[category] && allData[category].data.slice(-1)[0][mode])
+            let index = allData[category]?.data.length - 1;
+            let today = allData[category]?.data[index][mode];
+            if (today instanceof Object) {
+              today = today.y 
+            }
+            return a + today;
           }, 0), 
           diff: this.selectedCategories.reduce((a, category) => {
-            return a + (Math.round((allData[category] && allData[category].data.slice(-1)[0][mode] - allData[category].data.slice(-2)[0][mode])*10)/10)
+            let dataLength = allData[category]?.data.length;
+            let today = allData[category]?.data[dataLength-1][mode];
+            let yesterday = allData[category]?.data[dataLength-2][mode];
+            if (today instanceof Object) {
+               today = today.y;
+            }
+            if (yesterday instanceof Object) {
+               yesterday = yesterday.y;
+            }
+            return a + Math.round((today - yesterday)*10)/10;
           }, 0)
         }
         return obj
@@ -182,6 +197,14 @@ export default {
         labels: this.allData[this.category]?.data.map(e => e.x) || []
       };
     },
+    annotateChartData() {
+      let datasets = [...this.chartData.datasets].map(dataset => ({...dataset}));
+      datasets.forEach(dataset => { dataset.xAxisID = "annotate-1"; } );
+      return {
+        datasets,
+        labels: [...this.chartData.labels]
+      }
+    }, 
     last30() {
       
       let data = {...this.chartData};
