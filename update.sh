@@ -7,8 +7,8 @@ node scraper.js
 echo "Download complete"
 
 # Download Dashboard
-# curl https://web.archive.org/save/https://www.alberta.ca/stats/covid-19-alberta-statistics.htm > /dev/null 2>&1
-# wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm && \
+curl https://web.archive.org/save/https://www.alberta.ca/stats/covid-19-alberta-statistics.htm > /dev/null 2>&1
+wget https://www.alberta.ca/stats/covid-19-alberta-statistics.htm && \
 mv *.htm pages/$(date '+%Y%m%d%H%M%S').htm
 
 # Download Summary
