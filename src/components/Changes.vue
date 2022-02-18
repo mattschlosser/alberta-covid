@@ -9,7 +9,7 @@
                     <v-card-text>
                         <v-data-table :items="ohNoChanges" :items-per-page="-1" :headers="ohhoHeaders">
                         </v-data-table>
-                        The follwoing numbers are based on <b>today's</b> data only. They can vary widely. 
+                        The follwoing numbers are based on data from the last 30 days.  
                         <v-row class="pa-3" no-gutters>
                           <v-col cols="4">
                         <v-card style="height: 100%;" class="green">
@@ -48,9 +48,9 @@
                             <p><b>Unvaccinated</b> individuals are those who have no dose, or had one dose administerd less than two weeks ago</p>
                             <p><b>How to interpret this data:</b></p>
                             <p><b>Unvaccinated</b> individuals make up {{unvaccinatedPercent}}% of the population, so they are {{unvaccinatedRisk.timesTheVaccine}} times less common than their vaccianted counterparts, but
-                            make up {{unvaccinatedRisk.timesTheCases}}% more cases compared to vaccianted individuals, meaning they  are  {{unvaccinatedRisk.factor}} times more likely to test positive for the virus.</p>  
+                            make up {{unvaccinatedRisk.percent * 100}}% of the cases compared to vaccianted individuals, meaning they are {{unvaccinatedRisk.factor}} times more likely to test positive for the virus.</p>  
                             <p><b>Vaccinated</b> individuals make up {{vaccinatedPercent}}% of the population, so they are {{unvaccinatedRisk.timesTheVaccine}} times more common than their unvaccinated counterparts, 
-                            but have {{unvaccinatedRisk.timesTheCases*100}}% less cases, compared to unvaccinated individuals, meaning they are   {{unvaccinatedRisk.factor}} times less likely to test postiive for the virus</p>
+                            but represent {{unvaccinatedRisk.timesTheCases*100}}% of the cases, compared to unvaccinated individuals, meaning they are  {{unvaccinatedRisk.factor}} times less likely to test postiive for the virus</p>
                             <p>Based on today's data only, the vaccines are generally {{vaccineEffectiveness}}% effective against infection. 
                                 meaning {{vaccineEffectiveness}}% of the time when a vaccinated individual is exposted to the virus, 
                                 they do not become infected. 
@@ -256,45 +256,67 @@ export default {
         ohNoChanges() {
             return this.ohno.map(f => {
                 let dataLength = f.data.length;
-                return {
+                let obj = {
                     category: f.category,
                     cases: f.data[dataLength - 1].cases - f.data[dataLength - 2].cases,
-                    hospitalized: f.data[dataLength - 1].hospitalized - f.data[dataLength - 2].hospitalized,
+                    hospitalized: f.data[dataLength - 1].hospitalized - f.data[dataLength-2].hospitalized,
                     deaths: f.data[dataLength - 1].deaths - f.data[dataLength - 2].deaths
                 }
+                for (let i of [30, 60, 90]) {
+                    for (let type of ['cases', 'hospitalized', 'deaths']) {
+                        obj[`last${i}${type}`] = f.data[dataLength - 1][type] - f.data[dataLength - i][type];
+                    }
+                }
+                return obj;
             }).map((e, i,  a) => {
                 let total = a.find(e => e.category === 'Total') 
                 let unvax = a.find(e => e.category === 'Unvaccinated');
                 let vax = a.find(e => e.category === 'Vaccinated');
                 if (e.category == "Unvaccinated") {
                     e.timesTheCases = round(e.cases/vax.cases, 2);
+                    e.timesTheCases30 = round(e.last30cases/vax.last30cases, 2);
+                    e.percentOfCases = round(e.cases/total.cases, 2)*100;
                     e.timesTheVaccine = round(this.vaccinatedPercent / this.unvaccinatedPercent, 2);
+                    e.timesTheVaccine30 = round(e.last30cases/vax.last30cases, 2);
                     e.timesTheHosp = round(e.hospitalized/vax.hospitalized, 2);
+                    e.timesTheHosp30 = round(e.last30hospitalized/vax.last30hospitalized, 2);
                     e.timesTheDeath = round(e.deaths/vax.deaths, 2);
+                    e.timesTheDeath30 = round(e.last30deaths/vax.last30deaths, 2);
                     e.caseRiskFactor = round(e.timesTheCases * e.timesTheVaccine, 2);
+                    e.caseRiskFactor30 = round(e.timesTheCases30 * e.timesTheVaccine, 2);
                     e.hospRiskFactor = round(e.timesTheHosp * e.timesTheVaccine, 2);
-                    e.deathRiskFactor = round(e.timesTheDeath * e.timesTheVaccine, 2); 
+                    e.hospRiskFactor30 = round(e.timesTheHosp30 * e.timesTheVaccine, 2);
+                    e.deathRiskFactor = round(e.timesTheDeath * e.timesTheVaccine, 2);
+                    e.deathRiskFactor30 = round(e.timesTheDeath30 * e.timesTheVaccine , 2);
                 } else if (e.category == "Vaccinated") {
                     e.timesTheCases = round(e.cases/unvax.cases, 2);
+                    e.percentOfCases = round(e.cases/total.cases, 2) * 100;
                     e.timesTheVaccine = round(this.unvaccinatedPercent / this.vaccinatedPercent, 2);
                     e.caseRiskFactor = round(e.timesTheCases * e.timesTheVaccine, 2);
                 } else {
                     e.timesTheCases = 1;
+                    e.percentOfCases = 0;
                     e.timesTheVaccine = 1;
                     e.caseRiskFactor = 1;
                 }
                 return e
             })
         },
+        vax() {
+          return this.ohno.find(e => e.category == "Vaccinated");
+        }, 
+        unvax() {
+          return this.ohno.find(e => e.category == "Unvaccinated");
+        }, 
         unvaccinatedRisk() {
             let x = this.ohNoChanges.find(e => e.category == "Unvaccinated") ?? {};
             return {
                 
-                timesTheCases: x.timesTheCases ?? 0, 
+                timesTheCases: x.timesTheCases30 ?? 0, 
                 timesTheVaccine: x.timesTheVaccine ?? 0,
-                factor: x.caseRiskFactor ?? 0, 
-                hospFactor: x.hospRiskFactor ?? 0, 
-                deathFactor: x.deathRiskFactor ?? 0
+                factor: x.caseRiskFactor30 ?? 0, 
+                hospFactor: x.hospRiskFactor30 ?? 0, 
+                deathFactor: x.deathRiskFactor30 ?? 0
             }
         }, 
         vaccinatedRisk() {
