@@ -23,9 +23,9 @@ for (let filename of files) {
         let node = script.childNodes[0];
         if (node instanceof TextNode) {
           if (
-            node.rawText.match(/At least one dose/) &&
-            node.rawText.match(/immunized/) &&
-            node.rawText.match(/MAYERTHORPE/i)
+            (node.rawText.match(/At least one dose/ &&
+            node.rawText.match(/immunized/) || node.rawText.match(/wtih 1 dose/)) &&
+            node.rawText.match(/MAYERTHORPE/i))
           ) {
             let data = JSON.parse(node.rawText);
             let tree = data.x.calls[2].args[4];
