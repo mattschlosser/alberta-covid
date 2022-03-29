@@ -34,6 +34,30 @@ for (let filename of files) {
             .join("")
         );
       }
+      if (myDate.match(/\d{4}-\d{2}-0/)) {
+         console.log(myDate);
+      }
+      if (myDate > "2022-03-20" && !ddd["active cases"]) {
+         // i'll do it myself
+         // get the data
+         let cases = JSON.parse(file.querySelector("#total-cases script").text);
+         console.log(cases.x.data);
+         let dataset = d => cases.x.data.find(e => e.name === d);
+         let probable = dataset("Probable");
+         let confirmed = dataset("Confirmed");
+
+         let last14 = n => n.x.reduce((total, date, index) => {
+            let reportedDate = new Date(date).getTime();
+            let dataDate = new Date(myDate).getTime();
+            if ((dataDate - reportedDate) /1000 / 60 / 60 / 24 < 14) {
+             total += n.y[index];
+            }
+            return total;
+         }, 0);
+         let last14probable = last14(probable);
+         let last14confirmed = last14(confirmed);
+         ddd["active cases"] = last14confirmed + last14probable;
+      }
       if (!isEmpty(ddd)) {
         ddd.x = myDate;
         all.push(ddd);
