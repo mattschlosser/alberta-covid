@@ -1,1 +1,0 @@
-(self.webpackChunkalberta_covid_analysis=self.webpackChunkalberta_covid_analysis||[]).push([[726],{7179:a=>{"use strict";a.exports={}}}]);
