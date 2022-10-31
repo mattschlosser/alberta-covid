@@ -47,7 +47,7 @@ for (let filename of files) {
               // if this line represents a place name
               if (!lines[0].match(/:/) && !lines[0].match(/Percent/)) {
                 // push the last object, if any
-                console.log(lines[0]);
+                // console.log(lines[0]);
                 if (d) {
                   objs.push(d);
                 }
@@ -80,7 +80,7 @@ for (let filename of files) {
                 }
               }
             }
-            let str = JSON.stringify(objs, null, 2);
+            let str = JSON.stringify(objs);
             if (objs.length) {
               fs.writeFileSync(`localVaccine/20${myDate}.json`, str);
             }
