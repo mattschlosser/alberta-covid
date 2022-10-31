@@ -1,1 +1,4587 @@
-[{"place":"MUNICIPAL DISTRICT OF ACADIA NO. 34"},{"place":"27 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"26 RECOVERED"},{"place":"1 DEATH"},{"place":"CITY OF AIRDRIE"},{"place":"8789 CASES"},{"place":"482.8 ACTIVE CASE RATE PER 100K"},{"place":"348 ACTIVE"},{"place":"8410 RECOVERED"},{"place":"31 DEATH"},{"place":"ATHABASCA COUNTY"},{"place":"1189 CASES"},{"place":"374.8 ACTIVE CASE RATE PER 100K"},{"place":"49 ACTIVE"},{"place":"1135 RECOVERED"},{"place":"5 DEATH"},{"place":"COUNTY OF BARRHEAD NO. 11"},{"place":"1003 CASES"},{"place":"674.7 ACTIVE CASE RATE PER 100K"},{"place":"68 ACTIVE"},{"place":"928 RECOVERED"},{"place":"7 DEATH"},{"place":"CITY OF BEAUMONT"},{"place":"2294 CASES"},{"place":"370.9 ACTIVE CASE RATE PER 100K"},{"place":"71 ACTIVE"},{"place":"2205 RECOVERED"},{"place":"18 DEATH"},{"place":"BEAVER COUNTY"},{"place":"808 CASES"},{"place":"344.9 ACTIVE CASE RATE PER 100K"},{"place":"35 ACTIVE"},{"place":"756 RECOVERED"},{"place":"17 DEATH"},{"place":"MUNICIPAL DISTRICT OF BONNYVILLE NO. 87"},{"place":"2438 CASES"},{"place":"617.1 ACTIVE CASE RATE PER 100K"},{"place":"110 ACTIVE"},{"place":"2307 RECOVERED"},{"place":"21 DEATH"},{"place":"CITY OF BROOKS"},{"place":"2590 CASES"},{"place":"338.5 ACTIVE CASE RATE PER 100K"},{"place":"66 ACTIVE"},{"place":"2494 RECOVERED"},{"place":"30 DEATH"},{"place":"CITY OF CALGARY"},{"place":"169109 CASES"},{"place":"443.4 ACTIVE CASE RATE PER 100K"},{"place":"6061 ACTIVE"},{"place":"162180 RECOVERED"},{"place":"868 DEATH"},{"place":"CITY OF CAMROSE"},{"place":"2112 CASES"},{"place":"596 ACTIVE CASE RATE PER 100K"},{"place":"128 ACTIVE"},{"place":"1947 RECOVERED"},{"place":"37 DEATH"},{"place":"CAMROSE COUNTY"},{"place":"762 CASES"},{"place":"323.8 ACTIVE CASE RATE PER 100K"},{"place":"28 ACTIVE"},{"place":"732 RECOVERED"},{"place":"2 DEATH"},{"place":"TOWN OF CANMORE"},{"place":"1329 CASES"},{"place":"332.4 ACTIVE CASE RATE PER 100K"},{"place":"55 ACTIVE"},{"place":"1271 RECOVERED"},{"place":"3 DEATH"},{"place":"CARDSTON COUNTY"},{"place":"2466 CASES"},{"place":"882.4 ACTIVE CASE RATE PER 100K"},{"place":"145 ACTIVE"},{"place":"2279 RECOVERED"},{"place":"42 DEATH"},{"place":"TOWN OF COCHRANE"},{"place":"3181 CASES"},{"place":"539.6 ACTIVE CASE RATE PER 100K"},{"place":"186 ACTIVE"},{"place":"2982 RECOVERED"},{"place":"13 DEATH"},{"place":"CITY OF EDMONTON"},{"place":"122492 CASES"},{"place":"403.4 ACTIVE CASE RATE PER 100K"},{"place":"4187 ACTIVE"},{"place":"117134 RECOVERED"},{"place":"1171 DEATH"},{"place":"MUNICIPAL DISTRICT OF FAIRVIEW NO. 136"},{"place":"453 CASES"},{"place":"1039.6 ACTIVE CASE RATE PER 100K"},{"place":"53 ACTIVE"},{"place":"392 RECOVERED"},{"place":"8 DEATH"},{"place":"FLAGSTAFF COUNTY"},{"place":"603 CASES"},{"place":"474.7 ACTIVE CASE RATE PER 100K"},{"place":"40 ACTIVE"},{"place":"558 RECOVERED"},{"place":"5 DEATH"},{"place":"FOOTHILLS COUNTY"},{"place":"2113 CASES"},{"place":"488.7 ACTIVE CASE RATE PER 100K"},{"place":"110 ACTIVE"},{"place":"1997 RECOVERED"},{"place":"6 DEATH"},{"place":"FORT MCMURRAY"},{"place":"10200 CASES"},{"place":"294.6 ACTIVE CASE RATE PER 100K"},{"place":"234 ACTIVE"},{"place":"9945 RECOVERED"},{"place":"21 DEATH"},{"place":"CITY OF FORT SASKATCHEWAN"},{"place":"2823 CASES"},{"place":"395.5 ACTIVE CASE RATE PER 100K"},{"place":"107 ACTIVE"},{"place":"2689 RECOVERED"},{"place":"27 DEATH"},{"place":"COUNTY OF FORTY MILE NO. 8"},{"place":"411 CASES"},{"place":"312.1 ACTIVE CASE RATE PER 100K"},{"place":"20 ACTIVE"},{"place":"386 RECOVERED"},{"place":"5 DEATH"},{"place":"CITY OF GRANDE PRAIRIE"},{"place":"8419 CASES"},{"place":"501 ACTIVE CASE RATE PER 100K"},{"place":"372 ACTIVE"},{"place":"7987 RECOVERED"},{"place":"60 DEATH"},{"place":"COUNTY OF GRANDE PRAIRIE NO. 1"},{"place":"3319 CASES"},{"place":"421.8 ACTIVE CASE RATE PER 100K"},{"place":"134 ACTIVE"},{"place":"3169 RECOVERED"},{"place":"16 DEATH"},{"place":"TOWN OF HIGH RIVER"},{"place":"1935 CASES"},{"place":"372.3 ACTIVE CASE RATE PER 100K"},{"place":"63 ACTIVE"},{"place":"1861 RECOVERED"},{"place":"11 DEATH"},{"place":"TOWN OF HINTON"},{"place":"829 CASES"},{"place":"354.5 ACTIVE CASE RATE PER 100K"},{"place":"42 ACTIVE"},{"place":"775 RECOVERED"},{"place":"12 DEATH"},{"place":"I.D. NO. 4"},{"place":"8 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"8 RECOVERED"},{"place":"0 DEATH"},{"place":"I.D. NO. 9"},{"place":"1694 CASES"},{"place":"74.3 ACTIVE CASE RATE PER 100K"},{"place":"10 ACTIVE"},{"place":"1683 RECOVERED"},{"place":"1 DEATH"},{"place":"I.D. NO. 12"},{"place":"0 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"0 RECOVERED"},{"place":"0 DEATH"},{"place":"I.D. NO. 13"},{"place":"0 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"0 RECOVERED"},{"place":"0 DEATH"},{"place":"I.D. NO. 24"},{"place":"274 CASES"},{"place":"1362.8 ACTIVE CASE RATE PER 100K"},{"place":"8 ACTIVE"},{"place":"266 RECOVERED"},{"place":"0 DEATH"},{"place":"KNEEHILL COUNTY"},{"place":"1040 CASES"},{"place":"791.1 ACTIVE CASE RATE PER 100K"},{"place":"86 ACTIVE"},{"place":"940 RECOVERED"},{"place":"14 DEATH"},{"place":"LAC STE. ANNE COUNTY"},{"place":"1621 CASES"},{"place":"322 ACTIVE CASE RATE PER 100K"},{"place":"53 ACTIVE"},{"place":"1541 RECOVERED"},{"place":"27 DEATH"},{"place":"CITY OF LACOMBE"},{"place":"2105 CASES"},{"place":"409.5 ACTIVE CASE RATE PER 100K"},{"place":"77 ACTIVE"},{"place":"2014 RECOVERED"},{"place":"14 DEATH"},{"place":"LACOMBE COUNTY"},{"place":"2433 CASES"},{"place":"390 ACTIVE CASE RATE PER 100K"},{"place":"86 ACTIVE"},{"place":"2335 RECOVERED"},{"place":"12 DEATH"},{"place":"LAMONT COUNTY"},{"place":"576 CASES"},{"place":"497.1 ACTIVE CASE RATE PER 100K"},{"place":"39 ACTIVE"},{"place":"531 RECOVERED"},{"place":"6 DEATH"},{"place":"CITY OF LEDUC"},{"place":"3746 CASES"},{"place":"536 ACTIVE CASE RATE PER 100K"},{"place":"180 ACTIVE"},{"place":"3528 RECOVERED"},{"place":"38 DEATH"},{"place":"LEDUC COUNTY"},{"place":"2191 CASES"},{"place":"268.1 ACTIVE CASE RATE PER 100K"},{"place":"65 ACTIVE"},{"place":"2108 RECOVERED"},{"place":"18 DEATH"},{"place":"CITY OF LETHBRIDGE"},{"place":"11120 CASES"},{"place":"746.1 ACTIVE CASE RATE PER 100K"},{"place":"751 ACTIVE"},{"place":"10287 RECOVERED"},{"place":"82 DEATH"},{"place":"LETHBRIDGE COUNTY"},{"place":"2537 CASES"},{"place":"513.9 ACTIVE CASE RATE PER 100K"},{"place":"132 ACTIVE"},{"place":"2384 RECOVERED"},{"place":"21 DEATH"},{"place":"CITY OF LLOYDMINSTER"},{"place":"119 CASES"},{"place":"58.1 ACTIVE CASE RATE PER 100K"},{"place":"13 ACTIVE"},{"place":"105 RECOVERED"},{"place":"1 DEATH"},{"place":"CITY OF MEDICINE HAT"},{"place":"6753 CASES"},{"place":"621 ACTIVE CASE RATE PER 100K"},{"place":"423 ACTIVE"},{"place":"6246 RECOVERED"},{"place":"84 DEATH"},{"place":"COUNTY OF MINBURN NO. 27"},{"place":"706 CASES"},{"place":"279.1 ACTIVE CASE RATE PER 100K"},{"place":"29 ACTIVE"},{"place":"668 RECOVERED"},{"place":"9 DEATH"},{"place":"TOWN OF MORINVILLE"},{"place":"1353 CASES"},{"place":"464.3 ACTIVE CASE RATE PER 100K"},{"place":"53 ACTIVE"},{"place":"1286 RECOVERED"},{"place":"14 DEATH"},{"place":"MOUNTAIN VIEW COUNTY"},{"place":"1756 CASES"},{"place":"411.8 ACTIVE CASE RATE PER 100K"},{"place":"95 ACTIVE"},{"place":"1647 RECOVERED"},{"place":"14 DEATH"},{"place":"COUNTY OF NEWELL"},{"place":"637 CASES"},{"place":"525.1 ACTIVE CASE RATE PER 100K"},{"place":"42 ACTIVE"},{"place":"586 RECOVERED"},{"place":"9 DEATH"},{"place":"TOWN OF OKOTOKS"},{"place":"3818 CASES"},{"place":"448.9 ACTIVE CASE RATE PER 100K"},{"place":"160 ACTIVE"},{"place":"3653 RECOVERED"},{"place":"5 DEATH"},{"place":"TOWN OF OLDS"},{"place":"1265 CASES"},{"place":"546.9 ACTIVE CASE RATE PER 100K"},{"place":"68 ACTIVE"},{"place":"1181 RECOVERED"},{"place":"16 DEATH"},{"place":"COUNTY OF PAINTEARTH NO. 18"},{"place":"311 CASES"},{"place":"403.5 ACTIVE CASE RATE PER 100K"},{"place":"16 ACTIVE"},{"place":"291 RECOVERED"},{"place":"4 DEATH"},{"place":"PARKLAND COUNTY"},{"place":"3518 CASES"},{"place":"389.8 ACTIVE CASE RATE PER 100K"},{"place":"130 ACTIVE"},{"place":"3374 RECOVERED"},{"place":"14 DEATH"},{"place":"MUNICIPAL DISTRICT OF PEACE NO. 135"},{"place":"1670 CASES"},{"place":"773.5 ACTIVE CASE RATE PER 100K"},{"place":"123 ACTIVE"},{"place":"1535 RECOVERED"},{"place":"12 DEATH"},{"place":"MUNICIPAL DISTRICT OF PINCHER CREEK NO. 9"},{"place":"1061 CASES"},{"place":"1066.7 ACTIVE CASE RATE PER 100K"},{"place":"89 ACTIVE"},{"place":"959 RECOVERED"},{"place":"13 DEATH"},{"place":"PONOKA COUNTY"},{"place":"6409 CASES"},{"place":"1148.1 ACTIVE CASE RATE PER 100K"},{"place":"316 ACTIVE"},{"place":"6052 RECOVERED"},{"place":"41 DEATH"},{"place":"MUNICIPAL DISTRICT OF PROVOST NO. 52"},{"place":"363 CASES"},{"place":"493.8 ACTIVE CASE RATE PER 100K"},{"place":"24 ACTIVE"},{"place":"335 RECOVERED"},{"place":"4 DEATH"},{"place":"CITY OF RED DEER"},{"place":"13052 CASES"},{"place":"578 ACTIVE CASE RATE PER 100K"},{"place":"615 ACTIVE"},{"place":"12347 RECOVERED"},{"place":"90 DEATH"},{"place":"RED DEER COUNTY"},{"place":"3435 CASES"},{"place":"668.8 ACTIVE CASE RATE PER 100K"},{"place":"222 ACTIVE"},{"place":"3183 RECOVERED"},{"place":"30 DEATH"},{"place":"ROCKY VIEW COUNTY"},{"place":"4829 CASES"},{"place":"413.2 ACTIVE CASE RATE PER 100K"},{"place":"185 ACTIVE"},{"place":"4631 RECOVERED"},{"place":"13 DEATH"},{"place":"SMOKY LAKE COUNTY"},{"place":"2123 CASES"},{"place":"954.9 ACTIVE CASE RATE PER 100K"},{"place":"80 ACTIVE"},{"place":"2022 RECOVERED"},{"place":"21 DEATH"},{"place":"MUNICIPAL DISTRICT OF SMOKY RIVER NO. 130"},{"place":"454 CASES"},{"place":"1513.6 ACTIVE CASE RATE PER 100K"},{"place":"67 ACTIVE"},{"place":"377 RECOVERED"},{"place":"10 DEATH"},{"place":"MUNICIPAL DISTRICT OF SPIRIT RIVER NO. 133"},{"place":"226 CASES"},{"place":"325 ACTIVE CASE RATE PER 100K"},{"place":"10 ACTIVE"},{"place":"213 RECOVERED"},{"place":"3 DEATH"},{"place":"CITY OF SPRUCE GROVE"},{"place":"3946 CASES"},{"place":"506.2 ACTIVE CASE RATE PER 100K"},{"place":"191 ACTIVE"},{"place":"3738 RECOVERED"},{"place":"17 DEATH"},{"place":"CITY OF ST. ALBERT"},{"place":"7397 CASES"},{"place":"465.6 ACTIVE CASE RATE PER 100K"},{"place":"324 ACTIVE"},{"place":"7007 RECOVERED"},{"place":"66 DEATH"},{"place":"COUNTY OF ST. PAUL NO. 19"},{"place":"2362 CASES"},{"place":"536 ACTIVE CASE RATE PER 100K"},{"place":"87 ACTIVE"},{"place":"2257 RECOVERED"},{"place":"18 DEATH"},{"place":"STARLAND COUNTY"},{"place":"261 CASES"},{"place":"574.1 ACTIVE CASE RATE PER 100K"},{"place":"11 ACTIVE"},{"place":"245 RECOVERED"},{"place":"5 DEATH"},{"place":"COUNTY OF STETTLER NO. 6"},{"place":"1314 CASES"},{"place":"479.2 ACTIVE CASE RATE PER 100K"},{"place":"60 ACTIVE"},{"place":"1243 RECOVERED"},{"place":"11 DEATH"},{"place":"TOWN OF STONY PLAIN"},{"place":"1823 CASES"},{"place":"510.7 ACTIVE CASE RATE PER 100K"},{"place":"103 ACTIVE"},{"place":"1698 RECOVERED"},{"place":"22 DEATH"},{"place":"STRATHCONA COUNTY"},{"place":"2367 CASES"},{"place":"356.8 ACTIVE CASE RATE PER 100K"},{"place":"92 ACTIVE"},{"place":"2265 RECOVERED"},{"place":"10 DEATH"},{"place":"TOWN OF STRATHMORE"},{"place":"1782 CASES"},{"place":"474.1 ACTIVE CASE RATE PER 100K"},{"place":"88 ACTIVE"},{"place":"1668 RECOVERED"},{"place":"26 DEATH"},{"place":"STURGEON COUNTY"},{"place":"2718 CASES"},{"place":"465.4 ACTIVE CASE RATE PER 100K"},{"place":"130 ACTIVE"},{"place":"2571 RECOVERED"},{"place":"17 DEATH"},{"place":"TOWN OF SYLVAN LAKE"},{"place":"1732 CASES"},{"place":"528.3 ACTIVE CASE RATE PER 100K"},{"place":"90 ACTIVE"},{"place":"1627 RECOVERED"},{"place":"15 DEATH"},{"place":"MUNICIPAL DISTRICT OF TABER"},{"place":"1595 CASES"},{"place":"378.5 ACTIVE CASE RATE PER 100K"},{"place":"72 ACTIVE"},{"place":"1505 RECOVERED"},{"place":"18 DEATH"},{"place":"THORHILD COUNTY"},{"place":"247 CASES"},{"place":"477.8 ACTIVE CASE RATE PER 100K"},{"place":"13 ACTIVE"},{"place":"232 RECOVERED"},{"place":"2 DEATH"},{"place":"COUNTY OF TWO HILLS NO. 21"},{"place":"384 CASES"},{"place":"233 ACTIVE CASE RATE PER 100K"},{"place":"13 ACTIVE"},{"place":"362 RECOVERED"},{"place":"9 DEATH"},{"place":"COUNTY OF VERMILION RIVER"},{"place":"1074 CASES"},{"place":"335.1 ACTIVE CASE RATE PER 100K"},{"place":"43 ACTIVE"},{"place":"1016 RECOVERED"},{"place":"15 DEATH"},{"place":"VULCAN COUNTY"},{"place":"1737 CASES"},{"place":"1967.5 ACTIVE CASE RATE PER 100K"},{"place":"181 ACTIVE"},{"place":"1541 RECOVERED"},{"place":"15 DEATH"},{"place":"MUNICIPAL DISTRICT OF WAINWRIGHT NO. 61"},{"place":"1190 CASES"},{"place":"654.6 ACTIVE CASE RATE PER 100K"},{"place":"78 ACTIVE"},{"place":"1096 RECOVERED"},{"place":"16 DEATH"},{"place":"COUNTY OF WARNER NO. 5"},{"place":"1031 CASES"},{"place":"603.4 ACTIVE CASE RATE PER 100K"},{"place":"67 ACTIVE"},{"place":"958 RECOVERED"},{"place":"6 DEATH"},{"place":"WESTLOCK COUNTY"},{"place":"1172 CASES"},{"place":"486.9 ACTIVE CASE RATE PER 100K"},{"place":"66 ACTIVE"},{"place":"1094 RECOVERED"},{"place":"12 DEATH"},{"place":"CITY OF WETASKIWIN"},{"place":"2193 CASES"},{"place":"741.3 ACTIVE CASE RATE PER 100K"},{"place":"124 ACTIVE"},{"place":"2053 RECOVERED"},{"place":"16 DEATH"},{"place":"COUNTY OF WETASKIWIN NO. 10"},{"place":"951 CASES"},{"place":"419.3 ACTIVE CASE RATE PER 100K"},{"place":"43 ACTIVE"},{"place":"900 RECOVERED"},{"place":"8 DEATH"},{"place":"WHEATLAND COUNTY"},{"place":"772 CASES"},{"place":"1032.7 ACTIVE CASE RATE PER 100K"},{"place":"70 ACTIVE"},{"place":"701 RECOVERED"},{"place":"1 DEATH"},{"place":"TOWN OF WHITECOURT"},{"place":"1398 CASES"},{"place":"491.2 ACTIVE CASE RATE PER 100K"},{"place":"70 ACTIVE"},{"place":"1323 RECOVERED"},{"place":"5 DEATH"},{"place":"MUNICIPAL DISTRICT OF WILLOW CREEK NO. 26"},{"place":"1506 CASES"},{"place":"478 ACTIVE CASE RATE PER 100K"},{"place":"79 ACTIVE"},{"place":"1414 RECOVERED"},{"place":"13 DEATH"},{"place":"CITY OF CHESTERMERE"},{"place":"2864 CASES"},{"place":"403.4 ACTIVE CASE RATE PER 100K"},{"place":"86 ACTIVE"},{"place":"2777 RECOVERED"},{"place":"1 DEATH"},{"place":"MUNICIPALITY OF CROWSNEST PASS"},{"place":"303 CASES"},{"place":"414 ACTIVE CASE RATE PER 100K"},{"place":"26 ACTIVE"},{"place":"274 RECOVERED"},{"place":"3 DEATH"},{"place":"KANANASKIS IMPROVEMENT DISTRICT"},{"place":"1 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"1 RECOVERED"},{"place":"0 DEATH"},{"place":"CYPRESS COUNTY"},{"place":"1122 CASES"},{"place":"451.4 ACTIVE CASE RATE PER 100K"},{"place":"51 ACTIVE"},{"place":"1065 RECOVERED"},{"place":"6 DEATH"},{"place":"CLEARWATER COUNTY"},{"place":"2404 CASES"},{"place":"405.3 ACTIVE CASE RATE PER 100K"},{"place":"82 ACTIVE"},{"place":"2290 RECOVERED"},{"place":"32 DEATH"},{"place":"MUNICIPAL DISTRICT OF BIGHORN NO. 8"},{"place":"1111 CASES"},{"place":"746.1 ACTIVE CASE RATE PER 100K"},{"place":"38 ACTIVE"},{"place":"1061 RECOVERED"},{"place":"12 DEATH"},{"place":"BRAZEAU COUNTY"},{"place":"1826 CASES"},{"place":"434.4 ACTIVE CASE RATE PER 100K"},{"place":"73 ACTIVE"},{"place":"1738 RECOVERED"},{"place":"15 DEATH"},{"place":"MUNICIPALITY OF JASPER"},{"place":"467 CASES"},{"place":"89.4 ACTIVE CASE RATE PER 100K"},{"place":"5 ACTIVE"},{"place":"456 RECOVERED"},{"place":"6 DEATH"},{"place":"SPECIAL AREAS NO. 3"},{"place":"179 CASES"},{"place":"404.9 ACTIVE CASE RATE PER 100K"},{"place":"10 ACTIVE"},{"place":"166 RECOVERED"},{"place":"3 DEATH"},{"place":"SPECIAL AREAS NO. 4"},{"place":"177 CASES"},{"place":"364.5 ACTIVE CASE RATE PER 100K"},{"place":"8 ACTIVE"},{"place":"167 RECOVERED"},{"place":"2 DEATH"},{"place":"I.D. NO. 25"},{"place":"0 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"0 RECOVERED"},{"place":"0 DEATH"},{"place":"WOODLANDS COUNTY"},{"place":"90 CASES"},{"place":"449.2 ACTIVE CASE RATE PER 100K"},{"place":"6 ACTIVE"},{"place":"83 RECOVERED"},{"place":"1 DEATH"},{"place":"MUNICIPAL DISTRICT OF GREENVIEW NO. 16"},{"place":"1336 CASES"},{"place":"488.3 ACTIVE CASE RATE PER 100K"},{"place":"73 ACTIVE"},{"place":"1252 RECOVERED"},{"place":"11 DEATH"},{"place":"YELLOWHEAD COUNTY"},{"place":"1830 CASES"},{"place":"333.6 ACTIVE CASE RATE PER 100K"},{"place":"65 ACTIVE"},{"place":"1734 RECOVERED"},{"place":"31 DEATH"},{"place":"NORTHERN SUNRISE COUNTY"},{"place":"616 CASES"},{"place":"505.3 ACTIVE CASE RATE PER 100K"},{"place":"16 ACTIVE"},{"place":"596 RECOVERED"},{"place":"4 DEATH"},{"place":"MUNICIPAL DISTRICT OF RANCHLAND NO. 66"},{"place":"0 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"0 RECOVERED"},{"place":"0 DEATH"},{"place":"BIRCH HILLS COUNTY"},{"place":"88 CASES"},{"place":"135.5 ACTIVE CASE RATE PER 100K"},{"place":"2 ACTIVE"},{"place":"85 RECOVERED"},{"place":"1 DEATH"},{"place":"SADDLE HILLS COUNTY"},{"place":"136 CASES"},{"place":"192.2 ACTIVE CASE RATE PER 100K"},{"place":"3 ACTIVE"},{"place":"133 RECOVERED"},{"place":"0 DEATH"},{"place":"CLEAR HILLS COUNTY"},{"place":"243 CASES"},{"place":"131.9 ACTIVE CASE RATE PER 100K"},{"place":"4 ACTIVE"},{"place":"234 RECOVERED"},{"place":"5 DEATH"},{"place":"MACKENZIE COUNTY"},{"place":"3559 CASES"},{"place":"351 ACTIVE CASE RATE PER 100K"},{"place":"86 ACTIVE"},{"place":"3418 RECOVERED"},{"place":"55 DEATH"},{"place":"BIG LAKES COUNTY"},{"place":"1665 CASES"},{"place":"863.1 ACTIVE CASE RATE PER 100K"},{"place":"104 ACTIVE"},{"place":"1536 RECOVERED"},{"place":"25 DEATH"},{"place":"MUNICIPAL DISTRICT OF LESSER SLAVE RIVER NO. 124"},{"place":"1343 CASES"},{"place":"343 ACTIVE CASE RATE PER 100K"},{"place":"37 ACTIVE"},{"place":"1291 RECOVERED"},{"place":"15 DEATH"},{"place":"REGIONAL MUNICIPALITY OF WOOD BUFFALO"},{"place":"764 CASES"},{"place":"1626.3 ACTIVE CASE RATE PER 100K"},{"place":"66 ACTIVE"},{"place":"696 RECOVERED"},{"place":"2 DEATH"},{"place":"COUNTY OF NORTHERN LIGHTS"},{"place":"439 CASES"},{"place":"509 ACTIVE CASE RATE PER 100K"},{"place":"19 ACTIVE"},{"place":"419 RECOVERED"},{"place":"1 DEATH"},{"place":"MUNICIPAL DISTRICT OF OPPORTUNITY NO. 17"},{"place":"1386 CASES"},{"place":"530.5 ACTIVE CASE RATE PER 100K"},{"place":"35 ACTIVE"},{"place":"1339 RECOVERED"},{"place":"12 DEATH"},{"place":"SHERWOOD PARK"},{"place":"7350 CASES"},{"place":"461.4 ACTIVE CASE RATE PER 100K"},{"place":"339 ACTIVE"},{"place":"6960 RECOVERED"},{"place":"51 DEATH"},{"place":"CITY OF COLD LAKE"},{"place":"2383 CASES"},{"place":"439.4 ACTIVE CASE RATE PER 100K"},{"place":"87 ACTIVE"},{"place":"2279 RECOVERED"},{"place":"17 DEATH"},{"place":"TOWN OF DRUMHELLER"},{"place":"1078 CASES"},{"place":"522.3 ACTIVE CASE RATE PER 100K"},{"place":"47 ACTIVE"},{"place":"1021 RECOVERED"},{"place":"10 DEATH"},{"place":"LAC LA BICHE COUNTY"},{"place":"27 CASES"},{"place":"473.8 ACTIVE CASE RATE PER 100K"},{"place":"1 ACTIVE"},{"place":"26 RECOVERED"},{"place":"0 DEATH"},{"place":"SPECIAL AREAS NO. 2"},{"place":"337 CASES"},{"place":"308.3 ACTIVE CASE RATE PER 100K"},{"place":"14 ACTIVE"},{"place":"318 RECOVERED"},{"place":"5 DEATH"},{"place":"I.D. NO. 349"},{"place":"0 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"0 ACTIVE"},{"place":"0 RECOVERED"},{"place":"0 DEATH"},{"place":"LAC LA BICHE"},{"place":"1248 CASES"},{"place":"364.1 ACTIVE CASE RATE PER 100K"},{"place":"36 ACTIVE"},{"place":"1199 RECOVERED"},{"place":"13 DEATH"},{"place":"LAC LA BICHE"},{"place":"1248 CASES"},{"place":"364.1 ACTIVE CASE RATE PER 100K"},{"place":"36 ACTIVE"},{"place":"1199 RECOVERED"},{"place":"13 DEATH"},{"place":"NA"},{"place":"4591 CASES"},{"place":"0 ACTIVE CASE RATE PER 100K"},{"place":"392 ACTIVE"},{"place":"4182 RECOVERED"},{"place":"CALGARY - WEST","12-19":{"percent":95,"count":9751},"20-39":{"percent":89,"count":20045},"40-59":{"percent":92,"count":25879},"60-74":{"percent":98,"count":12990},"75+":{"percent":97,"count":4966},"18+":{"percent":93,"count":66068},"12+":{"percent":93,"count":73643},"All ages":{"percent":86,"count":79754}},{"place":"CALGARY - EAST","12-19":{"percent":86,"count":5699},"20-39":{"percent":83,"count":17775},"40-59":{"percent":88,"count":18407},"60-74":{"percent":98,"count":10498},"75+":{"percent":93,"count":3238},"18+":{"percent":88,"count":51375},"12+":{"percent":88,"count":55624},"All ages":{"percent":79,"count":57509}},{"place":"CALGARY - CENTRE","12-19":{"percent":96,"count":2091},"20-39":{"percent":95,"count":30803},"40-59":{"percent":88,"count":15002},"60-74":{"percent":93,"count":7361},"75+":{"percent":86,"count":2557},"18+":{"percent":92,"count":56343},"12+":{"percent":92,"count":57818},"All ages":{"percent":87,"count":58842}},{"place":"CALGARY - CENTRE WEST","12-19":{"percent":97,"count":4647},"20-39":{"percent":90,"count":19235},"40-59":{"percent":93,"count":17099},"60-74":{"percent":98,"count":8430},"75+":{"percent":95,"count":3713},"18+":{"percent":93,"count":49587},"12+":{"percent":93,"count":53131},"All ages":{"percent":85,"count":56494}},{"place":"CALGARY - ELBOW","12-19":{"percent":94,"count":2830},"20-39":{"percent":87,"count":10368},"40-59":{"percent":89,"count":9542},"60-74":{"percent":97,"count":7190},"75+":{"percent":91,"count":3474},"18+":{"percent":90,"count":31249},"12+":{"percent":90,"count":33411},"All ages":{"percent":86,"count":35166}},{"place":"CALGARY - FISH CREEK","12-19":{"percent":90,"count":7969},"20-39":{"percent":85,"count":26430},"40-59":{"percent":90,"count":27243},"60-74":{"percent":96,"count":19558},"75+":{"percent":96,"count":7715},"18+":{"percent":90,"count":83048},"12+":{"percent":90,"count":88925},"All ages":{"percent":83,"count":93456}},{"place":"CALGARY - SW","12-19":{"percent":92,"count":11578},"20-39":{"percent":89,"count":28834},"40-59":{"percent":92,"count":32122},"60-74":{"percent":100,"count":14969},"75+":{"percent":99,"count":5561},"18+":{"percent":93,"count":84366},"12+":{"percent":93,"count":93074},"All ages":{"percent":84,"count":99199}},{"place":"CALGARY - SE","12-19":{"percent":96,"count":11995},"20-39":{"percent":88,"count":36251},"40-59":{"percent":94,"count":35484},"60-74":{"percent":100,"count":14787},"75+":{"percent":100,"count":4059},"18+":{"percent":93,"count":93217},"12+":{"percent":93,"count":102600},"All ages":{"percent":83,"count":111855}},{"place":"CALGARY - UPPER NE","12-19":{"percent":100,"count":12800},"20-39":{"percent":100,"count":43258},"40-59":{"percent":100,"count":29098},"60-74":{"percent":100,"count":11954},"75+":{"percent":94,"count":2926},"18+":{"percent":100,"count":90356},"12+":{"percent":100,"count":100047},"All ages":{"percent":87,"count":105905}},{"place":"CALGARY - NOSE HILL","12-19":{"percent":99,"count":5618},"20-39":{"percent":91,"count":23148},"40-59":{"percent":93,"count":19348},"60-74":{"percent":98,"count":11127},"75+":{"percent":92,"count":4555},"18+":{"percent":93,"count":59721},"12+":{"percent":93,"count":63800},"All ages":{"percent":86,"count":67262}},{"place":"CALGARY - LOWER NE","12-19":{"percent":91,"count":8668},"20-39":{"percent":87,"count":25301},"40-59":{"percent":93,"count":23486},"60-74":{"percent":99,"count":13546},"75+":{"percent":97,"count":4334},"18+":{"percent":92,"count":68834},"12+":{"percent":92,"count":75347},"All ages":{"percent":81,"count":78072}},{"place":"CALGARY - UPPER NW","12-19":{"percent":93,"count":11872},"20-39":{"percent":90,"count":30991},"40-59":{"percent":92,"count":32044},"60-74":{"percent":99,"count":18219},"75+":{"percent":96,"count":6146},"18+":{"percent":93,"count":90312},"12+":{"percent":93,"count":99282},"All ages":{"percent":85,"count":106145}},{"place":"CALGARY - NORTH","12-19":{"percent":95,"count":11665},"20-39":{"percent":92,"count":30935},"40-59":{"percent":95,"count":32220},"60-74":{"percent":100,"count":14186},"75+":{"percent":96,"count":4116},"18+":{"percent":95,"count":84231},"12+":{"percent":95,"count":93129},"All ages":{"percent":85,"count":100125}},{"place":"CALGARY - CENTRE NORTH","12-19":{"percent":99,"count":2568},"20-39":{"percent":92,"count":14543},"40-59":{"percent":90,"count":11083},"60-74":{"percent":96,"count":5987},"75+":{"percent":91,"count":2759},"18+":{"percent":92,"count":34988},"12+":{"percent":92,"count":36943},"All ages":{"percent":86,"count":38896}},{"place":"CALGARY - WEST BOW","12-19":{"percent":87,"count":1144},"20-39":{"percent":89,"count":5846},"40-59":{"percent":88,"count":4902},"60-74":{"percent":93,"count":3383},"75+":{"percent":93,"count":1581},"18+":{"percent":90,"count":16017},"12+":{"percent":90,"count":16856},"All ages":{"percent":82,"count":17562}},{"place":"COCHRANE - SPRINGBANK","12-19":{"percent":86,"count":4544},"20-39":{"percent":83,"count":10223},"40-59":{"percent":88,"count":12340},"60-74":{"percent":95,"count":8794},"75+":{"percent":98,"count":2712},"18+":{"percent":89,"count":35164},"12+":{"percent":88,"count":38619},"All ages":{"percent":81,"count":41444}},{"place":"OKOTOKS-PRIDDIS","12-19":{"percent":84,"count":4716},"20-39":{"percent":77,"count":8020},"40-59":{"percent":85,"count":11414},"60-74":{"percent":95,"count":7612},"75+":{"percent":100,"count":2461},"18+":{"percent":86,"count":30595},"12+":{"percent":86,"count":34230},"All ages":{"percent":79,"count":36414}},{"place":"AIRDRIE","12-19":{"percent":90,"count":7028},"20-39":{"percent":83,"count":18291},"40-59":{"percent":90,"count":17797},"60-74":{"percent":100,"count":8295},"75+":{"percent":95,"count":2021},"18+":{"percent":89,"count":47879},"12+":{"percent":89,"count":53446},"All ages":{"percent":78,"count":57667}},{"place":"CHESTERMERE","12-19":{"percent":91,"count":2675},"20-39":{"percent":87,"count":5629},"40-59":{"percent":92,"count":6589},"60-74":{"percent":99,"count":3383},"75+":{"percent":100,"count":1095},"18+":{"percent":92,"count":17297},"12+":{"percent":92,"count":19376},"All ages":{"percent":82,"count":20654}},{"place":"CROSSFIELD","12-19":{"percent":74,"count":653},"20-39":{"percent":68,"count":1514},"40-59":{"percent":76,"count":1968},"60-74":{"percent":84,"count":1477},"75+":{"percent":87,"count":423},"18+":{"percent":76,"count":5533},"12+":{"percent":76,"count":6037},"All ages":{"percent":68,"count":6294}},{"place":"CALGARY - LOWER NW","12-19":{"percent":100,"count":6662},"20-39":{"percent":93,"count":15680},"40-59":{"percent":93,"count":16153},"60-74":{"percent":98,"count":9368},"75+":{"percent":100,"count":4282},"18+":{"percent":95,"count":47458},"12+":{"percent":95,"count":52150},"All ages":{"percent":89,"count":55891}},{"place":"THORSBY","12-19":{"percent":71,"count":583},"20-39":{"percent":71,"count":1549},"40-59":{"percent":75,"count":1848},"60-74":{"percent":86,"count":1564},"75+":{"percent":94,"count":569},"18+":{"percent":78,"count":5681},"12+":{"percent":78,"count":6114},"All ages":{"percent":69,"count":6312}},{"place":"STRATHCONA COUNTY EXCLUDING SHERWOOD PARK","12-19":{"percent":82,"count":1497},"20-39":{"percent":84,"count":3416},"40-59":{"percent":86,"count":4420},"60-74":{"percent":94,"count":3342},"75+":{"percent":94,"count":804},"18+":{"percent":87,"count":12372},"12+":{"percent":87,"count":13481},"All ages":{"percent":81,"count":14130}},{"place":"FORT SASKATCHEWAN","12-19":{"percent":91,"count":2246},"20-39":{"percent":85,"count":7097},"40-59":{"percent":91,"count":6048},"60-74":{"percent":97,"count":3465},"75+":{"percent":100,"count":1356},"18+":{"percent":90,"count":18491},"12+":{"percent":90,"count":20213},"All ages":{"percent":80,"count":21477}},{"place":"STURGEON COUNTY WEST","12-19":{"percent":85,"count":2812},"20-39":{"percent":82,"count":6516},"40-59":{"percent":89,"count":6988},"60-74":{"percent":93,"count":4387},"75+":{"percent":98,"count":1303},"18+":{"percent":88,"count":19898},"12+":{"percent":87,"count":22014},"All ages":{"percent":77,"count":23481}},{"place":"EDMONTON - TWIN BROOKS","12-19":{"percent":96,"count":7295},"20-39":{"percent":89,"count":17587},"40-59":{"percent":92,"count":19125},"60-74":{"percent":97,"count":12150},"75+":{"percent":98,"count":5469},"18+":{"percent":93,"count":56082},"12+":{"percent":93,"count":61643},"All ages":{"percent":87,"count":66094}},{"place":"ST. ALBERT","12-19":{"percent":92,"count":6534},"20-39":{"percent":88,"count":15000},"40-59":{"percent":93,"count":17472},"60-74":{"percent":99,"count":12084},"75+":{"percent":100,"count":5312},"18+":{"percent":93,"count":51437},"12+":{"percent":93,"count":56410},"All ages":{"percent":87,"count":60506}},{"place":"WESTVIEW EXCLUDING STONY PLAIN","12-19":{"percent":75,"count":2930},"20-39":{"percent":76,"count":6273},"40-59":{"percent":81,"count":8365},"60-74":{"percent":90,"count":6402},"75+":{"percent":92,"count":1937},"18+":{"percent":82,"count":23764},"12+":{"percent":82,"count":25922},"All ages":{"percent":74,"count":27191}},{"place":"EDMONTON - CASTLE DOWNS","12-19":{"percent":93,"count":6795},"20-39":{"percent":89,"count":18687},"40-59":{"percent":93,"count":17052},"60-74":{"percent":99,"count":9348},"75+":{"percent":98,"count":3489},"18+":{"percent":93,"count":50245},"12+":{"percent":93,"count":55380},"All ages":{"percent":81,"count":58406}},{"place":"EDMONTON - NE","12-19":{"percent":93,"count":7863},"20-39":{"percent":87,"count":25702},"40-59":{"percent":94,"count":21293},"60-74":{"percent":99,"count":11272},"75+":{"percent":94,"count":3453},"18+":{"percent":92,"count":63623},"12+":{"percent":92,"count":69596},"All ages":{"percent":80,"count":73068}},{"place":"EDMONTON - EASTWOOD","12-19":{"percent":87,"count":3774},"20-39":{"percent":82,"count":21870},"40-59":{"percent":85,"count":17086},"60-74":{"percent":94,"count":9751},"75+":{"percent":89,"count":3181},"18+":{"percent":85,"count":53059},"12+":{"percent":85,"count":55670},"All ages":{"percent":79,"count":56899}},{"place":"EDMONTON - BONNIE DOON","12-19":{"percent":96,"count":6114},"20-39":{"percent":89,"count":32544},"40-59":{"percent":90,"count":21240},"60-74":{"percent":97,"count":13703},"75+":{"percent":91,"count":6322},"18+":{"percent":91,"count":75995},"12+":{"percent":91,"count":79929},"All ages":{"percent":86,"count":83564}},{"place":"EDMONTON - WEST JASPER PLACE","12-19":{"percent":96,"count":9501},"20-39":{"percent":94,"count":28018},"40-59":{"percent":96,"count":26909},"60-74":{"percent":100,"count":14910},"75+":{"percent":98,"count":4983},"18+":{"percent":96,"count":77070},"12+":{"percent":96,"count":84335},"All ages":{"percent":88,"count":91158}},{"place":"EDMONTON - RUTHERFORD","12-19":{"percent":100,"count":9506},"20-39":{"percent":96,"count":39091},"40-59":{"percent":98,"count":26814},"60-74":{"percent":100,"count":9886},"75+":{"percent":100,"count":2623},"18+":{"percent":99,"count":80560},"12+":{"percent":99,"count":87936},"All ages":{"percent":86,"count":97222}},{"place":"EDMONTON - JASPER PLACE","12-19":{"percent":88,"count":3487},"20-39":{"percent":84,"count":11791},"40-59":{"percent":88,"count":10936},"60-74":{"percent":92,"count":6270},"75+":{"percent":88,"count":3412},"18+":{"percent":87,"count":33345},"12+":{"percent":87,"count":35897},"All ages":{"percent":79,"count":37236}},{"place":"EDMONTON - MILL WOODS SOUTH","12-19":{"percent":95,"count":7990},"20-39":{"percent":94,"count":27954},"40-59":{"percent":96,"count":20077},"60-74":{"percent":100,"count":10439},"75+":{"percent":96,"count":2479},"18+":{"percent":96,"count":63062},"12+":{"percent":96,"count":68947},"All ages":{"percent":85,"count":73119}},{"place":"SHERWOOD PARK","12-19":{"percent":95,"count":8217},"20-39":{"percent":88,"count":18237},"40-59":{"percent":92,"count":21207},"60-74":{"percent":98,"count":13203},"75+":{"percent":100,"count":5797},"18+":{"percent":93,"count":60513},"12+":{"percent":93,"count":66666},"All ages":{"percent":87,"count":71343}},{"place":"BEAUMONT","12-19":{"percent":93,"count":2633},"20-39":{"percent":87,"count":6055},"40-59":{"percent":91,"count":6327},"60-74":{"percent":98,"count":3369},"75+":{"percent":99,"count":784},"18+":{"percent":91,"count":17111},"12+":{"percent":91,"count":19173},"All ages":{"percent":81,"count":20925}},{"place":"LEDUC","12-19":{"percent":89,"count":3700},"20-39":{"percent":81,"count":10068},"40-59":{"percent":90,"count":9866},"60-74":{"percent":98,"count":5899},"75+":{"percent":97,"count":2332},"18+":{"percent":88,"count":29039},"12+":{"percent":88,"count":31870},"All ages":{"percent":78,"count":33830}},{"place":"EDMONTON - NORTHGATE","12-19":{"percent":90,"count":7223},"20-39":{"percent":88,"count":21159},"40-59":{"percent":92,"count":19381},"60-74":{"percent":97,"count":11198},"75+":{"percent":90,"count":5683},"18+":{"percent":91,"count":59276},"12+":{"percent":91,"count":64659},"All ages":{"percent":80,"count":67121}},{"place":"EDMONTON - WOODCROFT EAST","12-19":{"percent":93,"count":2964},"20-39":{"percent":85,"count":19637},"40-59":{"percent":87,"count":13853},"60-74":{"percent":93,"count":7910},"75+":{"percent":92,"count":3470},"18+":{"percent":88,"count":45716},"12+":{"percent":88,"count":47843},"All ages":{"percent":80,"count":49006}},{"place":"EDMONTON - DUGGAN","12-19":{"percent":94,"count":3366},"20-39":{"percent":91,"count":12192},"40-59":{"percent":95,"count":9273},"60-74":{"percent":98,"count":4882},"75+":{"percent":90,"count":2942},"18+":{"percent":93,"count":30252},"12+":{"percent":93,"count":32658},"All ages":{"percent":85,"count":34152}},{"place":"EDMONTON - MILL WOODS WEST","12-19":{"percent":95,"count":4945},"20-39":{"percent":89,"count":14121},"40-59":{"percent":96,"count":11941},"60-74":{"percent":98,"count":7355},"75+":{"percent":91,"count":2724},"18+":{"percent":93,"count":37427},"12+":{"percent":93,"count":41098},"All ages":{"percent":83,"count":42716}},{"place":"STURGEON COUNTY EAST","12-19":{"percent":73,"count":507},"20-39":{"percent":78,"count":1226},"40-59":{"percent":84,"count":1475},"60-74":{"percent":94,"count":892},"75+":{"percent":100,"count":262},"18+":{"percent":85,"count":3986},"12+":{"percent":83,"count":4362},"All ages":{"percent":76,"count":4632}},{"place":"EDMONTON - ABBOTTSFIELD","12-19":{"percent":80,"count":1148},"20-39":{"percent":77,"count":3223},"40-59":{"percent":86,"count":3241},"60-74":{"percent":94,"count":1911},"75+":{"percent":91,"count":823},"18+":{"percent":84,"count":9463},"12+":{"percent":84,"count":10347},"All ages":{"percent":73,"count":10715}},{"place":"STONY PLAIN","12-19":{"percent":89,"count":5209},"20-39":{"percent":82,"count":13663},"40-59":{"percent":90,"count":13154},"60-74":{"percent":96,"count":7960},"75+":{"percent":100,"count":3359},"18+":{"percent":89,"count":39385},"12+":{"percent":89,"count":43352},"All ages":{"percent":79,"count":46008}},{"place":"EDMONTON - WOODCROFT WEST","12-19":{"percent":96,"count":2465},"20-39":{"percent":89,"count":8924},"40-59":{"percent":93,"count":8286},"60-74":{"percent":96,"count":4824},"75+":{"percent":95,"count":1777},"18+":{"percent":92,"count":24410},"12+":{"percent":93,"count":26279},"All ages":{"percent":83,"count":27657}},{"place":"LETHBRIDGE - NORTH","12-19":{"percent":88,"count":2176},"20-39":{"percent":85,"count":7031},"40-59":{"percent":90,"count":6417},"60-74":{"percent":98,"count":4381},"75+":{"percent":96,"count":1875},"18+":{"percent":90,"count":20222},"12+":{"percent":90,"count":21885},"All ages":{"percent":81,"count":22820}},{"place":"LETHBRIDGE - WEST","12-19":{"percent":94,"count":3786},"20-39":{"percent":91,"count":12290},"40-59":{"percent":95,"count":8134},"60-74":{"percent":99,"count":4687},"75+":{"percent":100,"count":1517},"18+":{"percent":94,"count":27595},"12+":{"percent":94,"count":30423},"All ages":{"percent":85,"count":32516}},{"place":"LETHBRIDGE - SOUTH","12-19":{"percent":88,"count":2279},"20-39":{"percent":84,"count":8017},"40-59":{"percent":90,"count":6808},"60-74":{"percent":94,"count":6145},"75+":{"percent":94,"count":4165},"18+":{"percent":90,"count":25755},"12+":{"percent":90,"count":27420},"All ages":{"percent":83,"count":28490}},{"place":"MEDICINE HAT","12-19":{"percent":82,"count":5248},"20-39":{"percent":80,"count":14228},"40-59":{"percent":86,"count":14792},"60-74":{"percent":94,"count":11506},"75+":{"percent":94,"count":5476},"18+":{"percent":87,"count":47307},"12+":{"percent":86,"count":51258},"All ages":{"percent":78,"count":53346}},{"place":"RED DEER - NORTH","12-19":{"percent":77,"count":2716},"20-39":{"percent":72,"count":8135},"40-59":{"percent":85,"count":7715},"60-74":{"percent":93,"count":4479},"75+":{"percent":94,"count":1610},"18+":{"percent":81,"count":22635},"12+":{"percent":81,"count":24660},"All ages":{"percent":71,"count":25605}},{"place":"RED DEER - SW","12-19":{"percent":82,"count":858},"20-39":{"percent":72,"count":3564},"40-59":{"percent":80,"count":3295},"60-74":{"percent":90,"count":2336},"75+":{"percent":87,"count":1084},"18+":{"percent":79,"count":10508},"12+":{"percent":80,"count":11137},"All ages":{"percent":72,"count":11399}},{"place":"CITY OF GRANDE PRAIRIE","12-19":{"percent":74,"count":5343},"20-39":{"percent":68,"count":18291},"40-59":{"percent":80,"count":14722},"60-74":{"percent":91,"count":6388},"75+":{"percent":90,"count":1978},"18+":{"percent":76,"count":42658},"12+":{"percent":75,"count":46727},"All ages":{"percent":65,"count":48827}},{"place":"CYPRESS COUNTY","12-19":{"percent":71,"count":900},"20-39":{"percent":73,"count":2043},"40-59":{"percent":83,"count":2598},"60-74":{"percent":87,"count":1650},"75+":{"percent":85,"count":410},"18+":{"percent":80,"count":6913},"12+":{"percent":79,"count":7604},"All ages":{"percent":70,"count":7896}},{"place":"COUNTY OF FORTY MILE","12-19":{"percent":35,"count":304},"20-39":{"percent":46,"count":771},"40-59":{"percent":61,"count":747},"60-74":{"percent":77,"count":644},"75+":{"percent":84,"count":291},"18+":{"percent":59,"count":2534},"12+":{"percent":55,"count":2759},"All ages":{"percent":44,"count":2819}},{"place":"COUNTY OF WARNER","12-19":{"percent":63,"count":932},"20-39":{"percent":64,"count":1729},"40-59":{"percent":78,"count":1787},"60-74":{"percent":88,"count":1622},"75+":{"percent":87,"count":691},"18+":{"percent":76,"count":6051},"12+":{"percent":74,"count":6766},"All ages":{"percent":63,"count":7060}},{"place":"COUNTY OF LETHBRIDGE","12-19":{"percent":55,"count":1721},"20-39":{"percent":63,"count":4459},"40-59":{"percent":77,"count":4315},"60-74":{"percent":88,"count":3156},"75+":{"percent":89,"count":1180},"18+":{"percent":74,"count":13524},"12+":{"percent":72,"count":14831},"All ages":{"percent":60,"count":15582}},{"place":"TABER MD","12-19":{"percent":42,"count":1122},"20-39":{"percent":49,"count":2555},"40-59":{"percent":70,"count":2893},"60-74":{"percent":84,"count":1945},"75+":{"percent":90,"count":880},"18+":{"percent":65,"count":8557},"12+":{"percent":62,"count":9398},"All ages":{"percent":51,"count":9782}},{"place":"NEWELL","12-19":{"percent":74,"count":2434},"20-39":{"percent":77,"count":6018},"40-59":{"percent":84,"count":6246},"60-74":{"percent":93,"count":3180},"75+":{"percent":91,"count":1140},"18+":{"percent":83,"count":17180},"12+":{"percent":82,"count":19019},"All ages":{"percent":70,"count":19597}},{"place":"CARDSTON-KAINAI","12-19":{"percent":86,"count":1903},"20-39":{"percent":81,"count":3358},"40-59":{"percent":87,"count":2955},"60-74":{"percent":89,"count":2252},"75+":{"percent":89,"count":1127},"18+":{"percent":85,"count":10129},"12+":{"percent":86,"count":11606},"All ages":{"percent":74,"count":12301}},{"place":"PINCHER CREEK","12-19":{"percent":82,"count":642},"20-39":{"percent":81,"count":1593},"40-59":{"percent":85,"count":1668},"60-74":{"percent":91,"count":1552},"75+":{"percent":96,"count":757},"18+":{"percent":86,"count":5726},"12+":{"percent":86,"count":6213},"All ages":{"percent":78,"count":6513}},{"place":"OYEN","12-19":{"percent":60,"count":200},"20-39":{"percent":64,"count":496},"40-59":{"percent":73,"count":618},"60-74":{"percent":88,"count":640},"75+":{"percent":89,"count":280},"18+":{"percent":76,"count":2094},"12+":{"percent":75,"count":2235},"All ages":{"percent":65,"count":2288}},{"place":"CROWSNEST PASS","12-19":{"percent":70,"count":341},"20-39":{"percent":70,"count":914},"40-59":{"percent":79,"count":1284},"60-74":{"percent":89,"count":1437},"75+":{"percent":89,"count":537},"18+":{"percent":81,"count":4251},"12+":{"percent":80,"count":4513},"All ages":{"percent":74,"count":4680}},{"place":"FORT MACLEOD","12-19":{"percent":56,"count":387},"20-39":{"percent":58,"count":993},"40-59":{"percent":73,"count":1071},"60-74":{"percent":84,"count":1006},"75+":{"percent":87,"count":461},"18+":{"percent":71,"count":3621},"12+":{"percent":70,"count":3918},"All ages":{"percent":60,"count":4060}},{"place":"CLARESHOLM","12-19":{"percent":73,"count":342},"20-39":{"percent":71,"count":899},"40-59":{"percent":77,"count":1164},"60-74":{"percent":89,"count":1350},"75+":{"percent":92,"count":756},"18+":{"percent":81,"count":4247},"12+":{"percent":81,"count":4512},"All ages":{"percent":74,"count":4625}},{"place":"STRATHMORE","12-19":{"percent":84,"count":3503},"20-39":{"percent":78,"count":6917},"40-59":{"percent":85,"count":8549},"60-74":{"percent":92,"count":4997},"75+":{"percent":95,"count":1807},"18+":{"percent":85,"count":23074},"12+":{"percent":85,"count":25784},"All ages":{"percent":76,"count":27221}},{"place":"HIGH RIVER","12-19":{"percent":77,"count":1872},"20-39":{"percent":74,"count":3831},"40-59":{"percent":82,"count":5011},"60-74":{"percent":89,"count":4263},"75+":{"percent":96,"count":2185},"18+":{"percent":83,"count":15756},"12+":{"percent":82,"count":17166},"All ages":{"percent":75,"count":17823}},{"place":"DIDSBURY","12-19":{"percent":69,"count":1155},"20-39":{"percent":67,"count":2443},"40-59":{"percent":75,"count":3348},"60-74":{"percent":89,"count":2869},"75+":{"percent":97,"count":1144},"18+":{"percent":78,"count":10104},"12+":{"percent":77,"count":10961},"All ages":{"percent":69,"count":11403}},{"place":"VULCAN","12-19":{"percent":49,"count":352},"20-39":{"percent":60,"count":888},"40-59":{"percent":74,"count":1127},"60-74":{"percent":85,"count":1262},"75+":{"percent":89,"count":587},"18+":{"percent":74,"count":3951},"12+":{"percent":72,"count":4218},"All ages":{"percent":64,"count":4361}},{"place":"BLACK DIAMOND","12-19":{"percent":70,"count":537},"20-39":{"percent":72,"count":1303},"40-59":{"percent":76,"count":1795},"60-74":{"percent":91,"count":1878},"75+":{"percent":92,"count":643},"18+":{"percent":81,"count":5754},"12+":{"percent":80,"count":6157},"All ages":{"percent":72,"count":6387}},{"place":"BANFF","12-19":{"percent":94,"count":655},"20-39":{"percent":76,"count":5928},"40-59":{"percent":88,"count":2590},"60-74":{"percent":94,"count":978},"75+":{"percent":93,"count":274},"18+":{"percent":82,"count":10083},"12+":{"percent":82,"count":10428},"All ages":{"percent":79,"count":10734}},{"place":"CANMORE","12-19":{"percent":100,"count":2579},"20-39":{"percent":91,"count":7571},"40-59":{"percent":92,"count":7040},"60-74":{"percent":98,"count":4410},"75+":{"percent":98,"count":1188},"18+":{"percent":93,"count":20817},"12+":{"percent":94,"count":22791},"All ages":{"percent":87,"count":24137}},{"place":"PLANNING","12-19":{"percent":59,"count":202},"20-39":{"percent":69,"count":542},"40-59":{"percent":73,"count":704},"60-74":{"percent":81,"count":638},"75+":{"percent":94,"count":351},"18+":{"percent":76,"count":2292},"12+":{"percent":75,"count":2437},"All ages":{"percent":68,"count":2493}},{"place":"STARLAND COUNTY","12-19":{"percent":77,"count":875},"20-39":{"percent":88,"count":2516},"40-59":{"percent":87,"count":2699},"60-74":{"percent":93,"count":2170},"75+":{"percent":96,"count":910},"18+":{"percent":89,"count":8523},"12+":{"percent":88,"count":9170},"All ages":{"percent":79,"count":9428}},{"place":"THREE HILLS","12-19":{"percent":63,"count":712},"20-39":{"percent":63,"count":1585},"40-59":{"percent":71,"count":1918},"60-74":{"percent":83,"count":1672},"75+":{"percent":83,"count":832},"18+":{"percent":73,"count":6224},"12+":{"percent":72,"count":6719},"All ages":{"percent":64,"count":6944}},{"place":"MD OF PROVOST","12-19":{"percent":78,"count":427},"20-39":{"percent":73,"count":896},"40-59":{"percent":82,"count":1038},"60-74":{"percent":91,"count":704},"75+":{"percent":89,"count":337},"18+":{"percent":82,"count":3097},"12+":{"percent":81,"count":3402},"All ages":{"percent":72,"count":3502}},{"place":"CASTOR","12-19":{"percent":63,"count":425},"20-39":{"percent":64,"count":894},"40-59":{"percent":69,"count":1052},"60-74":{"percent":85,"count":998},"75+":{"percent":85,"count":442},"18+":{"percent":73,"count":3515},"12+":{"percent":72,"count":3811},"All ages":{"percent":63,"count":3911}},{"place":"STETTLER","12-19":{"percent":63,"count":746},"20-39":{"percent":61,"count":1849},"40-59":{"percent":75,"count":2271},"60-74":{"percent":85,"count":1985},"75+":{"percent":90,"count":1025},"18+":{"percent":75,"count":7336},"12+":{"percent":73,"count":7878},"All ages":{"percent":64,"count":8127}},{"place":"FLAGSTAFF COUNTY","12-19":{"percent":73,"count":600},"20-39":{"percent":74,"count":1367},"40-59":{"percent":80,"count":1712},"60-74":{"percent":92,"count":1629},"75+":{"percent":93,"count":772},"18+":{"percent":83,"count":5657},"12+":{"percent":82,"count":6080},"All ages":{"percent":74,"count":6252}},{"place":"MD OF WAINWRIGHT","12-19":{"percent":80,"count":1004},"20-39":{"percent":78,"count":2508},"40-59":{"percent":88,"count":2602},"60-74":{"percent":94,"count":1749},"75+":{"percent":92,"count":708},"18+":{"percent":86,"count":7804},"12+":{"percent":85,"count":8572},"All ages":{"percent":75,"count":9029}},{"place":"INNISFAIL","12-19":{"percent":74,"count":1098},"20-39":{"percent":80,"count":3036},"40-59":{"percent":87,"count":3638},"60-74":{"percent":92,"count":2941},"75+":{"percent":95,"count":1374},"18+":{"percent":87,"count":11279},"12+":{"percent":86,"count":12090},"All ages":{"percent":77,"count":12402}},{"place":"LACOMBE","12-19":{"percent":68,"count":1646},"20-39":{"percent":68,"count":4180},"40-59":{"percent":78,"count":4534},"60-74":{"percent":87,"count":3426},"75+":{"percent":90,"count":1476},"18+":{"percent":77,"count":14058},"12+":{"percent":76,"count":15263},"All ages":{"percent":68,"count":15870}},{"place":"PONOKA","12-19":{"percent":65,"count":787},"20-39":{"percent":67,"count":2134},"40-59":{"percent":80,"count":2395},"60-74":{"percent":87,"count":1880},"75+":{"percent":89,"count":890},"18+":{"percent":78,"count":7525},"12+":{"percent":77,"count":8086},"All ages":{"percent":67,"count":8306}},{"place":"CAMROSE","12-19":{"percent":79,"count":2165},"20-39":{"percent":77,"count":5848},"40-59":{"percent":85,"count":6181},"60-74":{"percent":91,"count":5119},"75+":{"percent":95,"count":2812},"18+":{"percent":85,"count":20481},"12+":{"percent":85,"count":22125},"All ages":{"percent":76,"count":23076}},{"place":"VIKING","12-19":{"percent":77,"count":164},"20-39":{"percent":78,"count":388},"40-59":{"percent":77,"count":454},"60-74":{"percent":85,"count":432},"75+":{"percent":90,"count":256},"18+":{"percent":81,"count":1567},"12+":{"percent":81,"count":1694},"All ages":{"percent":74,"count":1740}},{"place":"VEGREVILLE","12-19":{"percent":73,"count":686},"20-39":{"percent":73,"count":1731},"40-59":{"percent":84,"count":2212},"60-74":{"percent":92,"count":1820},"75+":{"percent":94,"count":1075},"18+":{"percent":84,"count":7024},"12+":{"percent":83,"count":7525},"All ages":{"percent":75,"count":7746}},{"place":"VERMILION RIVER COUNTY","12-19":{"percent":71,"count":2854},"20-39":{"percent":64,"count":6489},"40-59":{"percent":76,"count":7277},"60-74":{"percent":86,"count":4609},"75+":{"percent":82,"count":1908},"18+":{"percent":74,"count":20998},"12+":{"percent":74,"count":23170},"All ages":{"percent":64,"count":23956}},{"place":"TWO HILLS COUNTY","12-19":{"percent":26,"count":198},"20-39":{"percent":36,"count":489},"40-59":{"percent":58,"count":642},"60-74":{"percent":83,"count":667},"75+":{"percent":89,"count":388},"18+":{"percent":58,"count":2239},"12+":{"percent":53,"count":2384},"All ages":{"percent":43,"count":2436}},{"place":"LAMONT COUNTY","12-19":{"percent":74,"count":387},"20-39":{"percent":71,"count":1055},"40-59":{"percent":79,"count":1262},"60-74":{"percent":87,"count":1198},"75+":{"percent":94,"count":559},"18+":{"percent":81,"count":4170},"12+":{"percent":80,"count":4463},"All ages":{"percent":72,"count":4619}},{"place":"WETASKIWIN COUNTY","12-19":{"percent":75,"count":2914},"20-39":{"percent":75,"count":6328},"40-59":{"percent":83,"count":6568},"60-74":{"percent":88,"count":4908},"75+":{"percent":93,"count":2213},"18+":{"percent":82,"count":20719},"12+":{"percent":81,"count":22937},"All ages":{"percent":70,"count":23772}},{"place":"DRAYTON VALLEY","12-19":{"percent":64,"count":1168},"20-39":{"percent":60,"count":2874},"40-59":{"percent":71,"count":3441},"60-74":{"percent":87,"count":2537},"75+":{"percent":88,"count":939},"18+":{"percent":72,"count":10092},"12+":{"percent":71,"count":10964},"All ages":{"percent":62,"count":11193}},{"place":"TOFIELD","12-19":{"percent":67,"count":487},"20-39":{"percent":71,"count":1281},"40-59":{"percent":78,"count":1607},"60-74":{"percent":88,"count":1352},"75+":{"percent":88,"count":541},"18+":{"percent":79,"count":4886},"12+":{"percent":78,"count":5269},"All ages":{"percent":70,"count":5500}},{"place":"ROCKY MOUNTAIN HOUSE","12-19":{"percent":64,"count":1391},"20-39":{"percent":63,"count":3252},"40-59":{"percent":74,"count":3942},"60-74":{"percent":87,"count":3060},"75+":{"percent":91,"count":1236},"18+":{"percent":75,"count":11866},"12+":{"percent":73,"count":12889},"All ages":{"percent":65,"count":13319}},{"place":"OLDS","12-19":{"percent":79,"count":917},"20-39":{"percent":74,"count":2370},"40-59":{"percent":82,"count":2558},"60-74":{"percent":91,"count":2052},"75+":{"percent":90,"count":1195},"18+":{"percent":83,"count":8398},"12+":{"percent":82,"count":9092},"All ages":{"percent":74,"count":9387}},{"place":"SUNDRE","12-19":{"percent":57,"count":365},"20-39":{"percent":58,"count":841},"40-59":{"percent":69,"count":1235},"60-74":{"percent":83,"count":1329},"75+":{"percent":88,"count":560},"18+":{"percent":73,"count":4088},"12+":{"percent":71,"count":4330},"All ages":{"percent":64,"count":4407}},{"place":"RIMBEY","12-19":{"percent":60,"count":537},"20-39":{"percent":55,"count":1226},"40-59":{"percent":66,"count":1648},"60-74":{"percent":85,"count":1854},"75+":{"percent":88,"count":801},"18+":{"percent":71,"count":5679},"12+":{"percent":70,"count":6069},"All ages":{"percent":61,"count":6203}},{"place":"RED DEER COUNTY","12-19":{"percent":74,"count":2033},"20-39":{"percent":65,"count":5743},"40-59":{"percent":76,"count":5690},"60-74":{"percent":86,"count":3751},"75+":{"percent":93,"count":1215},"18+":{"percent":75,"count":16871},"12+":{"percent":75,"count":18435},"All ages":{"percent":65,"count":19225}},{"place":"SYLVAN LAKE","12-19":{"percent":70,"count":1295},"20-39":{"percent":64,"count":3626},"40-59":{"percent":78,"count":3669},"60-74":{"percent":90,"count":2066},"75+":{"percent":93,"count":581},"18+":{"percent":75,"count":10283},"12+":{"percent":74,"count":11243},"All ages":{"percent":64,"count":11672}},{"place":"BONNYVILLE","12-19":{"percent":73,"count":1348},"20-39":{"percent":72,"count":3315},"40-59":{"percent":81,"count":3545},"60-74":{"percent":89,"count":2032},"75+":{"percent":89,"count":757},"18+":{"percent":80,"count":10008},"12+":{"percent":79,"count":11000},"All ages":{"percent":68,"count":11429}},{"place":"LAC LA BICHE","12-19":{"percent":69,"count":805},"20-39":{"percent":68,"count":1969},"40-59":{"percent":80,"count":2144},"60-74":{"percent":90,"count":1354},"75+":{"percent":95,"count":519},"18+":{"percent":78,"count":6196},"12+":{"percent":77,"count":6794},"All ages":{"percent":68,"count":7061}},{"place":"ST. PAUL","12-19":{"percent":66,"count":1202},"20-39":{"percent":73,"count":3013},"40-59":{"percent":80,"count":2838},"60-74":{"percent":88,"count":2050},"75+":{"percent":92,"count":930},"18+":{"percent":80,"count":9150},"12+":{"percent":78,"count":10038},"All ages":{"percent":67,"count":10394}},{"place":"SMOKY LAKE","12-19":{"percent":61,"count":233},"20-39":{"percent":72,"count":686},"40-59":{"percent":74,"count":914},"60-74":{"percent":84,"count":922},"75+":{"percent":90,"count":517},"18+":{"percent":78,"count":3100},"12+":{"percent":77,"count":3272},"All ages":{"percent":70,"count":3352}},{"place":"MAYERTHORPE","12-19":{"percent":66,"count":982},"20-39":{"percent":72,"count":2590},"40-59":{"percent":74,"count":3347},"60-74":{"percent":90,"count":3070},"75+":{"percent":87,"count":1064},"18+":{"percent":79,"count":10340},"12+":{"percent":78,"count":11053},"All ages":{"percent":69,"count":11313}},{"place":"BARRHEAD","12-19":{"percent":63,"count":696},"20-39":{"percent":61,"count":1594},"40-59":{"percent":77,"count":1916},"60-74":{"percent":88,"count":1810},"75+":{"percent":92,"count":987},"18+":{"percent":76,"count":6496},"12+":{"percent":75,"count":7005},"All ages":{"percent":65,"count":7181}},{"place":"WHITECOURT","12-19":{"percent":67,"count":1089},"20-39":{"percent":69,"count":2966},"40-59":{"percent":79,"count":3338},"60-74":{"percent":90,"count":1663},"75+":{"percent":97,"count":430},"18+":{"percent":77,"count":8678},"12+":{"percent":76,"count":9488},"All ages":{"percent":66,"count":9817}},{"place":"ATHABASCA","12-19":{"percent":79,"count":814},"20-39":{"percent":77,"count":1876},"40-59":{"percent":81,"count":2422},"60-74":{"percent":93,"count":1976},"75+":{"percent":94,"count":812},"18+":{"percent":84,"count":7293},"12+":{"percent":84,"count":7901},"All ages":{"percent":77,"count":8229}},{"place":"EDSON","12-19":{"percent":70,"count":1132},"20-39":{"percent":70,"count":3161},"40-59":{"percent":79,"count":3479},"60-74":{"percent":92,"count":2286},"75+":{"percent":90,"count":727},"18+":{"percent":79,"count":9935},"12+":{"percent":78,"count":10787},"All ages":{"percent":69,"count":11150}},{"place":"BEAVERLODGE","12-19":{"percent":59,"count":809},"20-39":{"percent":59,"count":1902},"40-59":{"percent":70,"count":2147},"60-74":{"percent":83,"count":1536},"75+":{"percent":90,"count":610},"18+":{"percent":70,"count":6409},"12+":{"percent":69,"count":7005},"All ages":{"percent":59,"count":7270}},{"place":"PEACE RIVER","12-19":{"percent":61,"count":1255},"20-39":{"percent":64,"count":3439},"40-59":{"percent":78,"count":3600},"60-74":{"percent":89,"count":2302},"75+":{"percent":87,"count":779},"18+":{"percent":75,"count":10464},"12+":{"percent":73,"count":11378},"All ages":{"percent":63,"count":11777}},{"place":"FALHER","12-19":{"percent":65,"count":299},"20-39":{"percent":68,"count":781},"40-59":{"percent":76,"count":786},"60-74":{"percent":90,"count":692},"75+":{"percent":93,"count":372},"18+":{"percent":78,"count":2699},"12+":{"percent":77,"count":2930},"All ages":{"percent":68,"count":3015}},{"place":"SPIRIT RIVER","12-19":{"percent":55,"count":350},"20-39":{"percent":57,"count":829},"40-59":{"percent":75,"count":1188},"60-74":{"percent":83,"count":936},"75+":{"percent":87,"count":395},"18+":{"percent":72,"count":3445},"12+":{"percent":71,"count":3698},"All ages":{"percent":62,"count":3803}},{"place":"GRANDE PRAIRIE COUNTY","12-19":{"percent":69,"count":1704},"20-39":{"percent":65,"count":3679},"40-59":{"percent":78,"count":4442},"60-74":{"percent":86,"count":2291},"75+":{"percent":87,"count":601},"18+":{"percent":74,"count":11417},"12+":{"percent":74,"count":12719},"All ages":{"percent":64,"count":13377}},{"place":"VALLEYVIEW","12-19":{"percent":61,"count":485},"20-39":{"percent":66,"count":1253},"40-59":{"percent":76,"count":1313},"60-74":{"percent":83,"count":983},"75+":{"percent":88,"count":372},"18+":{"percent":74,"count":4051},"12+":{"percent":73,"count":4407},"All ages":{"percent":62,"count":4535}},{"place":"BOYLE","12-19":{"percent":67,"count":198},"20-39":{"percent":62,"count":520},"40-59":{"percent":74,"count":691},"60-74":{"percent":84,"count":629},"75+":{"percent":86,"count":240},"18+":{"percent":74,"count":2138},"12+":{"percent":73,"count":2278},"All ages":{"percent":65,"count":2322}},{"place":"FROG LAKE","12-19":{"percent":78,"count":482},"20-39":{"percent":81,"count":1027},"40-59":{"percent":85,"count":1024},"60-74":{"percent":93,"count":583},"75+":{"percent":91,"count":269},"18+":{"percent":85,"count":3031},"12+":{"percent":84,"count":3389},"All ages":{"percent":72,"count":3509}},{"place":"COLD LAKE","12-19":{"percent":77,"count":1822},"20-39":{"percent":80,"count":5095},"40-59":{"percent":85,"count":4367},"60-74":{"percent":97,"count":2107},"75+":{"percent":98,"count":664},"18+":{"percent":85,"count":12624},"12+":{"percent":84,"count":14056},"All ages":{"percent":72,"count":14968}},{"place":"JASPER","12-19":{"percent":100,"count":342},"20-39":{"percent":92,"count":2028},"40-59":{"percent":92,"count":1354},"60-74":{"percent":97,"count":655},"75+":{"percent":93,"count":177},"18+":{"percent":94,"count":4342},"12+":{"percent":93,"count":4556},"All ages":{"percent":89,"count":4793}},{"place":"HIGH PRAIRIE","12-19":{"percent":64,"count":952},"20-39":{"percent":73,"count":2133},"40-59":{"percent":77,"count":2280},"60-74":{"percent":92,"count":1512},"75+":{"percent":88,"count":542},"18+":{"percent":79,"count":6726},"12+":{"percent":77,"count":7423},"All ages":{"percent":65,"count":7624}},{"place":"SLAVE LAKE","12-19":{"percent":75,"count":979},"20-39":{"percent":72,"count":2506},"40-59":{"percent":79,"count":2489},"60-74":{"percent":92,"count":1201},"75+":{"percent":84,"count":301},"18+":{"percent":78,"count":6733},"12+":{"percent":78,"count":7478},"All ages":{"percent":67,"count":7824}},{"place":"FOX CREEK","12-19":{"percent":72,"count":163},"20-39":{"percent":70,"count":447},"40-59":{"percent":72,"count":503},"60-74":{"percent":91,"count":288},"75+":{"percent":71,"count":41},"18+":{"percent":75,"count":1315},"12+":{"percent":75,"count":1443},"All ages":{"percent":66,"count":1490}},{"place":"GRANDE CACHE","12-19":{"percent":60,"count":268},"20-39":{"percent":86,"count":1064},"40-59":{"percent":79,"count":961},"60-74":{"percent":91,"count":489},"75+":{"percent":87,"count":159},"18+":{"percent":83,"count":2735},"12+":{"percent":82,"count":2943},"All ages":{"percent":73,"count":3037}},{"place":"HINTON","12-19":{"percent":78,"count":906},"20-39":{"percent":79,"count":2857},"40-59":{"percent":84,"count":2790},"60-74":{"percent":92,"count":1723},"75+":{"percent":94,"count":528},"18+":{"percent":84,"count":8135},"12+":{"percent":84,"count":8805},"All ages":{"percent":75,"count":9175}},{"place":"SWAN HILLS","12-19":{"percent":55,"count":71},"20-39":{"percent":74,"count":245},"40-59":{"percent":76,"count":350},"60-74":{"percent":93,"count":191},"75+":{"percent":100,"count":30},"18+":{"percent":79,"count":830},"12+":{"percent":77,"count":887},"All ages":{"percent":68,"count":913}},{"place":"WOOD BUFFALO","12-19":{"percent":81,"count":375},"20-39":{"percent":80,"count":939},"40-59":{"percent":92,"count":1079},"60-74":{"percent":100,"count":490},"75+":{"percent":100,"count":105},"18+":{"percent":88,"count":2702},"12+":{"percent":88,"count":2989},"All ages":{"percent":77,"count":3121}},{"place":"MANNING","12-19":{"percent":64,"count":232},"20-39":{"percent":61,"count":497},"40-59":{"percent":72,"count":613},"60-74":{"percent":79,"count":422},"75+":{"percent":88,"count":224},"18+":{"percent":72,"count":1822},"12+":{"percent":71,"count":1988},"All ages":{"percent":62,"count":2055}},{"place":"WABASCA","12-19":{"percent":82,"count":501},"20-39":{"percent":89,"count":1054},"40-59":{"percent":93,"count":904},"60-74":{"percent":97,"count":418},"75+":{"percent":95,"count":94},"18+":{"percent":91,"count":2575},"12+":{"percent":90,"count":2971},"All ages":{"percent":73,"count":3121}},{"place":"HIGH LEVEL","12-19":{"percent":39,"count":1402},"20-39":{"percent":47,"count":3550},"40-59":{"percent":60,"count":2779},"60-74":{"percent":58,"count":1054},"75+":{"percent":44,"count":274},"18+":{"percent":52,"count":8061},"12+":{"percent":50,"count":9072},"All ages":{"percent":38,"count":9536}},{"place":"FAIRVIEW","12-19":{"percent":47,"count":480},"20-39":{"percent":55,"count":1088},"40-59":{"percent":72,"count":1372},"60-74":{"percent":85,"count":1097},"75+":{"percent":84,"count":544},"18+":{"percent":70,"count":4247},"12+":{"percent":67,"count":4581},"All ages":{"percent":57,"count":4694}},{"place":"WESTLOCK","12-19":{"percent":70,"count":1344},"20-39":{"percent":77,"count":3406},"40-59":{"percent":82,"count":3953},"60-74":{"percent":89,"count":3525},"75+":{"percent":93,"count":1725},"18+":{"percent":84,"count":12988},"12+":{"percent":82,"count":13954},"All ages":{"percent":75,"count":14456}},{"place":"RED DEER - EAST","12-19":{"percent":81,"count":4608},"20-39":{"percent":76,"count":12141},"40-59":{"percent":84,"count":12505},"60-74":{"percent":95,"count":7508},"75+":{"percent":94,"count":2898},"18+":{"percent":84,"count":36225},"12+":{"percent":84,"count":39667},"All ages":{"percent":75,"count":41819}}]
+[
+  {
+    "place": "CALGARY - WEST",
+    "12-19": {
+      "percent": 95,
+      "count": 9751
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 20045
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 25879
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 12990
+    },
+    "75+": {
+      "percent": 97,
+      "count": 4966
+    },
+    "18+": {
+      "percent": 93,
+      "count": 66068
+    },
+    "12+": {
+      "percent": 93,
+      "count": 73643
+    },
+    "All ages": {
+      "percent": 86,
+      "count": 79754
+    }
+  },
+  {
+    "place": "CALGARY - EAST",
+    "12-19": {
+      "percent": 86,
+      "count": 5699
+    },
+    "20-39": {
+      "percent": 83,
+      "count": 17775
+    },
+    "40-59": {
+      "percent": 88,
+      "count": 18407
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 10498
+    },
+    "75+": {
+      "percent": 93,
+      "count": 3238
+    },
+    "18+": {
+      "percent": 88,
+      "count": 51375
+    },
+    "12+": {
+      "percent": 88,
+      "count": 55624
+    },
+    "All ages": {
+      "percent": 79,
+      "count": 57509
+    }
+  },
+  {
+    "place": "CALGARY - CENTRE",
+    "12-19": {
+      "percent": 96,
+      "count": 2091
+    },
+    "20-39": {
+      "percent": 95,
+      "count": 30803
+    },
+    "40-59": {
+      "percent": 88,
+      "count": 15002
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 7361
+    },
+    "75+": {
+      "percent": 86,
+      "count": 2557
+    },
+    "18+": {
+      "percent": 92,
+      "count": 56343
+    },
+    "12+": {
+      "percent": 92,
+      "count": 57818
+    },
+    "All ages": {
+      "percent": 87,
+      "count": 58842
+    }
+  },
+  {
+    "place": "CALGARY - CENTRE WEST",
+    "12-19": {
+      "percent": 97,
+      "count": 4647
+    },
+    "20-39": {
+      "percent": 90,
+      "count": 19235
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 17099
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 8430
+    },
+    "75+": {
+      "percent": 95,
+      "count": 3713
+    },
+    "18+": {
+      "percent": 93,
+      "count": 49587
+    },
+    "12+": {
+      "percent": 93,
+      "count": 53131
+    },
+    "All ages": {
+      "percent": 85,
+      "count": 56494
+    }
+  },
+  {
+    "place": "CALGARY - ELBOW",
+    "12-19": {
+      "percent": 94,
+      "count": 2830
+    },
+    "20-39": {
+      "percent": 87,
+      "count": 10368
+    },
+    "40-59": {
+      "percent": 89,
+      "count": 9542
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 7190
+    },
+    "75+": {
+      "percent": 91,
+      "count": 3474
+    },
+    "18+": {
+      "percent": 90,
+      "count": 31249
+    },
+    "12+": {
+      "percent": 90,
+      "count": 33411
+    },
+    "All ages": {
+      "percent": 86,
+      "count": 35166
+    }
+  },
+  {
+    "place": "CALGARY - FISH CREEK",
+    "12-19": {
+      "percent": 90,
+      "count": 7969
+    },
+    "20-39": {
+      "percent": 85,
+      "count": 26430
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 27243
+    },
+    "60-74": {
+      "percent": 96,
+      "count": 19558
+    },
+    "75+": {
+      "percent": 96,
+      "count": 7715
+    },
+    "18+": {
+      "percent": 90,
+      "count": 83048
+    },
+    "12+": {
+      "percent": 90,
+      "count": 88925
+    },
+    "All ages": {
+      "percent": 83,
+      "count": 93456
+    }
+  },
+  {
+    "place": "CALGARY - SW",
+    "12-19": {
+      "percent": 92,
+      "count": 11578
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 28834
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 32122
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 14969
+    },
+    "75+": {
+      "percent": 99,
+      "count": 5561
+    },
+    "18+": {
+      "percent": 93,
+      "count": 84366
+    },
+    "12+": {
+      "percent": 93,
+      "count": 93074
+    },
+    "All ages": {
+      "percent": 84,
+      "count": 99199
+    }
+  },
+  {
+    "place": "CALGARY - SE",
+    "12-19": {
+      "percent": 96,
+      "count": 11995
+    },
+    "20-39": {
+      "percent": 88,
+      "count": 36251
+    },
+    "40-59": {
+      "percent": 94,
+      "count": 35484
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 14787
+    },
+    "75+": {
+      "percent": 100,
+      "count": 4059
+    },
+    "18+": {
+      "percent": 93,
+      "count": 93217
+    },
+    "12+": {
+      "percent": 93,
+      "count": 102600
+    },
+    "All ages": {
+      "percent": 83,
+      "count": 111855
+    }
+  },
+  {
+    "place": "CALGARY - UPPER NE",
+    "12-19": {
+      "percent": 100,
+      "count": 12800
+    },
+    "20-39": {
+      "percent": 100,
+      "count": 43258
+    },
+    "40-59": {
+      "percent": 100,
+      "count": 29098
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 11954
+    },
+    "75+": {
+      "percent": 94,
+      "count": 2926
+    },
+    "18+": {
+      "percent": 100,
+      "count": 90356
+    },
+    "12+": {
+      "percent": 100,
+      "count": 100047
+    },
+    "All ages": {
+      "percent": 87,
+      "count": 105905
+    }
+  },
+  {
+    "place": "CALGARY - NOSE HILL",
+    "12-19": {
+      "percent": 99,
+      "count": 5618
+    },
+    "20-39": {
+      "percent": 91,
+      "count": 23148
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 19348
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 11127
+    },
+    "75+": {
+      "percent": 92,
+      "count": 4555
+    },
+    "18+": {
+      "percent": 93,
+      "count": 59721
+    },
+    "12+": {
+      "percent": 93,
+      "count": 63800
+    },
+    "All ages": {
+      "percent": 86,
+      "count": 67262
+    }
+  },
+  {
+    "place": "CALGARY - LOWER NE",
+    "12-19": {
+      "percent": 91,
+      "count": 8668
+    },
+    "20-39": {
+      "percent": 87,
+      "count": 25301
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 23486
+    },
+    "60-74": {
+      "percent": 99,
+      "count": 13546
+    },
+    "75+": {
+      "percent": 97,
+      "count": 4334
+    },
+    "18+": {
+      "percent": 92,
+      "count": 68834
+    },
+    "12+": {
+      "percent": 92,
+      "count": 75347
+    },
+    "All ages": {
+      "percent": 81,
+      "count": 78072
+    }
+  },
+  {
+    "place": "CALGARY - UPPER NW",
+    "12-19": {
+      "percent": 93,
+      "count": 11872
+    },
+    "20-39": {
+      "percent": 90,
+      "count": 30991
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 32044
+    },
+    "60-74": {
+      "percent": 99,
+      "count": 18219
+    },
+    "75+": {
+      "percent": 96,
+      "count": 6146
+    },
+    "18+": {
+      "percent": 93,
+      "count": 90312
+    },
+    "12+": {
+      "percent": 93,
+      "count": 99282
+    },
+    "All ages": {
+      "percent": 85,
+      "count": 106145
+    }
+  },
+  {
+    "place": "CALGARY - NORTH",
+    "12-19": {
+      "percent": 95,
+      "count": 11665
+    },
+    "20-39": {
+      "percent": 92,
+      "count": 30935
+    },
+    "40-59": {
+      "percent": 95,
+      "count": 32220
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 14186
+    },
+    "75+": {
+      "percent": 96,
+      "count": 4116
+    },
+    "18+": {
+      "percent": 95,
+      "count": 84231
+    },
+    "12+": {
+      "percent": 95,
+      "count": 93129
+    },
+    "All ages": {
+      "percent": 85,
+      "count": 100125
+    }
+  },
+  {
+    "place": "CALGARY - CENTRE NORTH",
+    "12-19": {
+      "percent": 99,
+      "count": 2568
+    },
+    "20-39": {
+      "percent": 92,
+      "count": 14543
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 11083
+    },
+    "60-74": {
+      "percent": 96,
+      "count": 5987
+    },
+    "75+": {
+      "percent": 91,
+      "count": 2759
+    },
+    "18+": {
+      "percent": 92,
+      "count": 34988
+    },
+    "12+": {
+      "percent": 92,
+      "count": 36943
+    },
+    "All ages": {
+      "percent": 86,
+      "count": 38896
+    }
+  },
+  {
+    "place": "CALGARY - WEST BOW",
+    "12-19": {
+      "percent": 87,
+      "count": 1144
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 5846
+    },
+    "40-59": {
+      "percent": 88,
+      "count": 4902
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 3383
+    },
+    "75+": {
+      "percent": 93,
+      "count": 1581
+    },
+    "18+": {
+      "percent": 90,
+      "count": 16017
+    },
+    "12+": {
+      "percent": 90,
+      "count": 16856
+    },
+    "All ages": {
+      "percent": 82,
+      "count": 17562
+    }
+  },
+  {
+    "place": "COCHRANE - SPRINGBANK",
+    "12-19": {
+      "percent": 86,
+      "count": 4544
+    },
+    "20-39": {
+      "percent": 83,
+      "count": 10223
+    },
+    "40-59": {
+      "percent": 88,
+      "count": 12340
+    },
+    "60-74": {
+      "percent": 95,
+      "count": 8794
+    },
+    "75+": {
+      "percent": 98,
+      "count": 2712
+    },
+    "18+": {
+      "percent": 89,
+      "count": 35164
+    },
+    "12+": {
+      "percent": 88,
+      "count": 38619
+    },
+    "All ages": {
+      "percent": 81,
+      "count": 41444
+    }
+  },
+  {
+    "place": "OKOTOKS-PRIDDIS",
+    "12-19": {
+      "percent": 84,
+      "count": 4716
+    },
+    "20-39": {
+      "percent": 77,
+      "count": 8020
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 11414
+    },
+    "60-74": {
+      "percent": 95,
+      "count": 7612
+    },
+    "75+": {
+      "percent": 100,
+      "count": 2461
+    },
+    "18+": {
+      "percent": 86,
+      "count": 30595
+    },
+    "12+": {
+      "percent": 86,
+      "count": 34230
+    },
+    "All ages": {
+      "percent": 79,
+      "count": 36414
+    }
+  },
+  {
+    "place": "AIRDRIE",
+    "12-19": {
+      "percent": 90,
+      "count": 7028
+    },
+    "20-39": {
+      "percent": 83,
+      "count": 18291
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 17797
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 8295
+    },
+    "75+": {
+      "percent": 95,
+      "count": 2021
+    },
+    "18+": {
+      "percent": 89,
+      "count": 47879
+    },
+    "12+": {
+      "percent": 89,
+      "count": 53446
+    },
+    "All ages": {
+      "percent": 78,
+      "count": 57667
+    }
+  },
+  {
+    "place": "CHESTERMERE",
+    "12-19": {
+      "percent": 91,
+      "count": 2675
+    },
+    "20-39": {
+      "percent": 87,
+      "count": 5629
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 6589
+    },
+    "60-74": {
+      "percent": 99,
+      "count": 3383
+    },
+    "75+": {
+      "percent": 100,
+      "count": 1095
+    },
+    "18+": {
+      "percent": 92,
+      "count": 17297
+    },
+    "12+": {
+      "percent": 92,
+      "count": 19376
+    },
+    "All ages": {
+      "percent": 82,
+      "count": 20654
+    }
+  },
+  {
+    "place": "CROSSFIELD",
+    "12-19": {
+      "percent": 74,
+      "count": 653
+    },
+    "20-39": {
+      "percent": 68,
+      "count": 1514
+    },
+    "40-59": {
+      "percent": 76,
+      "count": 1968
+    },
+    "60-74": {
+      "percent": 84,
+      "count": 1477
+    },
+    "75+": {
+      "percent": 87,
+      "count": 423
+    },
+    "18+": {
+      "percent": 76,
+      "count": 5533
+    },
+    "12+": {
+      "percent": 76,
+      "count": 6037
+    },
+    "All ages": {
+      "percent": 68,
+      "count": 6294
+    }
+  },
+  {
+    "place": "CALGARY - LOWER NW",
+    "12-19": {
+      "percent": 100,
+      "count": 6662
+    },
+    "20-39": {
+      "percent": 93,
+      "count": 15680
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 16153
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 9368
+    },
+    "75+": {
+      "percent": 100,
+      "count": 4282
+    },
+    "18+": {
+      "percent": 95,
+      "count": 47458
+    },
+    "12+": {
+      "percent": 95,
+      "count": 52150
+    },
+    "All ages": {
+      "percent": 89,
+      "count": 55891
+    }
+  },
+  {
+    "place": "THORSBY",
+    "12-19": {
+      "percent": 71,
+      "count": 583
+    },
+    "20-39": {
+      "percent": 71,
+      "count": 1549
+    },
+    "40-59": {
+      "percent": 75,
+      "count": 1848
+    },
+    "60-74": {
+      "percent": 86,
+      "count": 1564
+    },
+    "75+": {
+      "percent": 94,
+      "count": 569
+    },
+    "18+": {
+      "percent": 78,
+      "count": 5681
+    },
+    "12+": {
+      "percent": 78,
+      "count": 6114
+    },
+    "All ages": {
+      "percent": 69,
+      "count": 6312
+    }
+  },
+  {
+    "place": "STRATHCONA COUNTY EXCLUDING SHERWOOD PARK",
+    "12-19": {
+      "percent": 82,
+      "count": 1497
+    },
+    "20-39": {
+      "percent": 84,
+      "count": 3416
+    },
+    "40-59": {
+      "percent": 86,
+      "count": 4420
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 3342
+    },
+    "75+": {
+      "percent": 94,
+      "count": 804
+    },
+    "18+": {
+      "percent": 87,
+      "count": 12372
+    },
+    "12+": {
+      "percent": 87,
+      "count": 13481
+    },
+    "All ages": {
+      "percent": 81,
+      "count": 14130
+    }
+  },
+  {
+    "place": "FORT SASKATCHEWAN",
+    "12-19": {
+      "percent": 91,
+      "count": 2246
+    },
+    "20-39": {
+      "percent": 85,
+      "count": 7097
+    },
+    "40-59": {
+      "percent": 91,
+      "count": 6048
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 3465
+    },
+    "75+": {
+      "percent": 100,
+      "count": 1356
+    },
+    "18+": {
+      "percent": 90,
+      "count": 18491
+    },
+    "12+": {
+      "percent": 90,
+      "count": 20213
+    },
+    "All ages": {
+      "percent": 80,
+      "count": 21477
+    }
+  },
+  {
+    "place": "STURGEON COUNTY WEST",
+    "12-19": {
+      "percent": 85,
+      "count": 2812
+    },
+    "20-39": {
+      "percent": 82,
+      "count": 6516
+    },
+    "40-59": {
+      "percent": 89,
+      "count": 6988
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 4387
+    },
+    "75+": {
+      "percent": 98,
+      "count": 1303
+    },
+    "18+": {
+      "percent": 88,
+      "count": 19898
+    },
+    "12+": {
+      "percent": 87,
+      "count": 22014
+    },
+    "All ages": {
+      "percent": 77,
+      "count": 23481
+    }
+  },
+  {
+    "place": "EDMONTON - TWIN BROOKS",
+    "12-19": {
+      "percent": 96,
+      "count": 7295
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 17587
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 19125
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 12150
+    },
+    "75+": {
+      "percent": 98,
+      "count": 5469
+    },
+    "18+": {
+      "percent": 93,
+      "count": 56082
+    },
+    "12+": {
+      "percent": 93,
+      "count": 61643
+    },
+    "All ages": {
+      "percent": 87,
+      "count": 66094
+    }
+  },
+  {
+    "place": "ST. ALBERT",
+    "12-19": {
+      "percent": 92,
+      "count": 6534
+    },
+    "20-39": {
+      "percent": 88,
+      "count": 15000
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 17472
+    },
+    "60-74": {
+      "percent": 99,
+      "count": 12084
+    },
+    "75+": {
+      "percent": 100,
+      "count": 5312
+    },
+    "18+": {
+      "percent": 93,
+      "count": 51437
+    },
+    "12+": {
+      "percent": 93,
+      "count": 56410
+    },
+    "All ages": {
+      "percent": 87,
+      "count": 60506
+    }
+  },
+  {
+    "place": "WESTVIEW EXCLUDING STONY PLAIN",
+    "12-19": {
+      "percent": 75,
+      "count": 2930
+    },
+    "20-39": {
+      "percent": 76,
+      "count": 6273
+    },
+    "40-59": {
+      "percent": 81,
+      "count": 8365
+    },
+    "60-74": {
+      "percent": 90,
+      "count": 6402
+    },
+    "75+": {
+      "percent": 92,
+      "count": 1937
+    },
+    "18+": {
+      "percent": 82,
+      "count": 23764
+    },
+    "12+": {
+      "percent": 82,
+      "count": 25922
+    },
+    "All ages": {
+      "percent": 74,
+      "count": 27191
+    }
+  },
+  {
+    "place": "EDMONTON - CASTLE DOWNS",
+    "12-19": {
+      "percent": 93,
+      "count": 6795
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 18687
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 17052
+    },
+    "60-74": {
+      "percent": 99,
+      "count": 9348
+    },
+    "75+": {
+      "percent": 98,
+      "count": 3489
+    },
+    "18+": {
+      "percent": 93,
+      "count": 50245
+    },
+    "12+": {
+      "percent": 93,
+      "count": 55380
+    },
+    "All ages": {
+      "percent": 81,
+      "count": 58406
+    }
+  },
+  {
+    "place": "EDMONTON - NE",
+    "12-19": {
+      "percent": 93,
+      "count": 7863
+    },
+    "20-39": {
+      "percent": 87,
+      "count": 25702
+    },
+    "40-59": {
+      "percent": 94,
+      "count": 21293
+    },
+    "60-74": {
+      "percent": 99,
+      "count": 11272
+    },
+    "75+": {
+      "percent": 94,
+      "count": 3453
+    },
+    "18+": {
+      "percent": 92,
+      "count": 63623
+    },
+    "12+": {
+      "percent": 92,
+      "count": 69596
+    },
+    "All ages": {
+      "percent": 80,
+      "count": 73068
+    }
+  },
+  {
+    "place": "EDMONTON - EASTWOOD",
+    "12-19": {
+      "percent": 87,
+      "count": 3774
+    },
+    "20-39": {
+      "percent": 82,
+      "count": 21870
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 17086
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 9751
+    },
+    "75+": {
+      "percent": 89,
+      "count": 3181
+    },
+    "18+": {
+      "percent": 85,
+      "count": 53059
+    },
+    "12+": {
+      "percent": 85,
+      "count": 55670
+    },
+    "All ages": {
+      "percent": 79,
+      "count": 56899
+    }
+  },
+  {
+    "place": "EDMONTON - BONNIE DOON",
+    "12-19": {
+      "percent": 96,
+      "count": 6114
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 32544
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 21240
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 13703
+    },
+    "75+": {
+      "percent": 91,
+      "count": 6322
+    },
+    "18+": {
+      "percent": 91,
+      "count": 75995
+    },
+    "12+": {
+      "percent": 91,
+      "count": 79929
+    },
+    "All ages": {
+      "percent": 86,
+      "count": 83564
+    }
+  },
+  {
+    "place": "EDMONTON - WEST JASPER PLACE",
+    "12-19": {
+      "percent": 96,
+      "count": 9501
+    },
+    "20-39": {
+      "percent": 94,
+      "count": 28018
+    },
+    "40-59": {
+      "percent": 96,
+      "count": 26909
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 14910
+    },
+    "75+": {
+      "percent": 98,
+      "count": 4983
+    },
+    "18+": {
+      "percent": 96,
+      "count": 77070
+    },
+    "12+": {
+      "percent": 96,
+      "count": 84335
+    },
+    "All ages": {
+      "percent": 88,
+      "count": 91158
+    }
+  },
+  {
+    "place": "EDMONTON - RUTHERFORD",
+    "12-19": {
+      "percent": 100,
+      "count": 9506
+    },
+    "20-39": {
+      "percent": 96,
+      "count": 39091
+    },
+    "40-59": {
+      "percent": 98,
+      "count": 26814
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 9886
+    },
+    "75+": {
+      "percent": 100,
+      "count": 2623
+    },
+    "18+": {
+      "percent": 99,
+      "count": 80560
+    },
+    "12+": {
+      "percent": 99,
+      "count": 87936
+    },
+    "All ages": {
+      "percent": 86,
+      "count": 97222
+    }
+  },
+  {
+    "place": "EDMONTON - JASPER PLACE",
+    "12-19": {
+      "percent": 88,
+      "count": 3487
+    },
+    "20-39": {
+      "percent": 84,
+      "count": 11791
+    },
+    "40-59": {
+      "percent": 88,
+      "count": 10936
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 6270
+    },
+    "75+": {
+      "percent": 88,
+      "count": 3412
+    },
+    "18+": {
+      "percent": 87,
+      "count": 33345
+    },
+    "12+": {
+      "percent": 87,
+      "count": 35897
+    },
+    "All ages": {
+      "percent": 79,
+      "count": 37236
+    }
+  },
+  {
+    "place": "EDMONTON - MILL WOODS SOUTH",
+    "12-19": {
+      "percent": 95,
+      "count": 7990
+    },
+    "20-39": {
+      "percent": 94,
+      "count": 27954
+    },
+    "40-59": {
+      "percent": 96,
+      "count": 20077
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 10439
+    },
+    "75+": {
+      "percent": 96,
+      "count": 2479
+    },
+    "18+": {
+      "percent": 96,
+      "count": 63062
+    },
+    "12+": {
+      "percent": 96,
+      "count": 68947
+    },
+    "All ages": {
+      "percent": 85,
+      "count": 73119
+    }
+  },
+  {
+    "place": "SHERWOOD PARK",
+    "12-19": {
+      "percent": 95,
+      "count": 8217
+    },
+    "20-39": {
+      "percent": 88,
+      "count": 18237
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 21207
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 13203
+    },
+    "75+": {
+      "percent": 100,
+      "count": 5797
+    },
+    "18+": {
+      "percent": 93,
+      "count": 60513
+    },
+    "12+": {
+      "percent": 93,
+      "count": 66666
+    },
+    "All ages": {
+      "percent": 87,
+      "count": 71343
+    }
+  },
+  {
+    "place": "BEAUMONT",
+    "12-19": {
+      "percent": 93,
+      "count": 2633
+    },
+    "20-39": {
+      "percent": 87,
+      "count": 6055
+    },
+    "40-59": {
+      "percent": 91,
+      "count": 6327
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 3369
+    },
+    "75+": {
+      "percent": 99,
+      "count": 784
+    },
+    "18+": {
+      "percent": 91,
+      "count": 17111
+    },
+    "12+": {
+      "percent": 91,
+      "count": 19173
+    },
+    "All ages": {
+      "percent": 81,
+      "count": 20925
+    }
+  },
+  {
+    "place": "LEDUC",
+    "12-19": {
+      "percent": 89,
+      "count": 3700
+    },
+    "20-39": {
+      "percent": 81,
+      "count": 10068
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 9866
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 5899
+    },
+    "75+": {
+      "percent": 97,
+      "count": 2332
+    },
+    "18+": {
+      "percent": 88,
+      "count": 29039
+    },
+    "12+": {
+      "percent": 88,
+      "count": 31870
+    },
+    "All ages": {
+      "percent": 78,
+      "count": 33830
+    }
+  },
+  {
+    "place": "EDMONTON - NORTHGATE",
+    "12-19": {
+      "percent": 90,
+      "count": 7223
+    },
+    "20-39": {
+      "percent": 88,
+      "count": 21159
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 19381
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 11198
+    },
+    "75+": {
+      "percent": 90,
+      "count": 5683
+    },
+    "18+": {
+      "percent": 91,
+      "count": 59276
+    },
+    "12+": {
+      "percent": 91,
+      "count": 64659
+    },
+    "All ages": {
+      "percent": 80,
+      "count": 67121
+    }
+  },
+  {
+    "place": "EDMONTON - WOODCROFT EAST",
+    "12-19": {
+      "percent": 93,
+      "count": 2964
+    },
+    "20-39": {
+      "percent": 85,
+      "count": 19637
+    },
+    "40-59": {
+      "percent": 87,
+      "count": 13853
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 7910
+    },
+    "75+": {
+      "percent": 92,
+      "count": 3470
+    },
+    "18+": {
+      "percent": 88,
+      "count": 45716
+    },
+    "12+": {
+      "percent": 88,
+      "count": 47843
+    },
+    "All ages": {
+      "percent": 80,
+      "count": 49006
+    }
+  },
+  {
+    "place": "EDMONTON - DUGGAN",
+    "12-19": {
+      "percent": 94,
+      "count": 3366
+    },
+    "20-39": {
+      "percent": 91,
+      "count": 12192
+    },
+    "40-59": {
+      "percent": 95,
+      "count": 9273
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 4882
+    },
+    "75+": {
+      "percent": 90,
+      "count": 2942
+    },
+    "18+": {
+      "percent": 93,
+      "count": 30252
+    },
+    "12+": {
+      "percent": 93,
+      "count": 32658
+    },
+    "All ages": {
+      "percent": 85,
+      "count": 34152
+    }
+  },
+  {
+    "place": "EDMONTON - MILL WOODS WEST",
+    "12-19": {
+      "percent": 95,
+      "count": 4945
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 14121
+    },
+    "40-59": {
+      "percent": 96,
+      "count": 11941
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 7355
+    },
+    "75+": {
+      "percent": 91,
+      "count": 2724
+    },
+    "18+": {
+      "percent": 93,
+      "count": 37427
+    },
+    "12+": {
+      "percent": 93,
+      "count": 41098
+    },
+    "All ages": {
+      "percent": 83,
+      "count": 42716
+    }
+  },
+  {
+    "place": "STURGEON COUNTY EAST",
+    "12-19": {
+      "percent": 73,
+      "count": 507
+    },
+    "20-39": {
+      "percent": 78,
+      "count": 1226
+    },
+    "40-59": {
+      "percent": 84,
+      "count": 1475
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 892
+    },
+    "75+": {
+      "percent": 100,
+      "count": 262
+    },
+    "18+": {
+      "percent": 85,
+      "count": 3986
+    },
+    "12+": {
+      "percent": 83,
+      "count": 4362
+    },
+    "All ages": {
+      "percent": 76,
+      "count": 4632
+    }
+  },
+  {
+    "place": "EDMONTON - ABBOTTSFIELD",
+    "12-19": {
+      "percent": 80,
+      "count": 1148
+    },
+    "20-39": {
+      "percent": 77,
+      "count": 3223
+    },
+    "40-59": {
+      "percent": 86,
+      "count": 3241
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 1911
+    },
+    "75+": {
+      "percent": 91,
+      "count": 823
+    },
+    "18+": {
+      "percent": 84,
+      "count": 9463
+    },
+    "12+": {
+      "percent": 84,
+      "count": 10347
+    },
+    "All ages": {
+      "percent": 73,
+      "count": 10715
+    }
+  },
+  {
+    "place": "STONY PLAIN",
+    "12-19": {
+      "percent": 89,
+      "count": 5209
+    },
+    "20-39": {
+      "percent": 82,
+      "count": 13663
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 13154
+    },
+    "60-74": {
+      "percent": 96,
+      "count": 7960
+    },
+    "75+": {
+      "percent": 100,
+      "count": 3359
+    },
+    "18+": {
+      "percent": 89,
+      "count": 39385
+    },
+    "12+": {
+      "percent": 89,
+      "count": 43352
+    },
+    "All ages": {
+      "percent": 79,
+      "count": 46008
+    }
+  },
+  {
+    "place": "EDMONTON - WOODCROFT WEST",
+    "12-19": {
+      "percent": 96,
+      "count": 2465
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 8924
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 8286
+    },
+    "60-74": {
+      "percent": 96,
+      "count": 4824
+    },
+    "75+": {
+      "percent": 95,
+      "count": 1777
+    },
+    "18+": {
+      "percent": 92,
+      "count": 24410
+    },
+    "12+": {
+      "percent": 93,
+      "count": 26279
+    },
+    "All ages": {
+      "percent": 83,
+      "count": 27657
+    }
+  },
+  {
+    "place": "LETHBRIDGE - NORTH",
+    "12-19": {
+      "percent": 88,
+      "count": 2176
+    },
+    "20-39": {
+      "percent": 85,
+      "count": 7031
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 6417
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 4381
+    },
+    "75+": {
+      "percent": 96,
+      "count": 1875
+    },
+    "18+": {
+      "percent": 90,
+      "count": 20222
+    },
+    "12+": {
+      "percent": 90,
+      "count": 21885
+    },
+    "All ages": {
+      "percent": 81,
+      "count": 22820
+    }
+  },
+  {
+    "place": "LETHBRIDGE - WEST",
+    "12-19": {
+      "percent": 94,
+      "count": 3786
+    },
+    "20-39": {
+      "percent": 91,
+      "count": 12290
+    },
+    "40-59": {
+      "percent": 95,
+      "count": 8134
+    },
+    "60-74": {
+      "percent": 99,
+      "count": 4687
+    },
+    "75+": {
+      "percent": 100,
+      "count": 1517
+    },
+    "18+": {
+      "percent": 94,
+      "count": 27595
+    },
+    "12+": {
+      "percent": 94,
+      "count": 30423
+    },
+    "All ages": {
+      "percent": 85,
+      "count": 32516
+    }
+  },
+  {
+    "place": "LETHBRIDGE - SOUTH",
+    "12-19": {
+      "percent": 88,
+      "count": 2279
+    },
+    "20-39": {
+      "percent": 84,
+      "count": 8017
+    },
+    "40-59": {
+      "percent": 90,
+      "count": 6808
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 6145
+    },
+    "75+": {
+      "percent": 94,
+      "count": 4165
+    },
+    "18+": {
+      "percent": 90,
+      "count": 25755
+    },
+    "12+": {
+      "percent": 90,
+      "count": 27420
+    },
+    "All ages": {
+      "percent": 83,
+      "count": 28490
+    }
+  },
+  {
+    "place": "MEDICINE HAT",
+    "12-19": {
+      "percent": 82,
+      "count": 5248
+    },
+    "20-39": {
+      "percent": 80,
+      "count": 14228
+    },
+    "40-59": {
+      "percent": 86,
+      "count": 14792
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 11506
+    },
+    "75+": {
+      "percent": 94,
+      "count": 5476
+    },
+    "18+": {
+      "percent": 87,
+      "count": 47307
+    },
+    "12+": {
+      "percent": 86,
+      "count": 51258
+    },
+    "All ages": {
+      "percent": 78,
+      "count": 53346
+    }
+  },
+  {
+    "place": "RED DEER - NORTH",
+    "12-19": {
+      "percent": 77,
+      "count": 2716
+    },
+    "20-39": {
+      "percent": 72,
+      "count": 8135
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 7715
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 4479
+    },
+    "75+": {
+      "percent": 94,
+      "count": 1610
+    },
+    "18+": {
+      "percent": 81,
+      "count": 22635
+    },
+    "12+": {
+      "percent": 81,
+      "count": 24660
+    },
+    "All ages": {
+      "percent": 71,
+      "count": 25605
+    }
+  },
+  {
+    "place": "RED DEER - SW",
+    "12-19": {
+      "percent": 82,
+      "count": 858
+    },
+    "20-39": {
+      "percent": 72,
+      "count": 3564
+    },
+    "40-59": {
+      "percent": 80,
+      "count": 3295
+    },
+    "60-74": {
+      "percent": 90,
+      "count": 2336
+    },
+    "75+": {
+      "percent": 87,
+      "count": 1084
+    },
+    "18+": {
+      "percent": 79,
+      "count": 10508
+    },
+    "12+": {
+      "percent": 80,
+      "count": 11137
+    },
+    "All ages": {
+      "percent": 72,
+      "count": 11399
+    }
+  },
+  {
+    "place": "CITY OF GRANDE PRAIRIE",
+    "12-19": {
+      "percent": 74,
+      "count": 5343
+    },
+    "20-39": {
+      "percent": 68,
+      "count": 18291
+    },
+    "40-59": {
+      "percent": 80,
+      "count": 14722
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 6388
+    },
+    "75+": {
+      "percent": 90,
+      "count": 1978
+    },
+    "18+": {
+      "percent": 76,
+      "count": 42658
+    },
+    "12+": {
+      "percent": 75,
+      "count": 46727
+    },
+    "All ages": {
+      "percent": 65,
+      "count": 48827
+    }
+  },
+  {
+    "place": "CYPRESS COUNTY",
+    "12-19": {
+      "percent": 71,
+      "count": 900
+    },
+    "20-39": {
+      "percent": 73,
+      "count": 2043
+    },
+    "40-59": {
+      "percent": 83,
+      "count": 2598
+    },
+    "60-74": {
+      "percent": 87,
+      "count": 1650
+    },
+    "75+": {
+      "percent": 85,
+      "count": 410
+    },
+    "18+": {
+      "percent": 80,
+      "count": 6913
+    },
+    "12+": {
+      "percent": 79,
+      "count": 7604
+    },
+    "All ages": {
+      "percent": 70,
+      "count": 7896
+    }
+  },
+  {
+    "place": "COUNTY OF FORTY MILE",
+    "12-19": {
+      "percent": 35,
+      "count": 304
+    },
+    "20-39": {
+      "percent": 46,
+      "count": 771
+    },
+    "40-59": {
+      "percent": 61,
+      "count": 747
+    },
+    "60-74": {
+      "percent": 77,
+      "count": 644
+    },
+    "75+": {
+      "percent": 84,
+      "count": 291
+    },
+    "18+": {
+      "percent": 59,
+      "count": 2534
+    },
+    "12+": {
+      "percent": 55,
+      "count": 2759
+    },
+    "All ages": {
+      "percent": 44,
+      "count": 2819
+    }
+  },
+  {
+    "place": "COUNTY OF WARNER",
+    "12-19": {
+      "percent": 63,
+      "count": 932
+    },
+    "20-39": {
+      "percent": 64,
+      "count": 1729
+    },
+    "40-59": {
+      "percent": 78,
+      "count": 1787
+    },
+    "60-74": {
+      "percent": 88,
+      "count": 1622
+    },
+    "75+": {
+      "percent": 87,
+      "count": 691
+    },
+    "18+": {
+      "percent": 76,
+      "count": 6051
+    },
+    "12+": {
+      "percent": 74,
+      "count": 6766
+    },
+    "All ages": {
+      "percent": 63,
+      "count": 7060
+    }
+  },
+  {
+    "place": "COUNTY OF LETHBRIDGE",
+    "12-19": {
+      "percent": 55,
+      "count": 1721
+    },
+    "20-39": {
+      "percent": 63,
+      "count": 4459
+    },
+    "40-59": {
+      "percent": 77,
+      "count": 4315
+    },
+    "60-74": {
+      "percent": 88,
+      "count": 3156
+    },
+    "75+": {
+      "percent": 89,
+      "count": 1180
+    },
+    "18+": {
+      "percent": 74,
+      "count": 13524
+    },
+    "12+": {
+      "percent": 72,
+      "count": 14831
+    },
+    "All ages": {
+      "percent": 60,
+      "count": 15582
+    }
+  },
+  {
+    "place": "TABER MD",
+    "12-19": {
+      "percent": 42,
+      "count": 1122
+    },
+    "20-39": {
+      "percent": 49,
+      "count": 2555
+    },
+    "40-59": {
+      "percent": 70,
+      "count": 2893
+    },
+    "60-74": {
+      "percent": 84,
+      "count": 1945
+    },
+    "75+": {
+      "percent": 90,
+      "count": 880
+    },
+    "18+": {
+      "percent": 65,
+      "count": 8557
+    },
+    "12+": {
+      "percent": 62,
+      "count": 9398
+    },
+    "All ages": {
+      "percent": 51,
+      "count": 9782
+    }
+  },
+  {
+    "place": "NEWELL",
+    "12-19": {
+      "percent": 74,
+      "count": 2434
+    },
+    "20-39": {
+      "percent": 77,
+      "count": 6018
+    },
+    "40-59": {
+      "percent": 84,
+      "count": 6246
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 3180
+    },
+    "75+": {
+      "percent": 91,
+      "count": 1140
+    },
+    "18+": {
+      "percent": 83,
+      "count": 17180
+    },
+    "12+": {
+      "percent": 82,
+      "count": 19019
+    },
+    "All ages": {
+      "percent": 70,
+      "count": 19597
+    }
+  },
+  {
+    "place": "CARDSTON-KAINAI",
+    "12-19": {
+      "percent": 86,
+      "count": 1903
+    },
+    "20-39": {
+      "percent": 81,
+      "count": 3358
+    },
+    "40-59": {
+      "percent": 87,
+      "count": 2955
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 2252
+    },
+    "75+": {
+      "percent": 89,
+      "count": 1127
+    },
+    "18+": {
+      "percent": 85,
+      "count": 10129
+    },
+    "12+": {
+      "percent": 86,
+      "count": 11606
+    },
+    "All ages": {
+      "percent": 74,
+      "count": 12301
+    }
+  },
+  {
+    "place": "PINCHER CREEK",
+    "12-19": {
+      "percent": 82,
+      "count": 642
+    },
+    "20-39": {
+      "percent": 81,
+      "count": 1593
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 1668
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 1552
+    },
+    "75+": {
+      "percent": 96,
+      "count": 757
+    },
+    "18+": {
+      "percent": 86,
+      "count": 5726
+    },
+    "12+": {
+      "percent": 86,
+      "count": 6213
+    },
+    "All ages": {
+      "percent": 78,
+      "count": 6513
+    }
+  },
+  {
+    "place": "OYEN",
+    "12-19": {
+      "percent": 60,
+      "count": 200
+    },
+    "20-39": {
+      "percent": 64,
+      "count": 496
+    },
+    "40-59": {
+      "percent": 73,
+      "count": 618
+    },
+    "60-74": {
+      "percent": 88,
+      "count": 640
+    },
+    "75+": {
+      "percent": 89,
+      "count": 280
+    },
+    "18+": {
+      "percent": 76,
+      "count": 2094
+    },
+    "12+": {
+      "percent": 75,
+      "count": 2235
+    },
+    "All ages": {
+      "percent": 65,
+      "count": 2288
+    }
+  },
+  {
+    "place": "CROWSNEST PASS",
+    "12-19": {
+      "percent": 70,
+      "count": 341
+    },
+    "20-39": {
+      "percent": 70,
+      "count": 914
+    },
+    "40-59": {
+      "percent": 79,
+      "count": 1284
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 1437
+    },
+    "75+": {
+      "percent": 89,
+      "count": 537
+    },
+    "18+": {
+      "percent": 81,
+      "count": 4251
+    },
+    "12+": {
+      "percent": 80,
+      "count": 4513
+    },
+    "All ages": {
+      "percent": 74,
+      "count": 4680
+    }
+  },
+  {
+    "place": "FORT MACLEOD",
+    "12-19": {
+      "percent": 56,
+      "count": 387
+    },
+    "20-39": {
+      "percent": 58,
+      "count": 993
+    },
+    "40-59": {
+      "percent": 73,
+      "count": 1071
+    },
+    "60-74": {
+      "percent": 84,
+      "count": 1006
+    },
+    "75+": {
+      "percent": 87,
+      "count": 461
+    },
+    "18+": {
+      "percent": 71,
+      "count": 3621
+    },
+    "12+": {
+      "percent": 70,
+      "count": 3918
+    },
+    "All ages": {
+      "percent": 60,
+      "count": 4060
+    }
+  },
+  {
+    "place": "CLARESHOLM",
+    "12-19": {
+      "percent": 73,
+      "count": 342
+    },
+    "20-39": {
+      "percent": 71,
+      "count": 899
+    },
+    "40-59": {
+      "percent": 77,
+      "count": 1164
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 1350
+    },
+    "75+": {
+      "percent": 92,
+      "count": 756
+    },
+    "18+": {
+      "percent": 81,
+      "count": 4247
+    },
+    "12+": {
+      "percent": 81,
+      "count": 4512
+    },
+    "All ages": {
+      "percent": 74,
+      "count": 4625
+    }
+  },
+  {
+    "place": "STRATHMORE",
+    "12-19": {
+      "percent": 84,
+      "count": 3503
+    },
+    "20-39": {
+      "percent": 78,
+      "count": 6917
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 8549
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 4997
+    },
+    "75+": {
+      "percent": 95,
+      "count": 1807
+    },
+    "18+": {
+      "percent": 85,
+      "count": 23074
+    },
+    "12+": {
+      "percent": 85,
+      "count": 25784
+    },
+    "All ages": {
+      "percent": 76,
+      "count": 27221
+    }
+  },
+  {
+    "place": "HIGH RIVER",
+    "12-19": {
+      "percent": 77,
+      "count": 1872
+    },
+    "20-39": {
+      "percent": 74,
+      "count": 3831
+    },
+    "40-59": {
+      "percent": 82,
+      "count": 5011
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 4263
+    },
+    "75+": {
+      "percent": 96,
+      "count": 2185
+    },
+    "18+": {
+      "percent": 83,
+      "count": 15756
+    },
+    "12+": {
+      "percent": 82,
+      "count": 17166
+    },
+    "All ages": {
+      "percent": 75,
+      "count": 17823
+    }
+  },
+  {
+    "place": "DIDSBURY",
+    "12-19": {
+      "percent": 69,
+      "count": 1155
+    },
+    "20-39": {
+      "percent": 67,
+      "count": 2443
+    },
+    "40-59": {
+      "percent": 75,
+      "count": 3348
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 2869
+    },
+    "75+": {
+      "percent": 97,
+      "count": 1144
+    },
+    "18+": {
+      "percent": 78,
+      "count": 10104
+    },
+    "12+": {
+      "percent": 77,
+      "count": 10961
+    },
+    "All ages": {
+      "percent": 69,
+      "count": 11403
+    }
+  },
+  {
+    "place": "VULCAN",
+    "12-19": {
+      "percent": 49,
+      "count": 352
+    },
+    "20-39": {
+      "percent": 60,
+      "count": 888
+    },
+    "40-59": {
+      "percent": 74,
+      "count": 1127
+    },
+    "60-74": {
+      "percent": 85,
+      "count": 1262
+    },
+    "75+": {
+      "percent": 89,
+      "count": 587
+    },
+    "18+": {
+      "percent": 74,
+      "count": 3951
+    },
+    "12+": {
+      "percent": 72,
+      "count": 4218
+    },
+    "All ages": {
+      "percent": 64,
+      "count": 4361
+    }
+  },
+  {
+    "place": "BLACK DIAMOND",
+    "12-19": {
+      "percent": 70,
+      "count": 537
+    },
+    "20-39": {
+      "percent": 72,
+      "count": 1303
+    },
+    "40-59": {
+      "percent": 76,
+      "count": 1795
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 1878
+    },
+    "75+": {
+      "percent": 92,
+      "count": 643
+    },
+    "18+": {
+      "percent": 81,
+      "count": 5754
+    },
+    "12+": {
+      "percent": 80,
+      "count": 6157
+    },
+    "All ages": {
+      "percent": 72,
+      "count": 6387
+    }
+  },
+  {
+    "place": "BANFF",
+    "12-19": {
+      "percent": 94,
+      "count": 655
+    },
+    "20-39": {
+      "percent": 76,
+      "count": 5928
+    },
+    "40-59": {
+      "percent": 88,
+      "count": 2590
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 978
+    },
+    "75+": {
+      "percent": 93,
+      "count": 274
+    },
+    "18+": {
+      "percent": 82,
+      "count": 10083
+    },
+    "12+": {
+      "percent": 82,
+      "count": 10428
+    },
+    "All ages": {
+      "percent": 79,
+      "count": 10734
+    }
+  },
+  {
+    "place": "CANMORE",
+    "12-19": {
+      "percent": 100,
+      "count": 2579
+    },
+    "20-39": {
+      "percent": 91,
+      "count": 7571
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 7040
+    },
+    "60-74": {
+      "percent": 98,
+      "count": 4410
+    },
+    "75+": {
+      "percent": 98,
+      "count": 1188
+    },
+    "18+": {
+      "percent": 93,
+      "count": 20817
+    },
+    "12+": {
+      "percent": 94,
+      "count": 22791
+    },
+    "All ages": {
+      "percent": 87,
+      "count": 24137
+    }
+  },
+  {
+    "place": "PLANNING",
+    "12-19": {
+      "percent": 59,
+      "count": 202
+    },
+    "20-39": {
+      "percent": 69,
+      "count": 542
+    },
+    "40-59": {
+      "percent": 73,
+      "count": 704
+    },
+    "60-74": {
+      "percent": 81,
+      "count": 638
+    },
+    "75+": {
+      "percent": 94,
+      "count": 351
+    },
+    "18+": {
+      "percent": 76,
+      "count": 2292
+    },
+    "12+": {
+      "percent": 75,
+      "count": 2437
+    },
+    "All ages": {
+      "percent": 68,
+      "count": 2493
+    }
+  },
+  {
+    "place": "STARLAND COUNTY",
+    "12-19": {
+      "percent": 77,
+      "count": 875
+    },
+    "20-39": {
+      "percent": 88,
+      "count": 2516
+    },
+    "40-59": {
+      "percent": 87,
+      "count": 2699
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 2170
+    },
+    "75+": {
+      "percent": 96,
+      "count": 910
+    },
+    "18+": {
+      "percent": 89,
+      "count": 8523
+    },
+    "12+": {
+      "percent": 88,
+      "count": 9170
+    },
+    "All ages": {
+      "percent": 79,
+      "count": 9428
+    }
+  },
+  {
+    "place": "THREE HILLS",
+    "12-19": {
+      "percent": 63,
+      "count": 712
+    },
+    "20-39": {
+      "percent": 63,
+      "count": 1585
+    },
+    "40-59": {
+      "percent": 71,
+      "count": 1918
+    },
+    "60-74": {
+      "percent": 83,
+      "count": 1672
+    },
+    "75+": {
+      "percent": 83,
+      "count": 832
+    },
+    "18+": {
+      "percent": 73,
+      "count": 6224
+    },
+    "12+": {
+      "percent": 72,
+      "count": 6719
+    },
+    "All ages": {
+      "percent": 64,
+      "count": 6944
+    }
+  },
+  {
+    "place": "MD OF PROVOST",
+    "12-19": {
+      "percent": 78,
+      "count": 427
+    },
+    "20-39": {
+      "percent": 73,
+      "count": 896
+    },
+    "40-59": {
+      "percent": 82,
+      "count": 1038
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 704
+    },
+    "75+": {
+      "percent": 89,
+      "count": 337
+    },
+    "18+": {
+      "percent": 82,
+      "count": 3097
+    },
+    "12+": {
+      "percent": 81,
+      "count": 3402
+    },
+    "All ages": {
+      "percent": 72,
+      "count": 3502
+    }
+  },
+  {
+    "place": "CASTOR",
+    "12-19": {
+      "percent": 63,
+      "count": 425
+    },
+    "20-39": {
+      "percent": 64,
+      "count": 894
+    },
+    "40-59": {
+      "percent": 69,
+      "count": 1052
+    },
+    "60-74": {
+      "percent": 85,
+      "count": 998
+    },
+    "75+": {
+      "percent": 85,
+      "count": 442
+    },
+    "18+": {
+      "percent": 73,
+      "count": 3515
+    },
+    "12+": {
+      "percent": 72,
+      "count": 3811
+    },
+    "All ages": {
+      "percent": 63,
+      "count": 3911
+    }
+  },
+  {
+    "place": "STETTLER",
+    "12-19": {
+      "percent": 63,
+      "count": 746
+    },
+    "20-39": {
+      "percent": 61,
+      "count": 1849
+    },
+    "40-59": {
+      "percent": 75,
+      "count": 2271
+    },
+    "60-74": {
+      "percent": 85,
+      "count": 1985
+    },
+    "75+": {
+      "percent": 90,
+      "count": 1025
+    },
+    "18+": {
+      "percent": 75,
+      "count": 7336
+    },
+    "12+": {
+      "percent": 73,
+      "count": 7878
+    },
+    "All ages": {
+      "percent": 64,
+      "count": 8127
+    }
+  },
+  {
+    "place": "FLAGSTAFF COUNTY",
+    "12-19": {
+      "percent": 73,
+      "count": 600
+    },
+    "20-39": {
+      "percent": 74,
+      "count": 1367
+    },
+    "40-59": {
+      "percent": 80,
+      "count": 1712
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 1629
+    },
+    "75+": {
+      "percent": 93,
+      "count": 772
+    },
+    "18+": {
+      "percent": 83,
+      "count": 5657
+    },
+    "12+": {
+      "percent": 82,
+      "count": 6080
+    },
+    "All ages": {
+      "percent": 74,
+      "count": 6252
+    }
+  },
+  {
+    "place": "MD OF WAINWRIGHT",
+    "12-19": {
+      "percent": 80,
+      "count": 1004
+    },
+    "20-39": {
+      "percent": 78,
+      "count": 2508
+    },
+    "40-59": {
+      "percent": 88,
+      "count": 2602
+    },
+    "60-74": {
+      "percent": 94,
+      "count": 1749
+    },
+    "75+": {
+      "percent": 92,
+      "count": 708
+    },
+    "18+": {
+      "percent": 86,
+      "count": 7804
+    },
+    "12+": {
+      "percent": 85,
+      "count": 8572
+    },
+    "All ages": {
+      "percent": 75,
+      "count": 9029
+    }
+  },
+  {
+    "place": "INNISFAIL",
+    "12-19": {
+      "percent": 74,
+      "count": 1098
+    },
+    "20-39": {
+      "percent": 80,
+      "count": 3036
+    },
+    "40-59": {
+      "percent": 87,
+      "count": 3638
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 2941
+    },
+    "75+": {
+      "percent": 95,
+      "count": 1374
+    },
+    "18+": {
+      "percent": 87,
+      "count": 11279
+    },
+    "12+": {
+      "percent": 86,
+      "count": 12090
+    },
+    "All ages": {
+      "percent": 77,
+      "count": 12402
+    }
+  },
+  {
+    "place": "LACOMBE",
+    "12-19": {
+      "percent": 68,
+      "count": 1646
+    },
+    "20-39": {
+      "percent": 68,
+      "count": 4180
+    },
+    "40-59": {
+      "percent": 78,
+      "count": 4534
+    },
+    "60-74": {
+      "percent": 87,
+      "count": 3426
+    },
+    "75+": {
+      "percent": 90,
+      "count": 1476
+    },
+    "18+": {
+      "percent": 77,
+      "count": 14058
+    },
+    "12+": {
+      "percent": 76,
+      "count": 15263
+    },
+    "All ages": {
+      "percent": 68,
+      "count": 15870
+    }
+  },
+  {
+    "place": "PONOKA",
+    "12-19": {
+      "percent": 65,
+      "count": 787
+    },
+    "20-39": {
+      "percent": 67,
+      "count": 2134
+    },
+    "40-59": {
+      "percent": 80,
+      "count": 2395
+    },
+    "60-74": {
+      "percent": 87,
+      "count": 1880
+    },
+    "75+": {
+      "percent": 89,
+      "count": 890
+    },
+    "18+": {
+      "percent": 78,
+      "count": 7525
+    },
+    "12+": {
+      "percent": 77,
+      "count": 8086
+    },
+    "All ages": {
+      "percent": 67,
+      "count": 8306
+    }
+  },
+  {
+    "place": "CAMROSE",
+    "12-19": {
+      "percent": 79,
+      "count": 2165
+    },
+    "20-39": {
+      "percent": 77,
+      "count": 5848
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 6181
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 5119
+    },
+    "75+": {
+      "percent": 95,
+      "count": 2812
+    },
+    "18+": {
+      "percent": 85,
+      "count": 20481
+    },
+    "12+": {
+      "percent": 85,
+      "count": 22125
+    },
+    "All ages": {
+      "percent": 76,
+      "count": 23076
+    }
+  },
+  {
+    "place": "VIKING",
+    "12-19": {
+      "percent": 77,
+      "count": 164
+    },
+    "20-39": {
+      "percent": 78,
+      "count": 388
+    },
+    "40-59": {
+      "percent": 77,
+      "count": 454
+    },
+    "60-74": {
+      "percent": 85,
+      "count": 432
+    },
+    "75+": {
+      "percent": 90,
+      "count": 256
+    },
+    "18+": {
+      "percent": 81,
+      "count": 1567
+    },
+    "12+": {
+      "percent": 81,
+      "count": 1694
+    },
+    "All ages": {
+      "percent": 74,
+      "count": 1740
+    }
+  },
+  {
+    "place": "VEGREVILLE",
+    "12-19": {
+      "percent": 73,
+      "count": 686
+    },
+    "20-39": {
+      "percent": 73,
+      "count": 1731
+    },
+    "40-59": {
+      "percent": 84,
+      "count": 2212
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 1820
+    },
+    "75+": {
+      "percent": 94,
+      "count": 1075
+    },
+    "18+": {
+      "percent": 84,
+      "count": 7024
+    },
+    "12+": {
+      "percent": 83,
+      "count": 7525
+    },
+    "All ages": {
+      "percent": 75,
+      "count": 7746
+    }
+  },
+  {
+    "place": "VERMILION RIVER COUNTY",
+    "12-19": {
+      "percent": 71,
+      "count": 2854
+    },
+    "20-39": {
+      "percent": 64,
+      "count": 6489
+    },
+    "40-59": {
+      "percent": 76,
+      "count": 7277
+    },
+    "60-74": {
+      "percent": 86,
+      "count": 4609
+    },
+    "75+": {
+      "percent": 82,
+      "count": 1908
+    },
+    "18+": {
+      "percent": 74,
+      "count": 20998
+    },
+    "12+": {
+      "percent": 74,
+      "count": 23170
+    },
+    "All ages": {
+      "percent": 64,
+      "count": 23956
+    }
+  },
+  {
+    "place": "TWO HILLS COUNTY",
+    "12-19": {
+      "percent": 26,
+      "count": 198
+    },
+    "20-39": {
+      "percent": 36,
+      "count": 489
+    },
+    "40-59": {
+      "percent": 58,
+      "count": 642
+    },
+    "60-74": {
+      "percent": 83,
+      "count": 667
+    },
+    "75+": {
+      "percent": 89,
+      "count": 388
+    },
+    "18+": {
+      "percent": 58,
+      "count": 2239
+    },
+    "12+": {
+      "percent": 53,
+      "count": 2384
+    },
+    "All ages": {
+      "percent": 43,
+      "count": 2436
+    }
+  },
+  {
+    "place": "LAMONT COUNTY",
+    "12-19": {
+      "percent": 74,
+      "count": 387
+    },
+    "20-39": {
+      "percent": 71,
+      "count": 1055
+    },
+    "40-59": {
+      "percent": 79,
+      "count": 1262
+    },
+    "60-74": {
+      "percent": 87,
+      "count": 1198
+    },
+    "75+": {
+      "percent": 94,
+      "count": 559
+    },
+    "18+": {
+      "percent": 81,
+      "count": 4170
+    },
+    "12+": {
+      "percent": 80,
+      "count": 4463
+    },
+    "All ages": {
+      "percent": 72,
+      "count": 4619
+    }
+  },
+  {
+    "place": "WETASKIWIN COUNTY",
+    "12-19": {
+      "percent": 75,
+      "count": 2914
+    },
+    "20-39": {
+      "percent": 75,
+      "count": 6328
+    },
+    "40-59": {
+      "percent": 83,
+      "count": 6568
+    },
+    "60-74": {
+      "percent": 88,
+      "count": 4908
+    },
+    "75+": {
+      "percent": 93,
+      "count": 2213
+    },
+    "18+": {
+      "percent": 82,
+      "count": 20719
+    },
+    "12+": {
+      "percent": 81,
+      "count": 22937
+    },
+    "All ages": {
+      "percent": 70,
+      "count": 23772
+    }
+  },
+  {
+    "place": "DRAYTON VALLEY",
+    "12-19": {
+      "percent": 64,
+      "count": 1168
+    },
+    "20-39": {
+      "percent": 60,
+      "count": 2874
+    },
+    "40-59": {
+      "percent": 71,
+      "count": 3441
+    },
+    "60-74": {
+      "percent": 87,
+      "count": 2537
+    },
+    "75+": {
+      "percent": 88,
+      "count": 939
+    },
+    "18+": {
+      "percent": 72,
+      "count": 10092
+    },
+    "12+": {
+      "percent": 71,
+      "count": 10964
+    },
+    "All ages": {
+      "percent": 62,
+      "count": 11193
+    }
+  },
+  {
+    "place": "TOFIELD",
+    "12-19": {
+      "percent": 67,
+      "count": 487
+    },
+    "20-39": {
+      "percent": 71,
+      "count": 1281
+    },
+    "40-59": {
+      "percent": 78,
+      "count": 1607
+    },
+    "60-74": {
+      "percent": 88,
+      "count": 1352
+    },
+    "75+": {
+      "percent": 88,
+      "count": 541
+    },
+    "18+": {
+      "percent": 79,
+      "count": 4886
+    },
+    "12+": {
+      "percent": 78,
+      "count": 5269
+    },
+    "All ages": {
+      "percent": 70,
+      "count": 5500
+    }
+  },
+  {
+    "place": "ROCKY MOUNTAIN HOUSE",
+    "12-19": {
+      "percent": 64,
+      "count": 1391
+    },
+    "20-39": {
+      "percent": 63,
+      "count": 3252
+    },
+    "40-59": {
+      "percent": 74,
+      "count": 3942
+    },
+    "60-74": {
+      "percent": 87,
+      "count": 3060
+    },
+    "75+": {
+      "percent": 91,
+      "count": 1236
+    },
+    "18+": {
+      "percent": 75,
+      "count": 11866
+    },
+    "12+": {
+      "percent": 73,
+      "count": 12889
+    },
+    "All ages": {
+      "percent": 65,
+      "count": 13319
+    }
+  },
+  {
+    "place": "OLDS",
+    "12-19": {
+      "percent": 79,
+      "count": 917
+    },
+    "20-39": {
+      "percent": 74,
+      "count": 2370
+    },
+    "40-59": {
+      "percent": 82,
+      "count": 2558
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 2052
+    },
+    "75+": {
+      "percent": 90,
+      "count": 1195
+    },
+    "18+": {
+      "percent": 83,
+      "count": 8398
+    },
+    "12+": {
+      "percent": 82,
+      "count": 9092
+    },
+    "All ages": {
+      "percent": 74,
+      "count": 9387
+    }
+  },
+  {
+    "place": "SUNDRE",
+    "12-19": {
+      "percent": 57,
+      "count": 365
+    },
+    "20-39": {
+      "percent": 58,
+      "count": 841
+    },
+    "40-59": {
+      "percent": 69,
+      "count": 1235
+    },
+    "60-74": {
+      "percent": 83,
+      "count": 1329
+    },
+    "75+": {
+      "percent": 88,
+      "count": 560
+    },
+    "18+": {
+      "percent": 73,
+      "count": 4088
+    },
+    "12+": {
+      "percent": 71,
+      "count": 4330
+    },
+    "All ages": {
+      "percent": 64,
+      "count": 4407
+    }
+  },
+  {
+    "place": "RIMBEY",
+    "12-19": {
+      "percent": 60,
+      "count": 537
+    },
+    "20-39": {
+      "percent": 55,
+      "count": 1226
+    },
+    "40-59": {
+      "percent": 66,
+      "count": 1648
+    },
+    "60-74": {
+      "percent": 85,
+      "count": 1854
+    },
+    "75+": {
+      "percent": 88,
+      "count": 801
+    },
+    "18+": {
+      "percent": 71,
+      "count": 5679
+    },
+    "12+": {
+      "percent": 70,
+      "count": 6069
+    },
+    "All ages": {
+      "percent": 61,
+      "count": 6203
+    }
+  },
+  {
+    "place": "RED DEER COUNTY",
+    "12-19": {
+      "percent": 74,
+      "count": 2033
+    },
+    "20-39": {
+      "percent": 65,
+      "count": 5743
+    },
+    "40-59": {
+      "percent": 76,
+      "count": 5690
+    },
+    "60-74": {
+      "percent": 86,
+      "count": 3751
+    },
+    "75+": {
+      "percent": 93,
+      "count": 1215
+    },
+    "18+": {
+      "percent": 75,
+      "count": 16871
+    },
+    "12+": {
+      "percent": 75,
+      "count": 18435
+    },
+    "All ages": {
+      "percent": 65,
+      "count": 19225
+    }
+  },
+  {
+    "place": "SYLVAN LAKE",
+    "12-19": {
+      "percent": 70,
+      "count": 1295
+    },
+    "20-39": {
+      "percent": 64,
+      "count": 3626
+    },
+    "40-59": {
+      "percent": 78,
+      "count": 3669
+    },
+    "60-74": {
+      "percent": 90,
+      "count": 2066
+    },
+    "75+": {
+      "percent": 93,
+      "count": 581
+    },
+    "18+": {
+      "percent": 75,
+      "count": 10283
+    },
+    "12+": {
+      "percent": 74,
+      "count": 11243
+    },
+    "All ages": {
+      "percent": 64,
+      "count": 11672
+    }
+  },
+  {
+    "place": "BONNYVILLE",
+    "12-19": {
+      "percent": 73,
+      "count": 1348
+    },
+    "20-39": {
+      "percent": 72,
+      "count": 3315
+    },
+    "40-59": {
+      "percent": 81,
+      "count": 3545
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 2032
+    },
+    "75+": {
+      "percent": 89,
+      "count": 757
+    },
+    "18+": {
+      "percent": 80,
+      "count": 10008
+    },
+    "12+": {
+      "percent": 79,
+      "count": 11000
+    },
+    "All ages": {
+      "percent": 68,
+      "count": 11429
+    }
+  },
+  {
+    "place": "LAC LA BICHE",
+    "12-19": {
+      "percent": 69,
+      "count": 805
+    },
+    "20-39": {
+      "percent": 68,
+      "count": 1969
+    },
+    "40-59": {
+      "percent": 80,
+      "count": 2144
+    },
+    "60-74": {
+      "percent": 90,
+      "count": 1354
+    },
+    "75+": {
+      "percent": 95,
+      "count": 519
+    },
+    "18+": {
+      "percent": 78,
+      "count": 6196
+    },
+    "12+": {
+      "percent": 77,
+      "count": 6794
+    },
+    "All ages": {
+      "percent": 68,
+      "count": 7061
+    }
+  },
+  {
+    "place": "ST. PAUL",
+    "12-19": {
+      "percent": 66,
+      "count": 1202
+    },
+    "20-39": {
+      "percent": 73,
+      "count": 3013
+    },
+    "40-59": {
+      "percent": 80,
+      "count": 2838
+    },
+    "60-74": {
+      "percent": 88,
+      "count": 2050
+    },
+    "75+": {
+      "percent": 92,
+      "count": 930
+    },
+    "18+": {
+      "percent": 80,
+      "count": 9150
+    },
+    "12+": {
+      "percent": 78,
+      "count": 10038
+    },
+    "All ages": {
+      "percent": 67,
+      "count": 10394
+    }
+  },
+  {
+    "place": "SMOKY LAKE",
+    "12-19": {
+      "percent": 61,
+      "count": 233
+    },
+    "20-39": {
+      "percent": 72,
+      "count": 686
+    },
+    "40-59": {
+      "percent": 74,
+      "count": 914
+    },
+    "60-74": {
+      "percent": 84,
+      "count": 922
+    },
+    "75+": {
+      "percent": 90,
+      "count": 517
+    },
+    "18+": {
+      "percent": 78,
+      "count": 3100
+    },
+    "12+": {
+      "percent": 77,
+      "count": 3272
+    },
+    "All ages": {
+      "percent": 70,
+      "count": 3352
+    }
+  },
+  {
+    "place": "MAYERTHORPE",
+    "12-19": {
+      "percent": 66,
+      "count": 982
+    },
+    "20-39": {
+      "percent": 72,
+      "count": 2590
+    },
+    "40-59": {
+      "percent": 74,
+      "count": 3347
+    },
+    "60-74": {
+      "percent": 90,
+      "count": 3070
+    },
+    "75+": {
+      "percent": 87,
+      "count": 1064
+    },
+    "18+": {
+      "percent": 79,
+      "count": 10340
+    },
+    "12+": {
+      "percent": 78,
+      "count": 11053
+    },
+    "All ages": {
+      "percent": 69,
+      "count": 11313
+    }
+  },
+  {
+    "place": "BARRHEAD",
+    "12-19": {
+      "percent": 63,
+      "count": 696
+    },
+    "20-39": {
+      "percent": 61,
+      "count": 1594
+    },
+    "40-59": {
+      "percent": 77,
+      "count": 1916
+    },
+    "60-74": {
+      "percent": 88,
+      "count": 1810
+    },
+    "75+": {
+      "percent": 92,
+      "count": 987
+    },
+    "18+": {
+      "percent": 76,
+      "count": 6496
+    },
+    "12+": {
+      "percent": 75,
+      "count": 7005
+    },
+    "All ages": {
+      "percent": 65,
+      "count": 7181
+    }
+  },
+  {
+    "place": "WHITECOURT",
+    "12-19": {
+      "percent": 67,
+      "count": 1089
+    },
+    "20-39": {
+      "percent": 69,
+      "count": 2966
+    },
+    "40-59": {
+      "percent": 79,
+      "count": 3338
+    },
+    "60-74": {
+      "percent": 90,
+      "count": 1663
+    },
+    "75+": {
+      "percent": 97,
+      "count": 430
+    },
+    "18+": {
+      "percent": 77,
+      "count": 8678
+    },
+    "12+": {
+      "percent": 76,
+      "count": 9488
+    },
+    "All ages": {
+      "percent": 66,
+      "count": 9817
+    }
+  },
+  {
+    "place": "ATHABASCA",
+    "12-19": {
+      "percent": 79,
+      "count": 814
+    },
+    "20-39": {
+      "percent": 77,
+      "count": 1876
+    },
+    "40-59": {
+      "percent": 81,
+      "count": 2422
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 1976
+    },
+    "75+": {
+      "percent": 94,
+      "count": 812
+    },
+    "18+": {
+      "percent": 84,
+      "count": 7293
+    },
+    "12+": {
+      "percent": 84,
+      "count": 7901
+    },
+    "All ages": {
+      "percent": 77,
+      "count": 8229
+    }
+  },
+  {
+    "place": "EDSON",
+    "12-19": {
+      "percent": 70,
+      "count": 1132
+    },
+    "20-39": {
+      "percent": 70,
+      "count": 3161
+    },
+    "40-59": {
+      "percent": 79,
+      "count": 3479
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 2286
+    },
+    "75+": {
+      "percent": 90,
+      "count": 727
+    },
+    "18+": {
+      "percent": 79,
+      "count": 9935
+    },
+    "12+": {
+      "percent": 78,
+      "count": 10787
+    },
+    "All ages": {
+      "percent": 69,
+      "count": 11150
+    }
+  },
+  {
+    "place": "BEAVERLODGE",
+    "12-19": {
+      "percent": 59,
+      "count": 809
+    },
+    "20-39": {
+      "percent": 59,
+      "count": 1902
+    },
+    "40-59": {
+      "percent": 70,
+      "count": 2147
+    },
+    "60-74": {
+      "percent": 83,
+      "count": 1536
+    },
+    "75+": {
+      "percent": 90,
+      "count": 610
+    },
+    "18+": {
+      "percent": 70,
+      "count": 6409
+    },
+    "12+": {
+      "percent": 69,
+      "count": 7005
+    },
+    "All ages": {
+      "percent": 59,
+      "count": 7270
+    }
+  },
+  {
+    "place": "PEACE RIVER",
+    "12-19": {
+      "percent": 61,
+      "count": 1255
+    },
+    "20-39": {
+      "percent": 64,
+      "count": 3439
+    },
+    "40-59": {
+      "percent": 78,
+      "count": 3600
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 2302
+    },
+    "75+": {
+      "percent": 87,
+      "count": 779
+    },
+    "18+": {
+      "percent": 75,
+      "count": 10464
+    },
+    "12+": {
+      "percent": 73,
+      "count": 11378
+    },
+    "All ages": {
+      "percent": 63,
+      "count": 11777
+    }
+  },
+  {
+    "place": "FALHER",
+    "12-19": {
+      "percent": 65,
+      "count": 299
+    },
+    "20-39": {
+      "percent": 68,
+      "count": 781
+    },
+    "40-59": {
+      "percent": 76,
+      "count": 786
+    },
+    "60-74": {
+      "percent": 90,
+      "count": 692
+    },
+    "75+": {
+      "percent": 93,
+      "count": 372
+    },
+    "18+": {
+      "percent": 78,
+      "count": 2699
+    },
+    "12+": {
+      "percent": 77,
+      "count": 2930
+    },
+    "All ages": {
+      "percent": 68,
+      "count": 3015
+    }
+  },
+  {
+    "place": "SPIRIT RIVER",
+    "12-19": {
+      "percent": 55,
+      "count": 350
+    },
+    "20-39": {
+      "percent": 57,
+      "count": 829
+    },
+    "40-59": {
+      "percent": 75,
+      "count": 1188
+    },
+    "60-74": {
+      "percent": 83,
+      "count": 936
+    },
+    "75+": {
+      "percent": 87,
+      "count": 395
+    },
+    "18+": {
+      "percent": 72,
+      "count": 3445
+    },
+    "12+": {
+      "percent": 71,
+      "count": 3698
+    },
+    "All ages": {
+      "percent": 62,
+      "count": 3803
+    }
+  },
+  {
+    "place": "GRANDE PRAIRIE COUNTY",
+    "12-19": {
+      "percent": 69,
+      "count": 1704
+    },
+    "20-39": {
+      "percent": 65,
+      "count": 3679
+    },
+    "40-59": {
+      "percent": 78,
+      "count": 4442
+    },
+    "60-74": {
+      "percent": 86,
+      "count": 2291
+    },
+    "75+": {
+      "percent": 87,
+      "count": 601
+    },
+    "18+": {
+      "percent": 74,
+      "count": 11417
+    },
+    "12+": {
+      "percent": 74,
+      "count": 12719
+    },
+    "All ages": {
+      "percent": 64,
+      "count": 13377
+    }
+  },
+  {
+    "place": "VALLEYVIEW",
+    "12-19": {
+      "percent": 61,
+      "count": 485
+    },
+    "20-39": {
+      "percent": 66,
+      "count": 1253
+    },
+    "40-59": {
+      "percent": 76,
+      "count": 1313
+    },
+    "60-74": {
+      "percent": 83,
+      "count": 983
+    },
+    "75+": {
+      "percent": 88,
+      "count": 372
+    },
+    "18+": {
+      "percent": 74,
+      "count": 4051
+    },
+    "12+": {
+      "percent": 73,
+      "count": 4407
+    },
+    "All ages": {
+      "percent": 62,
+      "count": 4535
+    }
+  },
+  {
+    "place": "BOYLE",
+    "12-19": {
+      "percent": 67,
+      "count": 198
+    },
+    "20-39": {
+      "percent": 62,
+      "count": 520
+    },
+    "40-59": {
+      "percent": 74,
+      "count": 691
+    },
+    "60-74": {
+      "percent": 84,
+      "count": 629
+    },
+    "75+": {
+      "percent": 86,
+      "count": 240
+    },
+    "18+": {
+      "percent": 74,
+      "count": 2138
+    },
+    "12+": {
+      "percent": 73,
+      "count": 2278
+    },
+    "All ages": {
+      "percent": 65,
+      "count": 2322
+    }
+  },
+  {
+    "place": "FROG LAKE",
+    "12-19": {
+      "percent": 78,
+      "count": 482
+    },
+    "20-39": {
+      "percent": 81,
+      "count": 1027
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 1024
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 583
+    },
+    "75+": {
+      "percent": 91,
+      "count": 269
+    },
+    "18+": {
+      "percent": 85,
+      "count": 3031
+    },
+    "12+": {
+      "percent": 84,
+      "count": 3389
+    },
+    "All ages": {
+      "percent": 72,
+      "count": 3509
+    }
+  },
+  {
+    "place": "COLD LAKE",
+    "12-19": {
+      "percent": 77,
+      "count": 1822
+    },
+    "20-39": {
+      "percent": 80,
+      "count": 5095
+    },
+    "40-59": {
+      "percent": 85,
+      "count": 4367
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 2107
+    },
+    "75+": {
+      "percent": 98,
+      "count": 664
+    },
+    "18+": {
+      "percent": 85,
+      "count": 12624
+    },
+    "12+": {
+      "percent": 84,
+      "count": 14056
+    },
+    "All ages": {
+      "percent": 72,
+      "count": 14968
+    }
+  },
+  {
+    "place": "JASPER",
+    "12-19": {
+      "percent": 100,
+      "count": 342
+    },
+    "20-39": {
+      "percent": 92,
+      "count": 2028
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 1354
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 655
+    },
+    "75+": {
+      "percent": 93,
+      "count": 177
+    },
+    "18+": {
+      "percent": 94,
+      "count": 4342
+    },
+    "12+": {
+      "percent": 93,
+      "count": 4556
+    },
+    "All ages": {
+      "percent": 89,
+      "count": 4793
+    }
+  },
+  {
+    "place": "HIGH PRAIRIE",
+    "12-19": {
+      "percent": 64,
+      "count": 952
+    },
+    "20-39": {
+      "percent": 73,
+      "count": 2133
+    },
+    "40-59": {
+      "percent": 77,
+      "count": 2280
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 1512
+    },
+    "75+": {
+      "percent": 88,
+      "count": 542
+    },
+    "18+": {
+      "percent": 79,
+      "count": 6726
+    },
+    "12+": {
+      "percent": 77,
+      "count": 7423
+    },
+    "All ages": {
+      "percent": 65,
+      "count": 7624
+    }
+  },
+  {
+    "place": "SLAVE LAKE",
+    "12-19": {
+      "percent": 75,
+      "count": 979
+    },
+    "20-39": {
+      "percent": 72,
+      "count": 2506
+    },
+    "40-59": {
+      "percent": 79,
+      "count": 2489
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 1201
+    },
+    "75+": {
+      "percent": 84,
+      "count": 301
+    },
+    "18+": {
+      "percent": 78,
+      "count": 6733
+    },
+    "12+": {
+      "percent": 78,
+      "count": 7478
+    },
+    "All ages": {
+      "percent": 67,
+      "count": 7824
+    }
+  },
+  {
+    "place": "FOX CREEK",
+    "12-19": {
+      "percent": 72,
+      "count": 163
+    },
+    "20-39": {
+      "percent": 70,
+      "count": 447
+    },
+    "40-59": {
+      "percent": 72,
+      "count": 503
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 288
+    },
+    "75+": {
+      "percent": 71,
+      "count": 41
+    },
+    "18+": {
+      "percent": 75,
+      "count": 1315
+    },
+    "12+": {
+      "percent": 75,
+      "count": 1443
+    },
+    "All ages": {
+      "percent": 66,
+      "count": 1490
+    }
+  },
+  {
+    "place": "GRANDE CACHE",
+    "12-19": {
+      "percent": 60,
+      "count": 268
+    },
+    "20-39": {
+      "percent": 86,
+      "count": 1064
+    },
+    "40-59": {
+      "percent": 79,
+      "count": 961
+    },
+    "60-74": {
+      "percent": 91,
+      "count": 489
+    },
+    "75+": {
+      "percent": 87,
+      "count": 159
+    },
+    "18+": {
+      "percent": 83,
+      "count": 2735
+    },
+    "12+": {
+      "percent": 82,
+      "count": 2943
+    },
+    "All ages": {
+      "percent": 73,
+      "count": 3037
+    }
+  },
+  {
+    "place": "HINTON",
+    "12-19": {
+      "percent": 78,
+      "count": 906
+    },
+    "20-39": {
+      "percent": 79,
+      "count": 2857
+    },
+    "40-59": {
+      "percent": 84,
+      "count": 2790
+    },
+    "60-74": {
+      "percent": 92,
+      "count": 1723
+    },
+    "75+": {
+      "percent": 94,
+      "count": 528
+    },
+    "18+": {
+      "percent": 84,
+      "count": 8135
+    },
+    "12+": {
+      "percent": 84,
+      "count": 8805
+    },
+    "All ages": {
+      "percent": 75,
+      "count": 9175
+    }
+  },
+  {
+    "place": "SWAN HILLS",
+    "12-19": {
+      "percent": 55,
+      "count": 71
+    },
+    "20-39": {
+      "percent": 74,
+      "count": 245
+    },
+    "40-59": {
+      "percent": 76,
+      "count": 350
+    },
+    "60-74": {
+      "percent": 93,
+      "count": 191
+    },
+    "75+": {
+      "percent": 100,
+      "count": 30
+    },
+    "18+": {
+      "percent": 79,
+      "count": 830
+    },
+    "12+": {
+      "percent": 77,
+      "count": 887
+    },
+    "All ages": {
+      "percent": 68,
+      "count": 913
+    }
+  },
+  {
+    "place": "WOOD BUFFALO",
+    "12-19": {
+      "percent": 81,
+      "count": 375
+    },
+    "20-39": {
+      "percent": 80,
+      "count": 939
+    },
+    "40-59": {
+      "percent": 92,
+      "count": 1079
+    },
+    "60-74": {
+      "percent": 100,
+      "count": 490
+    },
+    "75+": {
+      "percent": 100,
+      "count": 105
+    },
+    "18+": {
+      "percent": 88,
+      "count": 2702
+    },
+    "12+": {
+      "percent": 88,
+      "count": 2989
+    },
+    "All ages": {
+      "percent": 77,
+      "count": 3121
+    }
+  },
+  {
+    "place": "MANNING",
+    "12-19": {
+      "percent": 64,
+      "count": 232
+    },
+    "20-39": {
+      "percent": 61,
+      "count": 497
+    },
+    "40-59": {
+      "percent": 72,
+      "count": 613
+    },
+    "60-74": {
+      "percent": 79,
+      "count": 422
+    },
+    "75+": {
+      "percent": 88,
+      "count": 224
+    },
+    "18+": {
+      "percent": 72,
+      "count": 1822
+    },
+    "12+": {
+      "percent": 71,
+      "count": 1988
+    },
+    "All ages": {
+      "percent": 62,
+      "count": 2055
+    }
+  },
+  {
+    "place": "WABASCA",
+    "12-19": {
+      "percent": 82,
+      "count": 501
+    },
+    "20-39": {
+      "percent": 89,
+      "count": 1054
+    },
+    "40-59": {
+      "percent": 93,
+      "count": 904
+    },
+    "60-74": {
+      "percent": 97,
+      "count": 418
+    },
+    "75+": {
+      "percent": 95,
+      "count": 94
+    },
+    "18+": {
+      "percent": 91,
+      "count": 2575
+    },
+    "12+": {
+      "percent": 90,
+      "count": 2971
+    },
+    "All ages": {
+      "percent": 73,
+      "count": 3121
+    }
+  },
+  {
+    "place": "HIGH LEVEL",
+    "12-19": {
+      "percent": 39,
+      "count": 1402
+    },
+    "20-39": {
+      "percent": 47,
+      "count": 3550
+    },
+    "40-59": {
+      "percent": 60,
+      "count": 2779
+    },
+    "60-74": {
+      "percent": 58,
+      "count": 1054
+    },
+    "75+": {
+      "percent": 44,
+      "count": 274
+    },
+    "18+": {
+      "percent": 52,
+      "count": 8061
+    },
+    "12+": {
+      "percent": 50,
+      "count": 9072
+    },
+    "All ages": {
+      "percent": 38,
+      "count": 9536
+    }
+  },
+  {
+    "place": "FAIRVIEW",
+    "12-19": {
+      "percent": 47,
+      "count": 480
+    },
+    "20-39": {
+      "percent": 55,
+      "count": 1088
+    },
+    "40-59": {
+      "percent": 72,
+      "count": 1372
+    },
+    "60-74": {
+      "percent": 85,
+      "count": 1097
+    },
+    "75+": {
+      "percent": 84,
+      "count": 544
+    },
+    "18+": {
+      "percent": 70,
+      "count": 4247
+    },
+    "12+": {
+      "percent": 67,
+      "count": 4581
+    },
+    "All ages": {
+      "percent": 57,
+      "count": 4694
+    }
+  },
+  {
+    "place": "WESTLOCK",
+    "12-19": {
+      "percent": 70,
+      "count": 1344
+    },
+    "20-39": {
+      "percent": 77,
+      "count": 3406
+    },
+    "40-59": {
+      "percent": 82,
+      "count": 3953
+    },
+    "60-74": {
+      "percent": 89,
+      "count": 3525
+    },
+    "75+": {
+      "percent": 93,
+      "count": 1725
+    },
+    "18+": {
+      "percent": 84,
+      "count": 12988
+    },
+    "12+": {
+      "percent": 82,
+      "count": 13954
+    },
+    "All ages": {
+      "percent": 75,
+      "count": 14456
+    }
+  },
+  {
+    "place": "RED DEER - EAST",
+    "12-19": {
+      "percent": 81,
+      "count": 4608
+    },
+    "20-39": {
+      "percent": 76,
+      "count": 12141
+    },
+    "40-59": {
+      "percent": 84,
+      "count": 12505
+    },
+    "60-74": {
+      "percent": 95,
+      "count": 7508
+    },
+    "75+": {
+      "percent": 94,
+      "count": 2898
+    },
+    "18+": {
+      "percent": 84,
+      "count": 36225
+    },
+    "12+": {
+      "percent": 84,
+      "count": 39667
+    },
+    "All ages": {
+      "percent": 75,
+      "count": 41819
+    }
+  }
+]
