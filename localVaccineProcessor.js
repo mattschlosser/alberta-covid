@@ -7,6 +7,7 @@ for (let filename of files) {
   let objs = [];
   if (filename.match(/\.htm/)) {
     // vacinne data added May 16
+    if (filename < "20220111") continue;
     if (filename < "20211101") continue;
     let data = fs.readFileSync(path.join(__dirname, "pages", filename));
     let file = parse(data);
@@ -19,14 +20,18 @@ for (let filename of files) {
     if (!fs.existsSync(`localVaccine/20${myDate}.json`)) {
       // get local data and save to local
       let scripts = file.querySelectorAll('[type="application/json"]');
+      let scriptIndex = 0;
       for (let script of scripts) {
         let node = script.childNodes[0];
+//        let scriptIndex = 0;
         if (node instanceof TextNode) {
           if (
             (node.rawText.match(/At least one dose/ &&
             node.rawText.match(/immunized/) || node.rawText.match(/wtih 1 dose/)) &&
-            node.rawText.match(/MAYERTHORPE/i))
+            node.rawText.match(/MAYERTHORPE/i) && !node.rawText.match(/100k/i))
           ) {
+            scriptIndex++;
+            console.log(scriptIndex, " IS THE SCRIPT");
             let data = JSON.parse(node.rawText);
             let tree = data.x.calls[2].args[4];
             let r = parse(tree);
@@ -42,12 +47,13 @@ for (let filename of files) {
               // if this line represents a place name
               if (!lines[0].match(/:/) && !lines[0].match(/Percent/)) {
                 // push the last object, if any
+                console.log(lines[0]);
                 if (d) {
                   objs.push(d);
                 }
                 // create a new object
                 let place = lines[0].match(/([\w.\s\-]+)+/)?.[0].trim().toUpperCase();
-                console.log(place);
+                // console.log(place);
                 d = {
                   place: place,
                 };
@@ -74,7 +80,7 @@ for (let filename of files) {
                 }
               }
             }
-            let str = JSON.stringify(objs);
+            let str = JSON.stringify(objs, null, 2);
             if (objs.length) {
               fs.writeFileSync(`localVaccine/20${myDate}.json`, str);
             }
